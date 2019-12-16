@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*---------------------------
+special-top
+---------------------------*/
+#special{position: relative; width: 100%;}
+#special .bg-change02 .head-tit01:before{border-bottom: 58px solid #ff7bac}
+#special .bg-change02 .head-tit01:after{border-top: 58px solid #ff7bac}
+
+#sp-name{position: relative;}
+#sp-name .floor{padding:80px 10px 40px;}
+
+#sp-floor{position: relative;background:#fff; padding:0 0 80px;}
+#sp-floor .floor{padding:80px 10px 0}
+#sp-floor .c-new{right:inherit;left:5px}
+
+.cont-tit{width: 100%; margin: 0 auto 10px; padding:10px 10px 5px; font-size: 2.0rem;color:#fff; letter-spacing:1px }
+
+@media screen and (max-width: 768px){
+	#sp-floor{padding:0 0 40px;}
+	#sp-floor .floor{padding:40px 10px 0}
+}
+
+@media screen and (max-width: 480px){
+	#sp-name .floor{padding:100px 5px 20px;}
+	#special .bg-change02 .head-tit01:before{border-bottom: 48px solid #ff7bac}
+	#special .bg-change02 .head-tit01:after{border-top: 48px solid #ff7bac}
+}
+
+/*---------------------------
+見出し
+---------------------------*/
+#special .head-tit01 .sp-tit span{padding: 7px 0;}
+#special .head-tit01 .sp-tit span:first-letter{font-size:100%;}
+
+.sp-head-tit{background: rgba(255,222,236,.65);border-bottom: 2px solid #ed1e78; margin:0 0 20px}
+.sp-head-tit h2{text-align: left;font-size: 2rem;padding:10px;}
+.sp-head-tit h2:after{content: "";position: absolute;height: 1px;width: 100%;bottom: 3px;left:0;background: #ed1e78;}
+
+.sp-tit-blu{padding:5px;background:rgba(0,192,235,.7);color:#fff;}
+
+@media screen and (max-width: 480px){
+	#special .head-tit01 .sp-tit span{padding: 5px 0;}
+}
+
+/*---------------------------
+限定版同梱特典情報
+---------------------------*/
+.privi-box{font-size: 0; line-height: 0; text-align: center}
+
+.privi-sub{width: 32.33%; margin: 0.5%; padding:5px; display: inline-block; vertical-align: top; background: #fff;}
+
+.privi-sub:nth-of-type(n+4){width: 49%;position: relative;height: 100%;}
+.privi-sub:nth-of-type(n+4) .privi-img,
+.privi-sub:nth-of-type(n+4) .privi-text{display: inline-block; vertical-align: top;}
+.privi-sub:nth-of-type(n+4) .privi-img{width:55% }
+.privi-sub:nth-of-type(n+4) .privi-text{width: 45%; height: 100%;min-height: 275px; padding: 10px 0 0 5px;position: relative}
+.privi-sub:nth-of-type(n+4) .privi-text p.abs50{position: absolute;top:50%;-ms-transform:translate(0,-50%);-webkit-transform :translate(0,-50%);transform :translate(0,-50%);}
+
+.privi-img{margin:5px auto;max-width: 480px;}
+.privi-text p{text-align:left; font-size: 1.4rem; line-height: 2rem;}
+
+@media screen and (max-width: 768px){
+	.privi-sub:nth-of-type(n+4) .privi-img{width:100%}
+	.privi-sub:nth-of-type(n+4) .privi-text{width:100%;min-height:inherit; padding: 10px 0 0 0;position: relative}
+	.privi-sub:nth-of-type(n+4) .privi-text p.abs50{position:static;top:0;-ms-transform:none;-webkit-transform :none;transform :none;}
+}
+
+@media screen and (max-width:640px){
+	.privi-sub{width: 49%;}
+	.privi-sub:last-of-type{width: 100%}
+	.privi-sub:last-of-type .privi-img{width:50% }
+	.privi-sub:last-of-type .privi-text{width:50%;}
+}
+
+@media screen and (max-width:480px){
+	.privi-sub{width:100%; margin: 0 0 20px}
+	.privi-sub:nth-of-type(n+4){width:100%;}
+	.privi-sub:last-of-type{width: 100%}
+	.privi-sub:last-of-type .privi-img{width:100% }
+	.privi-sub:last-of-type .privi-text{width:100%;}
+}
+
+/*---------------------------
+アペンド
+---------------------------*/
+#append-box{position: absolute;height: 100%;top:0;left:0}
+#append-box .floor{padding:80px 15px 15px;max-width:480px;margin: 0 auto}
+#append-box p{padding:15px 0}
+
+@media screen and (max-width: 1024px){
+	#append-box{position: absolute;height:auto;bottom:0;left:0;top:inherit;width: 100%;}
+	#append-box .floor{padding:15px;max-width:1024px;margin: 0 auto}
+}
+
+@media screen and (max-width:768px){
+	.append-mv{margin: 0 0 -30%}
+	#append-box{position:relative;}
+}
+
+@media screen and (max-width:480px){
+	.append-mv{margin: 0 0 -20%}
+}
+
+

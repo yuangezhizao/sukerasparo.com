@@ -1,0 +1,84 @@
+/*==========サポート==========*/
+fieldset {width:740px; margin:0 auto;padding: 40px 0 20px;border:none;display: inline;}
+label {float:left;width:150px; margin-right:10px;text-align:right;padding:6px 0 4px;box-sizing:border-box;}
+
+input{
+	width:570px;
+	padding:8px;
+	font-size:1.4rem;
+	line-height:1.4rem;
+	margin-bottom:20px;
+	border:0;
+	background:#fff;
+	color:#000;
+	border-radius:5px;
+	box-sizing:border-box;
+	border:1px solid #dab4b4;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+}
+input:focus{border:1px solid #ff8397;background-color:#ffecf1;outline: none;}
+textarea{
+	width:570px;
+	padding:8px;
+	font-size:14px;
+	line-height:14px;
+	height:100px;
+	margin-bottom:20px;
+	border:0;
+	background:#fff;
+	color:#000;
+	border-radius:5px;
+	box-sizing:border-box;
+	border:1px solid #dab4b4;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	display: inline;
+}
+textarea:focus{border:1px solid #ff8397;background-color:#ffecf1;outline: none;}
+select{
+	width:570px;
+	padding:8px;
+	font-size:14px;
+	line-height:14px;
+	margin-bottom:20px;
+	border:0;
+	background:#fff;
+	color:#000;
+	border-radius:5px;
+	box-sizing:border-box;
+	border:1px solid #dab4b4;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+}
+select:focus{border:1px solid #ff8397;background-color:#ffecf1;outline: none;}
+
+input.submit{
+	width:100%;
+	height:40px;
+	line-height:30px;
+	background:#ff8397;
+	color:#fff;
+	padding:0;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:20px;
+	letter-spacing:5px;
+	border-radius:5px;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0);
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0);
+}
+input.submit:hover{background:#00bece}
+
+#submit_press input{ border:none}
+
+@media screen and (max-width: 640px){
+fieldset{ width:100%}
+label{float:none;margin-right:0px;text-align:left; display:block}
+input{ width:100%;}
+textarea{width:100%;}
+}

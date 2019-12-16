@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>クダンノフォークロア - sukerasparo</title>
+<meta name="author" content="sukerasparo"/>
+<meta name="copyright" content="(c)sukerasparo"/>
+<meta name="description" content="sukerasparo「クダンノフォークロア」公式サイト"/>
+<meta name="keywords" content="クダンノフォークロア,sukerasparo,スケラスパーロ,スケラスパロ,スケラスパロー"/>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<!-- OG-->
+<meta property="og:title" content="sukerasparo「クダンノフォークロア」">
+<meta property="og:description" content="SukeraSparo新作｜少女＋百合＋都市伝説＝『クダンノフォークロア』">
+<meta property="og:url" contetnt="http://sukerasparo.com/folklore/">
+<meta property="og:image" content="http://sukerasparo.com/folklore/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sukerasparo">
+<meta name="twitter:title" content="クダンノフォークロア">
+<meta name="twitter:description" content="SukeraSparo新作｜少女＋百合＋都市伝説＝『クダンノフォークロア』">
+<meta name="twitter:image:src" content="http://sukerasparo.com/folklore/img/og.jpg">
+<meta name="twitter:url" content="http://sukerasparo.com/folklore/">
+<link rel="shortcut icon" href="img/icon.ico" />
+<link rel="stylesheet" href="css/ress.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-rwd.css" media="screen and (max-width:1027px)">
+<link rel="stylesheet" href="css/style-rwd640.css" media="screen and (max-width:640px)">
+<link rel="stylesheet" href="css/slider-pro.min.css">
+<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Sawarabi+Mincho">
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!-- Google Analytics-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-100381791-1', 'auto');
+ga('send', 'pageview');
+</script>
+<style>
+	#mv-contents{height:100%;position: relative;min-height: 768px;}
+	#mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
+	.mv-bg{width:100%;height:100%;top:0}
+	.mv-bg{background:url(img/mv-bg.jpg) center 46% no-repeat; background-size:cover;position: fixed;}
+
+	.mv-logo{width:100%;height:100%;position:absolute;z-index:5;max-width:520px;max-height: 469px; top:3%;right:7%}
+	.mv-text01,.mv-text02,.mv-text03,.mv-text04,.mv-text05,.mv-text06,.mv-text07,.mv-text-logo{width:100%;height:100%;position:absolute;}
+	.mv-text01{background:url(img/mv-text01.png) bottom no-repeat;background-size:contain;z-index:6}
+	.mv-text02{background:url(img/mv-text02.png) bottom no-repeat;background-size:contain;z-index:5}
+	.mv-text03{background:url(img/mv-text03.png) bottom no-repeat;background-size:contain;z-index:6}
+	.mv-text04{background:url(img/mv-text04.png) bottom no-repeat;background-size:contain;z-index:5}
+	.mv-text05{background:url(img/mv-text05.png) bottom no-repeat;background-size:contain;z-index:6}
+	.mv-text06{background:url(img/mv-text06.png) bottom no-repeat;background-size:contain;z-index:5}
+	.mv-text07{background:url(img/mv-text07b.png) bottom no-repeat;background-size:contain;z-index:6}
+	.mv-text-logo{background:url(img/mv-text-logo.png) bottom no-repeat;background-size:contain;z-index:5}
+	
+	.mv-banner{bottom:-28%; right: 0; max-width: 550px; position: absolute;}
+	
+	.icn-tw-copy{ position: absolute;top:10px; right:10px;z-index:10}
+	.copy-icn,.tw-icn{ max-width: 60px; background: #fff;margin: 0 0 5px;}
+	.copy-icn img,.tw-icn img{ border: 2px solid #fff;}
+	
+	#mv-demo{bottom:3%;right:6.5%; position: absolute;width: 100%;max-width:544px;z-index:10}
+	.demo{position: relative;width: 100%;padding:50% 0 0 0;max-width:480px;margin:0 auto;box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);border: 3px solid #fff;background: #fff;}
+	.demo	iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+	
+	.mas-up{ position:absolute;top:3%;left:200px;z-index:10;max-width:285px; width: 15%;}
+	.menu-banner{width: 96%; margin:10px auto; border: 2px solid #fff; background: #fff}
+	.menu-banner a{padding:0;}
+	.menu-banner a:after{content: none}
+	
+	@media screen and (max-width: 1366px){
+		.mv-logo{width:100%;height:100%;right:5%;max-width:400px;max-height:320px;}
+		#mv-demo{right:4%;max-width:400px;}
+		.demo{padding: 55% 0 0 0;}
+		.mas-up{max-width:220px;}
+	}
+	@media screen and (max-width: 1280px){
+		.mv-logo{top: 2%;}
+		#mv-demo{bottom:4%;max-width:inherit; right:3%}
+		.demo{padding: 20% 0 0 0;max-width:420px; margin: 0 0 0 auto}
+	}
+	@media screen and (max-width: 1027px){
+		.tw-icn{display: none}
+		.mas-up{top:10%;left:3%}
+	}
+	@media screen and (max-width: 1024px){
+		#mv-demo{bottom:3%right:auto;left:0}
+		.demo{padding: 24% 0 0 0;max-width:480px;margin: 0 auto}
+		.mas-up{top:8%;width: 50%;}
+	}
+	@media screen and (max-width: 768px){
+		.icn-tw-copy{top:inherit;bottom:10px}
+		#mv-demo{bottom:3%;right:auto;left:0}
+		.demo{padding: 36% 0 0 0;max-width:480px; margin: 0 auto}
+		.mas-up{top:7%; left: 2%;max-width:200px;}
+		.mv-logo{max-width:312px;max-height:280px;}
+		.mv-bg{background:none;}
+	}
+	@media screen and (max-width:640px){
+		#mv-demo{bottom:auto;right:auto; position:relative; width: 100%; max-width: inherit;background:rgba(95,0,11,.75);padding:20px 0}
+		.demo{padding:42% 0 0!important;margin: 0 auto;box-shadow:none; width:94%;}
+		.mas-up{top:auto;bottom:3%;}
+		.mv-logo{max-width:300px;max-height:270px;right: 3%;}
+	}
+	@media screen and (max-width: 480px){
+		.copy-icn{max-width: 40px!important}
+		.copy-icn img{width: 100%!important}
+		.demo{padding:55% 0 0!important;}
+		.mas-up{top:70px;right:1%; left:auto;bottom:auto; max-width: 150px}
+		.mv-bg{ background: url(img/mv-bg.jpg) 25% no-repeat;background-size:cover;}
+		.mv-logo{max-width: 240px;max-height: 220px;bottom:12%; top:inherit;left: 50%;-ms-transform: translate(-50%,0);-webkit-transform : translate(-50%,0);transform : translate(-50%,0);}
+	}
+	
+	@media screen and (max-width:360px){
+		.mas-up{max-width: 120px}
+		.mv-bg{ background: url(img/mv-bg.jpg) 30% no-repeat;background-size:cover;}
+		.mv-logo{max-width: 200px;max-height: 160px;bottom:12%;}
+	}
+	
+	@media screen and (max-height: 420px){
+		#mv-contents{min-height: 768px!important}
+		.mv-logo{top: inherit!important;left: inherit!important;-ms-transform: translate(0);-webkit-transform: translate(0);transform: translate(0);right:1%; width: 50%!important;height: 50%!important}
+		#mv-demo{bottom:auto;right:auto; position:relative; width: 100%; max-width: inherit;background:rgba(95,0,11,.75);padding:20px 0}
+		.demo{padding:55% 0 0!important;margin: 0 auto;box-shadow:none; width:94%;}
+	}
+
+</style>
+</head>
+<body id="top" class="top">
+<div id="loader-bg"><div id="loading"><img class="loadimg" src="img/copy-lord.gif" width="320" alt=""></div></div>
+
+<!--<div style=" display: none">
+<a href="img/cg15.jpg" target="_self" class="group2 pop-up"></a></div>-->
+
+<div class="drawer">
+	<div class="navbar_toggle"><span class="nav-i"></span><span class="nav-i"></span><span class="nav-i"></span></div>
+</div>
+
+<header id="head"></header>
+<main id="mv-contents">
+	<article id="mv-main">
+		<section>
+			<div class="mv-bg mv-shadow"></div>
+			<div class="mv-logo">
+				<div class="mv-text01"></div>
+				<div class="mv-text02"></div>
+				<div class="mv-text03"></div>
+				<div class="mv-text04"></div>
+				<div class="mv-text05"></div>
+				<div class="mv-text06"></div>
+				<div class="mv-text-logo"></div>
+				<div class="mv-text07"></div>
+				<div class="mv-banner"><a href="sp/download.html"><img src="img/topic-img22b.jpg" width="100%" alt=""></a></div>
+			</div>
+			<div class="mas-up">
+				<a href="sp/sp-dl.html"><img src="img/mv-sale-sam03.png" width="100%"></a>
+			</div>
+			<div class="icn-tw-copy">
+				<div class="copy-icn"><a href="../index.html" target="_blank"><img src="img/copy.gif" width="50"></a></div>
+				<div class="tw-icn"><a href="http://twitter.com/share?text=少女＋百合＋都市伝説＝クダンノフォークロア%0a%0aSukeraSparo新作『クダンノフォークロア』公式サイト公開!!%0a2019年4月26日（金）発売予定！%0a&url=http://sukerasparo.com/folklore/&hashtags=クダンノフォークロア" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow',personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="hover" target="_blank"><img src="img/tw-icon.gif" width="50"></a></div>
+			</div>
+		</section>
+	</article>
+</main>
+
+<!--<section id="mv-demo">
+<div class="demo"></div>
+</section>-->
+	
+<article id="floor-box" class="bg-col02"><!--01-->
+	<section class="floor" id="news">
+		<div class="news-box">
+			<h2 class="h2-tit news-tit font01">NEWS</h2>
+			<ul class="news-list">
+				<!---->
+				<li class="news-info">
+					<a href="../event/eve22.html"></a>
+					<time class="info-new">■2019.12.13</time>
+					<p>SukeraSparoのトークイベント<span class="bold blu">『ヨルノSukeraSparo』第二弾</span>のイベント情報を公開しました。</p>
+				</li>
+				<!---->
+				<li class="news-info">
+					<a href="sp/event02.html"></a>
+					<time>■2019.11.15</time>
+					<p><span class="bold blu">『クダンノフォークロア』&#9829;『スープカレーカムイ』コラボイベント情報</span>を公開しました。</p>
+				</li>
+				
+				<!---->
+				<li class="news-info">
+					<a href="sp/sp-dl.html"></a>
+					<time>■2019.11.08</time>
+					<p><span class="yel">『クダンノフォークロア』スマートフォン版</span> 『App Store』『Google Play』にて本日、配信開始!!</p>
+				</li>
+				
+			</ul>
+			<div class="more-box"><a href="info.html" class="more">もっと見る</a></div>
+		</div>
+		
+		<div class="tw-box">
+			<a class="twitter-timeline" data-width="580" data-height="562" data-theme="light" data-chrome="nofooter noheader" data-link-color="#E81C4F" href="https://twitter.com/SukeraSparo?ref_src=twsrc%5Etfw">Twitterが表示されない方はコチラ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</section>
+</article>
+
+<!--topics--->
+<article id="floor-box" class="bg-col02">
+	<section class="floor" id="topic">
+		<div class="topic-box">
+			<ul class="topic-list">
+				<!---->
+				<li class="topic-info t-new">
+					<a href="sp/sp-dl.html"></a>
+					<p class="topic-tit t-content">コンテンツ情報</p>
+					<div><img src="img/topic-img23.jpg" width="100%" alt="スマホ版"></div>
+					<p class="t-info">2019.11.08 update</p>
+				</li>
+				<!---->
+				<li class="topic-info t-new">
+					<a href="sp/rt-cpn.html"></a>
+					<p class="topic-tit t-cpn">キャンペーン情報</p>
+					<div><img src="img/topic-img24.jpg" width="100%" alt="RTキャンペーン"></div>
+					<p class="t-info">2019.11.08 update</p>
+				</li>	
+				<!---->
+				<li class="topic-info">
+					<a href="sp/download.html"></a>
+					<p class="topic-tit t-content">コンテンツ情報</p>
+					<div><img src="img/topic-img22.jpg" width="100%" alt="ダウンロード版"></div>
+					<p class="t-info">2019.08.30 update</p>
+				</li>
+				<!---->
+				<li class="topic-info">
+					<a href="sp/updata.html"></a>
+					<p class="topic-tit t-content">コンテンツ情報</p>
+					<div><img src="img/topic-img19a.jpg" width="100%" alt="アップデート"></div>
+					<p class="t-info">2019.08.30 update</p>
+				</li>
+				<!---->
+				<li class="topic-info">
+					<a href="sp/ank01.html"></a>
+					<p class="topic-tit t-content">コンテンツ情報</p>
+					<div><img src="img/topic-img21.jpg" width="100%" alt="アンケート"></div>
+					<p class="t-info">2019.06.14 update</p>
+				</li>				
+				<!---->
+				<li class="topic-info">
+					<a href="https://gyutto.jp/pd/folklore" target="_blank"></a>
+					<p class="topic-tit t-content">コンテンツ情報</p>
+					<div><img src="img/topic-img18.jpg" width="100%" alt="データDL"></div>
+					<p class="t-info">2019.04.26 update</p>
+				</li>
+				
+				<!---->
+				<li class="topic-info">
+					<a href="sp/privilege.html"></a>
+					<p class="topic-tit t-tokuten">特典情報</p>
+					<div><img src="img/topic-img03.jpg" width="100%" alt="限定版特典情報"></div>
+					<p class="t-info">2019.04.25 update</p>
+				</li>
+				<!---->
+				<li class="topic-info">
+					<a href="sp/experience.html"></a>
+					<p class="topic-tit t-content">コンテンツ情報</p>
+					<div><img src="img/topic-img14.jpg" width="100%" alt="体験版"></div>
+					<p class="t-info">2019.04.19 update</p>
+				</li>
+				
+				
+			</ul>
+			<div class="more-box"><a href="special.html" class="more">もっと見る</a></div>
+		</div>
+	</section>
+</article>
+
+
+<!--story--->
+<article id="floor-box" class="bg-col03">
+	<section class="floor" id="story">
+		<h2 class="h2-tit st-tit font01">STORY</h2>
+		<p class="st-text">
+			巷説に“クダン”という<span class="st-sub-text st-text01"><span class="font02 big">フォークロア</span></span>が広まっていた。<br><br>
+			<span class="font02 big">曰く、クダンは西洋の喪服を着た女の姿をし、<br>右手首はなく、素顔を黒いヴェールで隠している。<br><br>
+				曰く、クダンを目にしてしまった者の元へ、<br>七日のときを掛け近づき“災いの予言”をするという……。</span><br><br>
+
+			１６歳の少女、九段朔夜は奇縁から料理教室講師である志摩塔子という女性と出逢い<br>
+			――ふれ合ううちに仄かな想いを募らせていく。<br>
+			しかし、災厄を予言する“クダン”を塔子が目にしたことで、<br class="br480">穏やかだった日常は狂いだしていった。<br>
+			刻一刻と近づくクダン。朔夜は彼女を守るために奔走し、対抗する手段を得ようとする。<br class="br480">
+			そして己の学校、《九段女子高等学校》にフォークロアを<br>研究する部が在ることを識った。<br>
+			神秘学研究会の戸を叩き、会の長である春夏冬小兎とともに<br class="br480">朔夜は大切な人を守るため<span class="st-sub-text st-text02"><span class="font02 big">フォークロア</span></span>に挑む――――。
+		</p>
+	</section>
+
+	<!--point--->
+	<section class="floor bg-pt" id="point">
+		<div class="point-box point-box-sub">
+			<h2 class="h2-tit pt-tit font01"><span class="pt-tit-s">《３つの“クダン”が貴方を待つ》</span></h2>
+			<div class="pt-kudan">
+				<div class="pt-kudan-box">
+					<p class="pt-tit-sub02">1つ目のクダン</p>
+					<h3 class="pt-tit-sub01 font01">巷で話題のフォークロア<span class="pt-block">《クダン》</span></h3>
+				</div>
+				<p class="st-text pt-text pt-text-sp">
+					西洋の喪服を纏い、視た者へ災いの予言をする怪異。 物語の軸となる始まりのクダン。
+				</p>
+				<div class="pt-kudan-img"><img src="img/point-img03.jpg" width="100%"></div>
+			</div>
+			
+			<div class="pt-kudan">
+				<div class="pt-kudan-box">
+					<p class="pt-tit-sub02">2つ目のクダン</p>
+					<h3 class="pt-tit-sub01 font01">登場人物が生活する土地<span class="pt-block">《東京都千代田区九段（北・南）》</span></h3>
+				</div>
+				<p class="st-text pt-text pt-text-sp">
+					主人公たちが物語を動かす舞台が、千代田区九段周辺で描かれます。主に舞台となる場は<br>
+					『九段女子高等学校』『九段坂公園』『駅周辺』<br class="br1028">など。<br>
+				</p>
+				<div class="pt-kudan-img"><img src="img/point-img01.jpg" width="100%"></div>
+			</div>
+			
+			<div class="pt-kudan">
+				<div class="pt-kudan-box">
+					<p class="pt-tit-sub02">3つ目のクダン</p>
+					<h3 class="pt-tit-sub01 font01">主人公<span class="pt-block">《九段朔夜》</span></h3>
+				</div>
+				<p class="st-text pt-text pt-text-sp">
+					本作の主人公である九段朔夜。奇しくも怪異と同じクダンの姓を持つ。<br>
+					始まりは幼い頃から繰り返し観る悪夢だったが、その悪夢は別の形を借りてフォークロアとなり、九段朔夜の前に立ちはだかる。<br>
+					怪異であるクダンとも浅からぬ因縁を持つことを後に知る事となる。<br>
+				</p>
+				<div class="pt-kudan-img"><img src="img/point-img04.jpg" width="100%"></div>
+			</div>
+		</div>
+		
+		<div class="point-box point-box-sub">
+			<div>
+				<div class="pt-text02">
+					<h2 class="h2-tit pt-tit font01"><span class="pt-tit-s">《運命を避けようとした道で、運命に出逢う》</span></h2>
+					<p class="st-text t-left pt-text">
+					主人公である九段朔夜は、いつも自分から手に入れたいと思うものは決して手に入らず、これは自分の縁とは程遠いものだと判断したものほど、後の人生に深く関わることが運命付けられていた。<br>
+					そして、避けようとした道で出逢ったのが、志摩塔子であり――自分から運命を選び縁を結んだのは、春夏冬 小兎であった。<br>
+					フォークロアにまつわる謎の中で、彼女たちは何を掴み何を得るのか――……。<br>
+					</p>
+				</div>
+				<div class="pt-img">
+					<img src="img/point-img05.jpg" width="100%"><img src="img/cg02.jpg" width="100%" class="pt-img-sub01">
+				</div>
+			</div>
+		</div>
+		
+		<div class="point-box point-box-sub">
+			<div>
+				<div class="pt-text02">
+					<h2 class="h2-tit pt-tit font01"><span class="pt-tit-s">《夕暮れと触れられたくない過去を持つ少女たち》</span></h2>
+				<p class="st-text t-left pt-text">
+					怪異は逢魔が時に起きる。それぞれが持つ、忌まわしい過去を乗り越え成長していく少女たち<br>
+				</p>
+				</div>
+				<div class="pt-img">
+					<img src="img/point-img02.jpg" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+</article>
+<!--chara--->
+<article id="floor-box" class="bg-col04 chara-sp-box">
+	<section class="floor" id="chara">
+		<h2 class="h2-tit chara-tit font01">CHARACTER</h2>
+		<div class="slider-pro" id="slider">
+			<div class="sp-slides">
+				<!-- 01 -->
+				<div class="sp-slide">
+					<div class="cha-inner" id="chara01">
+						<div class="chara-img posi-abso c-img01"><img src="img/chara1-01.png" width="100%" alt="" name="imgLink"/></div>
+						<!---->
+						<div class="voice">
+							<div class="voice-btn"><img src="img/character_btn00.png" width="50" alt=""/></div>
+							<div class="voice-btn">
+								<a onClick="sound1()"><img src="img/character_btn01.png" width="50" alt=""/></a>
+								<audio id="sakuya01" preload="none"><source src="sv/sakuya01.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound2()"><img src="img/character_btn02.png" width="50" alt=""/></a>
+								<audio id="sakuya02" preload="none"><source src="sv/sakuya02.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound3()"><img src="img/character_btn03.png" width="50" alt=""/></a>
+								<audio id="sakuya03" preload="none"><source src="sv/sakuya03.mp3" type="audio/mp3"></audio>
+							</div>
+						</div>
+						
+						<div class="chara-text posi-abso">
+							<h2 class="chara-name font01 c-name01">九段 朔夜<span class="chara-age">(16)</span></h2>
+							<p class="chara-cv">CV：福原綾香</p>
+							<p>
+								九段女子高等学校体育科２年生。<br><br class="br480">
+								剣道部のエースであり特待生。<br>凛々しい見た目とさっぱりとした気質から主に下級生からの人気が高い。<br>
+								性格は剛毅果断で怖く思われがちだが、白黒はっきりつけたいのと目上が相手でも間違ったことは許さない言動からそう思われてはいるが、実際は気の良い姐御肌の世話好きである。<br><br class="br480">
+								吾妻佳恋とは小学校からの幼なじみ。<br>初めは二人とも野球をやっていたが中学からそれぞれ剣道・ソフトボールへと別れた。<br><br class="br480">
+								趣味は二人の姉の影響から漫画・レトロゲーム・小説などのサブカルチャーを好む。<br>尚、癖毛に悩んでいる。<br>
+							</p>
+							<p class="chara-serif font01">「避けずに選んだ運命ってのも悪くない」</p>
+							<p class="chara-size">誕生日：8月24日　身長：172cm　<br>スリーサイズ：B87 / W59 / H88</p>
+						</div>						
+					</div>					
+				</div>
+				
+				<!-- 02 -->
+				<div class="sp-slide">
+					<div class="cha-inner" id="chara02">
+						<div class="chara-img posi-abso c-img02"><img src="img/chara2-01.png" width="100%" alt="" name="imgLink"/></div>
+						<!---->
+						<div class="voice">
+							<div class="voice-btn"><img src="img/character_btn00.png" width="50" alt=""/></div>
+							<div class="voice-btn">
+								<a onClick="sound4()"><img src="img/character_btn01.png" width="50" alt=""/></a>
+								<audio id="toko01" preload="none"><source src="sv/toko01.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound5()"><img src="img/character_btn02.png" width="50" alt=""/></a>
+								<audio id="toko02" preload="none"><source src="sv/toko02.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound6()"><img src="img/character_btn03.png" width="50" alt=""/></a>
+								<audio id="toko03" preload="none"><source src="sv/toko03.mp3" type="audio/mp3"></audio>
+							</div>
+						</div>
+						
+						<div class="chara-bg posi-abso c-img02"><img src="img/chara2-bg.jpg" width="100%" alt=""/></div>
+						<div class="chara-text posi-abso">
+							<h2 class="chara-name font01 c-name02">志摩 塔子<span class="chara-age">(21)</span></h2>
+							<p class="chara-cv">CV：石見舞菜香</p>
+							<p>
+								九段南在住の料理教室講師。<br><br class="br480">
+								造船・林業で財を成した素封家の直系で、駅前にある志摩家の持ちビルであるコンセプトビルの一室にて料理教室を開いている。<br>
+								性格はおっとりとしていて穏和だが、頭の回転は速く理路整然としたものの考え方をする。しかし深慮ゆえか、はじき出した答えを口に出せず優柔不断なきらいがある。<br>
+								そのため即決即断の朔夜に憧れを持ち、歳離れた友人となった。<br><br class="br480">
+								使用人の岩井紗和子とはまだそれほど長い付き合いでなく、いつか名前で呼び合えるように打ち解けたいと思っている。<br><br class="br480">
+								趣味は各国の郷土料理を食べ習得すること。最近は写真を撮ることにも嵌まっている。<br>
+							</p>
+							<p class="chara-serif font01">「こちらの濃い色の卵はカルボナーラのソースを作るのに最適なんですよ。すごく濃厚な味になるの」</p>
+							<p class="chara-size">誕生日：7月13日　身長：164cm　<br>スリーサイズ：B82 / W61 / H84</p>
+						</div>						
+					</div>
+				</div>
+				
+				<!-- 03 -->
+				<div class="sp-slide">
+					<div class="cha-inner" id="chara03">
+						<div class="chara-img posi-abso c-img03"><img src="img/chara3-01.png" width="100%" alt="" name="imgLink"/></div>
+						<!---->
+						<div class="voice">
+							<div class="voice-btn"><img src="img/character_btn00.png" width="50" alt=""/></div>
+							<div class="voice-btn">
+								<a onClick="sound7()"><img src="img/character_btn01.png" width="50" alt=""/></a>
+								<audio id="koto01" preload="none"><source src="sv/koto01.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound8()"><img src="img/character_btn02.png" width="50" alt=""/></a>
+								<audio id="koto02" preload="none"><source src="sv/koto02.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound9()"><img src="img/character_btn03.png" width="50" alt=""/></a>
+								<audio id="koto03" preload="none"><source src="sv/koto03.mp3" type="audio/mp3"></audio>
+							</div>
+						</div>
+						
+						<div class="chara-bg posi-abso c-img03"><img src="img/chara3-bg.jpg" width="100%" alt=""/></div>
+						<div class="chara-text posi-abso">
+							<h2 class="chara-name font01 c-name03">春夏冬 小兎<span class="chara-age">(15)</span></h2>
+							<p class="chara-cv">CV：長縄まりあ</p>
+							<p>
+								九段女子高等学校普通科１年生。<br><br class="br480">
+								神秘学研究会の部長。見た目はギャルファッションに身を包み都市伝説や怪談などに興味がなさそうだが、その実、大のオカルトマニア。<br>
+								関心を惹かれた怪異に対してはフィールドワークを行い、客観的な見地と私見を交え専門誌としてまとめ発行。研究会としての体面を保っている。<br>
+								性格は見た目とは違い、理知的で生まじめ。目上の人に対しては敬語を使うなど一般常識を持つ。<br>
+								しかし、胸襟を開く相手になると砕けた口調になり、ギャルらしい言葉遣いに変わる。<br><br class="br480">
+								九段朔夜を校内の有名人ということで知ってはいたが、体育会系と文化系では接点がないと思っていた。<br>
+								しかし、とあるアクシデントから朔夜に助けて貰い後に友人となる。<br><br class="br480">
+								趣味はホラー映画鑑賞と絵を描くこと。身につける小物を手作りするのも好き。<br>
+							</p>
+							<p class="chara-serif font01">「そこのソファに座ってください。先輩何飲みます？　お茶かコーヒーなら常備してますよ」</p>
+							<p class="chara-size">誕生日：12月1日　身長：144cm　<br>スリーサイズ： B75 / W54 / H76</p>
+						</div>						
+					</div>
+				</div>
+				
+				<!-- 04 -->
+				<div class="sp-slide">
+					<div class="cha-inner" id="chara04">
+						<div class="chara-img posi-abso c-img04"><img src="img/chara4-01.png" width="100%" alt="" name="imgLink"/></div>
+						<!---->
+						<div class="voice">
+							<div class="voice-btn"><img src="img/character_btn00.png" width="50" alt=""/></div>
+							<div class="voice-btn">
+								<a onClick="sound10()"><img src="img/character_btn01.png" width="50" alt=""/></a>
+								<audio id="karen01" preload="none"><source src="sv/karen01.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound11()"><img src="img/character_btn02.png" width="50" alt=""/></a>
+								<audio id="karen02" preload="none"><source src="sv/karen02.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound12()"><img src="img/character_btn03.png" width="50" alt=""/></a>
+								<audio id="karen03" preload="none"><source src="sv/karen03.mp3" type="audio/mp3"></audio>
+							</div>
+						</div>
+						
+						<div class="chara-text posi-abso">
+							<h2 class="chara-name font01 c-name04">吾妻 佳恋<span class="chara-age">(16)</span></h2>
+							<p class="chara-cv">CV：岡本理絵</p>
+							<p>
+								九段女子高等学校体育科２年生。<br><br class="br480">
+								女子ソフトボール部の投手。体育科の推薦組であり特待生として選ばれている。<br>
+								そのため学費免除や数々の恩恵を得ている反面、結果を出すのを前提とされている。<br>
+								性格は快活で男前。話し方は中性的な口調だが、男らしい話し方をする朔夜よりも気質は男性的。<br>
+								上に体育会系の兄が二人いることも言動や服装に気を遣わないことに拍車を掛けている。目上の者と話す時は礼儀正しい喋り方をする。<br><br>
+								九段朔夜とは親友であり、怖く思われがちな朔夜のサポートをしている。<br>
+								空いた日はお互いの家に行き来し、ゲーム・映画を鑑賞している。<br><br class="br480">
+								趣味は、好物のカレー屋巡りと映画・ゲームを広く浅く。<br>
+							</p>
+							<p class="chara-serif font01">「それで夜にこんな話をして驚かせようって話かい？　ホラー映画好きのウチに死角はないけどね」</p>
+							<p class="chara-size">誕生日：9月10日　身長：172cm　<br>スリーサイズ： B85 / W62 / H91</p>
+						</div>						
+					</div>
+				</div>
+
+				<!-- 05 -->
+				<div class="sp-slide">
+					<div class="cha-inner" id="chara05">
+						<div class="chara-img posi-abso c-img05"><img src="img/chara5-01.png" width="100%" alt="" name="imgLink"/></div>
+						<!---->
+						<div class="voice">
+							<div class="voice-btn"><img src="img/character_btn00.png" width="50" alt=""/></div>
+							<div class="voice-btn">
+								<a onClick="sound13()"><img src="img/character_btn01.png" width="50" alt=""/></a>
+								<audio id="sawako01" preload="none"><source src="sv/sawako01.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound14()"><img src="img/character_btn02.png" width="50" alt=""/></a>
+								<audio id="sawako02" preload="none"><source src="sv/sawako02.mp3" type="audio/mp3"></audio>
+							</div>
+							<div class="voice-btn">
+								<a onClick="sound15()"><img src="img/character_btn03.png" width="50" alt=""/></a>
+								<audio id="sawako03" preload="none"><source src="sv/sawako03.mp3" type="audio/mp3"></audio>
+							</div>
+						</div>
+						
+						<div class="chara-text posi-abso">
+							<h2 class="chara-name font01 c-name05">岩井 紗和子<span class="chara-age">(24)</span></h2>
+							<p class="chara-cv">CV：森なな子</p>
+							<p>
+								志摩家に雇われている使用人。<br><br class="br480">
+								志摩塔子からでなく、志摩宗家から塔子へ仕えるように通達され、彼女のマネジメントの一切と自宅では家事使用人として尽くしている。<br>
+								性格は冷静で知性的。口数も少なく必要でない事は喋らない。<br>
+								表情もあまり変化がなく喜怒哀楽はあるが分かりづらい面も。<br><br class="br480">
+								志摩家の宗主である志摩塔子の祖母に仕えていたが、いまわの際に塔子へ仕えるように頼まれていたため彼女の元へ。<br>
+								宗主には世話に為っており、塔子へは雇い主以上の補佐と配慮を行っている。<br><br>
+								趣味はクラシックと資格免許所得。時間が空いた際は、様々な資格を収集するために勉強をしている。<br>
+							</p>
+							<p class="chara-serif font01">「私は志摩家付きの使用人です。 あの方からお嬢様をお支えするようにと申しつけられております」</p>
+							<p class="chara-size">誕生日：1月21日　身長：168cm　<br>スリーサイズ：B81 / W60 / H82</p>
+						</div>						
+					</div>
+				</div>
+				
+				<div class="sp-thumbnails">
+					<div class="sp-thumbnail"><img class="chara-btn" src="img/chara1-btn.png" width="100%"/><div class="c-mask"><p class="c-caption font01">九段 朔夜</p></div></div><!--01-->
+					<div class="sp-thumbnail"><img class="chara-btn" src="img/chara2-btn.png" width="100%"/><div class="c-mask"><p class="c-caption font01">志摩 塔子</p></div></div><!--02-->
+					<div class="sp-thumbnail"><img class="chara-btn" src="img/chara3-btn.png" width="100%"/><div class="c-mask"><p class="c-caption font01">春夏冬 小兎</p></div></div><!--03-->
+					<div class="sp-thumbnail"><img class="chara-btn" src="img/chara4-btn.png" width="100%"/><div class="c-mask"><p class="c-caption font01">吾妻 佳恋</p></div></div><!--04-->
+					<div class="sp-thumbnail"><img class="chara-btn" src="img/chara5-btn.png" width="100%"/><div class="c-mask"><p class="c-caption font01">岩井 紗和子</p></div></div><!--05-->
+				</div><!--//sp-thumbnails-->
+				
+			</div>
+		</div>
+	</section>
+</article>
+
+<article id="floor-box" class="bg-col05">
+	<section class="floor" id="gallery">
+		<h2 class="h2-tit cg-tit font01">GALLARY</h2>
+		<ul class="cg-box">
+			<li class="cg-sam cg-new"><a class="group1" href="img/cg14.png"><img src="img/cg14sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/mv-mas-up.png"><img src="img/cg12sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg08.jpg"><img src="img/cg08sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg09.jpg"><img src="img/cg09sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg10.jpg"><img src="img/cg10sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg11.jpg"><img src="img/cg11sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg05.jpg"><img src="img/cg05sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg06.jpg"><img src="img/cg06sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg07.jpg"><img src="img/cg07sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg03.jpg"><img src="img/cg03sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg04.jpg"><img src="img/cg04sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg01.jpg"><img src="img/cg01sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1 inline" href="index.html#cg02"><img src="img/cg02sam.jpg" width="332" alt=""></a></li>
+			<div style="display: none;">
+				<section id="cg02">
+					<div class="cg-on cg02h"><img src="img/cg02.jpg" width="100%" alt=""/></div>
+					<p class="hover-text">イラストの上にマウスオーバーすると、イラストが変化します。</p>
+				</section>
+			</div><!--//-->
+		</ul>
+	</section>
+
+</article>
+
+<article id="floor-box" class="bg-col05">
+	<section class="floor" id="spec">
+		<h2 class="h2-tit spec-tit font01">SPEC</h2>
+		<div class="spec-box">
+			<p class="spec-tit02">タイトル</p>
+			<h3 class="spec-tit03">クダンノフォークロア</h3>
+			<ul class="spec-text">
+				<li><span class="s-name">ブランド</span>SukeraSparo</li>
+				<li><span class="s-name">ジャンル</span>百合系フォークロアＡＤＶ</li>
+				<li><span class="s-name">販売区分</span>全年齢作品</li>
+			</ul>			
+			<ul class="spec-text">
+				<li><span class="s-name">発売日</span>2019年4月26日(金)</li>
+				<li><span class="s-name">予約開始日</span>2019年1月25日(金)</li>
+				<li class="spec100"><span class="s-name">対応OS</span>Windows 7 / 8 / 8.1 / 10</li>
+			</ul>
+			<ul class="spec-text">
+				<li class="w100 spec100"><span class="s-name block400">価格</span>限定版：5,800円<span class="mini">(税抜)</span><span class="s-kakaku">｜</span><br class="br480b">通常版：3,800円<span class="mini">(税抜)</span></li>
+			</ul>
+		</div>
+		
+		<div class="spec-box">
+			<p class="spec-tit02 spec-tit02sub">限定版 同梱特典</p>
+			<ul class="spec-text">
+				<li class="spec100">主題歌CD、ドラマDLカード、設定資料集</li>
+			</ul>
+			<p class="spec-tit02 spec-tit02sub4">予約キャンペーン</p>
+			<ul class="spec-text">
+				<li class="spec100">
+				はねこと先生描き下ろしミニ色紙<br>
+				<div class="shikishi"><img src="sp/img/yoyaku-img02.jpg" width="100%" alt=""></div>
+				</li>
+			</ul>
+			<p class="spec-tit02 spec-tit02sub4">スタッフ</p>
+			<ul class="spec-text">
+				<li><span class="s-name">キャラデザ・原画</span>はねこと</li>
+				<li><span class="s-name">シナリオ</span>志水はつみ</li>
+				<li><span class="s-name">音楽</span>KEYTONE</li>
+				<li><span class="s-name">背景</span>秋月すいれん</li>
+			</ul>
+			
+			<p class="spec-tit02 spec-tit02sub2">主題歌</p>
+			<h3 class="spec-tit03 spec-tit02sub3">『二つの光』</h3>	
+			<ul class="spec-text spec-text-sub">
+				<li><span class="s-name">歌</span>夢乃ゆき</li>
+				<li><span class="s-name">作詞</span>雪仁(スミレ)｜水城新人(スミレ)</li>
+				<li><span class="s-name">作編曲</span>水城新人(スミレ)</li>
+			</ul>
+			<p class="spec-tit02 spec-tit02sub4">キャスト</p>
+			<ul class="spec-text spec-text-sub">
+				<li><span class="s-name block">九段朔夜</span>福原綾香</li>
+				<li><span class="s-name block">志摩塔子</span>石見舞菜香</li>
+				<li><span class="s-name block">春夏冬小兎</span>長縄まりあ</li>
+				<li><span class="s-name block">吾妻佳恋</span>岡本理絵</li>
+				<li><span class="s-name block">岩井紗和子</span>森なな子</li>
+			</ul>
+			<p class="spec-tit02 spec-tit02sub4">スマートフォン版</p>
+			<ul class="spec-text">
+				<li><span class="s-name">配信日</span>2019年11月8日(金)</li>
+				<li><span class="s-name">価格</span>2,820円(税込)</li>
+			</ul>
+			<p class="spec-tit04 spec-tit02sub4">対応OS</p>
+			<ul class="spec-text spec-text-sub spec-app">
+				<li><span class="s-name block">iPhone版</span>iOS 8.0以上<br>
+				<a class="spec-app-img" href="https://itunes.apple.com/jp/app/id1483877446?mt=8" target="_blank"><img src="sp/img/sp-dl-app-icn.png"></a></li>
+				<li><span class="s-name block">Android版</span>Android 5.0以上<br><a class="spec-app-img" href="https://play.google.com/store/apps/details?id=jp.domeiapp.kudannofolklore" target="_blank"><img src="sp/img/sp-dl-google-play-icn.png"></a></li>
+			</ul>
+		</div>
+	</section>
+</article>
+
+<footer id="footer"></footer>
+
+<script src="js/index.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script type='application/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
+<script>
+	if ('addEventListener' in document) {
+		document.addEventListener('DOMContentLoaded', function() {
+			FastClick.attach(document.body);
+		}, false);
+	}
+	
+	$(function(){
+		var tgElm = $('p,h3,.chara-name'), 
+				tagType = "span";
+		tgElm.each(function(){
+			var tgText = $(this).html();
+			tgText = tgText.replace(/[「『（【｛［〔〈《“]/g, '<' + tagType + ' style="display: inline-block; margin-left: -0.2em;">$&</' + tagType + '>');
+			tgText = tgText.replace(/[」』）】｝］〕〉》”，、]/g, '<' + tagType + ' style="display: inline-block; margin-right: -0.2em;">$&</' + tagType + '>');
+			tgText = tgText.replace(/[・；：]/g, '<' + tagType + ' style="margin-left: -0.2em; margin-right: -0.2em;">$&</' + tagType + '>');
+			$(this).html(tgText);
+		});
+	});
+
+	$(document).ready(function(){
+		$('#slider').sliderPro({
+			width: '100%',
+			slideDistance:0,
+			arrows: true,
+			fade: true,
+			fadeArrows:true,
+			autoHeight:true,
+			buttons: false,
+			fadeFullScreen:true,
+			waitForLayers: true,
+			thumbnailWidth: 150,
+			thumbnailHeight: 50,
+			thumbnailPointer: true,
+			autoplay: false,
+			autoScaleLayers: false,
+			breakpoints: {
+				480: {//表示方法を変えるサイズ
+					autoHeight:true,
+					arrows:false,
+					thumbnailWidth: 90,
+					thumbnailHeight: 30,
+				}
+			}
+		});
+	});
+	$(document).ready(function(){
+		$(".group1").colorbox({rel:'group1'});
+		$(".group1").colorbox({
+			maxWidth:"90%",
+			maxHeight:"90%"
+		});
+		$(".inline").colorbox({
+			inline:true,
+			maxWidth:"90%",
+			maxHeight:"90%"
+		});
+		$(".group2").colorbox({
+			maxWidth:"90%",
+			maxHeight:"90%"
+		});
+		$(".pop-up").colorbox({open:true});
+	});
+</script>
+<script async>
+	var headerhtml = '/folklore/head.html';
+	$.ajax({
+		type: 'get',
+		url: headerhtml,
+		dataType: 'html',
+		success: function(data) {
+			$("#head").append(data);
+		}
+	});
+	var footerhtml = '/folklore/foot.html';
+	$.ajax({
+		type: 'get',
+		url: footerhtml,
+		dataType: 'html',
+		success: function(data) {
+			$("#footer").append(data);
+		}
+	});
+	
+	function sound1(){document.getElementById( 'sakuya01' ).play() ;}
+	function sound2(){document.getElementById( 'sakuya02' ).play() ;}
+	function sound3(){document.getElementById( 'sakuya03' ).play() ;}
+	function sound4(){document.getElementById( 'toko01' ).play() ;}
+	function sound5(){document.getElementById( 'toko02' ).play() ;}
+	function sound6(){document.getElementById( 'toko03' ).play() ;}
+	function sound7(){document.getElementById( 'koto01' ).play() ;}
+	function sound8(){document.getElementById( 'koto02' ).play() ;}
+	function sound9(){document.getElementById( 'koto03' ).play() ;}
+	function sound10(){document.getElementById( 'karen01' ).play() ;}
+	function sound11(){document.getElementById( 'karen02' ).play() ;}
+	function sound12(){document.getElementById( 'karen03' ).play() ;}
+	function sound13(){document.getElementById( 'sawako01' ).play() ;}
+	function sound14(){document.getElementById( 'sawako02' ).play() ;}
+	function sound15(){document.getElementById( 'sawako03' ).play() ;}
+	
+	
+</script>
+
+
+</body>
+</html>

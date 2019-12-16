@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>異世界ユリアーモ体験談募集中！ - ことのはアムリラート - sukerasparo</title>
+<meta name="author" content="sukerasparo"/>
+<meta name="copyright" content="(c)sukerasparo"/>
+<meta name="keywords"  content="ことのはアムリラート,sukerasparo,異世界ユリアーモ体験談募集中！"/>
+<link rel="shortcut icon" href="../image/icon.ico" />
+<link media="all" type="text/css" href="../css/special.css" rel="stylesheet" />
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style-sp.css" media="screen and (max-width:768px)">
+<link rel="stylesheet" href="../css/colorbox.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/multirollover.js"></script>
+<script src="../js/colorbox.js"></script>
+<script src="../js/parts.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100381791-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<style>
+.header{padding:0 0 0;background:linear-gradient(rgba(0,0,100,.22),transparent);background: -webkit-linear-gradient(rgba(0,0,100,.22),transparent);}
+.rt-box-img a img:hover{transition:all 0.3s ease;opacity:0.5;-moz-opacity:0.5;filter:alpha(opacity = 50);}
+
+</style>
+<!---->
+<header class="header" style="margin-top:0px;">
+  <iframe src="../header.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+</header><!--//header-->
+<!--content-->
+<div id="sp-main">
+  <div id="sp-floor">
+    <div id="k_contents">
+      <div class="k_contents_box freeview">
+        <div class="Block">
+          <h1 class="head">『ことのはアムリラート』<br class="aba640">異世界ユリアーモ体験談募集中！</h1>
+          <div class="rt-box">
+            <div>
+            『ことのはアムリラート』体験版の公開を記念して<br class="aba640c">twitterでの＃（ハッシュタグ）キャンペーンを行います。<br><br>
+            
+            <span class="bold pnk">＃異世界ユリアーモ体験<br><br></span>
+            
+            のハッシュタグをつけて体験版の感想を呟いてください。<br><br>
+            
+            純百合について<br>
+            ユリアーモについて<br>
+            異世界について<br>
+            キャラクターについて<br><br>
+            
+            なんでも構いません。<br><br>
+            
+            <span class="bold">期間は8/24（木）23：59まで<br><br></span>
+            
+            ＃異世界ユリアーモ体験をつけて呟いていただいた方から<br class="aba640c"><span class="bold pnk">抽選で1名様</span>に<span class="bold pnk">『ことのはアムリラート』出演声優 直筆サイン入り寄せ書き色紙</span>をプレゼント！
+            </div>
+            
+            <div class="rt-box-img"><img src="images/rt02_img04.jpg" width="100%"></div>
+            
+            <div>
+            是非この機会に体験版をプレイして、<br class="aba640c">あなたも異世界と純百合、そしてユリ百合ユリアーモ！を体験してください。
+            </div>
+            
+            <div class="rt-box-img" style="max-width:428px;"><a href="../sp004/experience.html"><img src="images/taikenban.jpg" width="100%"></a></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<footer id="footer" class="box">
+  <div class="ft-menu ifrsp">
+    <iframe src="../footer.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+  </div><!--//footer-->
+
+  <div class="copyright"><span>Copyright © sukerasparo All Rights Reserved.</span></div>
+  <div class="hob"><a href="http://hublots.net/" target="_blank"><img src="../image/alogo.png" width="100%"></a></div>
+</footer><!--//footer-->
+</body>
+<script>
+$(function(){
+	var tgElm = $('div.freeview'), //対象となる要素をここで指定
+		tagType = "span"; //括弧を囲うタグ名をここで指定
+	tgElm.each(function(){
+		var tgText = $(this).html();
+		tgText = tgText.replace(/[「『（【｛［〔〈《]/g, '<' + tagType + ' style="display: inline-block; margin-left: -0.4em;">$&</' + tagType + '>');
+		tgText = tgText.replace(/[」』）】｝］〕〉》]/g, '<' + tagType + ' style="display: inline-block; margin-right: -0.4em;">$&</' + tagType + '>');
+		tgText = tgText.replace(/・/g, '<' + tagType + ' style="margin-left: -0.1em; margin-right: -0.1em;">$&</' + tagType + '>');
+		$(this).html(tgText);
+	});
+});
+$(document).ready(function(){
+	$(".group1").colorbox({rel:'group1'});
+    $(".group1").colorbox({
+      maxWidth:"90%",
+      maxHeight:"90%"
+    });
+});
+</script>
+</html>

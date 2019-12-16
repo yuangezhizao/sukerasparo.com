@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*共通*/
+html{font-size:62.5%;height:100%;box-sizing:border-box;} *, *:before, *:after{box-sizing:inherit;}
+body{width:100%;min-width:1024px; height:100%;color:#9c3351;font-family:游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic',sans-serif;display:block;margin:0;padding:0;font-size:10px;font-size:1.0rem;-webkit-text-size-adjust:100%;}
+a{color:#00b5c5;outline:none;}
+a:visited{color:#00b5c5;}
+a:hover{color:#ff3c6e;}
+a:active{color:#ff3c6e;}
+img{margin:0;padding:0;vertical-align:middle;}
+a img:hover{transition:all 0.3s ease;opacity:0.65;filter:alpha(opacity=65);-ms-filter:"alpha(opacity=65)";}
+table{border-collapse: collapse;border-spacing: 0;}
+p,b,dd,dl,td,th,label,input,textarea{font-size:1.4rem; line-height:2.0rem;}
+b{font-size:1.6rem; line-height:2.2rem;}
+ul{list-style:none;}
+
+/*--ロード--*/
+#loading{position:absolute;left:50%;top:50%;-ms-transform:translate(-50%,-50%);-webkit-transform :translate(-50%,-50%);transform :translate(-50%,-50%);text-align:center;}
+#loader-bg {position:fixed;width:100%;height:100%;top:0px;left:0px;background:#000;z-index:999;}
+.loadimg{animation:load 0.8s ease 0s 1 normal;-webkit-animation:load 0.8s ease 0s 1 normal;}
+@keyframes load {0% {opacity:0}100% {opacity:1}}
+@-webkit-keyframes load {0% {opacity:0}100% {opacity:1}}
+

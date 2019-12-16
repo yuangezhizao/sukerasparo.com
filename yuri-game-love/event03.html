@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>『百合ゲー愛好会』&#9829;『スープカレーカムイ』コラボイベント情報- 百合ゲー愛好会</title>
+<meta name="author" content="百合ゲー愛好会"/>
+<meta name="copyright" content="(c)百合ゲー愛好会"/>
+<meta name="description" content="百合ゲー愛好会 公式サイト"/>
+<meta name="keywords" content="いつかのメモラージョ,ことのはアムリラート,sukerasparo,百合ゲー愛好会,百合ゲー愛好会活動日誌　～つるのおんがえし～"/>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="shortcut icon" href="img/yuri-icn.ico" />
+<link href="css/yuri-game-love.css" rel="stylesheet">
+<link href="css/event.css" rel="stylesheet">
+<link href="css/ress.min.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!-- Google Analytics-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-100381791-1', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+<body id="event">
+<div id="loader-bg"><div id="loading"><img class="loadimg" src="img/yuri-copy.gif" width="160" alt=""></div></div>
+<header id="head"></header>
+<style>
+	.w100{width: 100%;}
+	.w100 img{ display: block; max-width: 800px; margin: 0 auto}
+	@media screen and (max-width: 480px){
+		section:first-of-type #yuri-floor{padding: 60px 5px 30px;}
+		#yuri-floor {padding: 30px 5px;}
+	}
+</style>
+<section id="bg-01">
+	<div id="yuri-floor">
+		<div class="yuri-info-tit"><img src="img/ev-tit.gif" width="222" alt=""></div>
+		
+		<div class="yuri-floor-ev">
+			<h2 class="ev-title">『百合ゲー愛好会』&#9829;『スープカレーカムイ』コラボイベント情報</h2>
+			<table class="ev-schedule">
+				<tr>
+					<td>日　　程</td>
+					<td>2019年2月1日・4～8日 17時から20食限定<br>2019年2月3日・10日(日) 11時から30食限定<br>※2月2日・9日(土)は定休日です</td>
+				</tr>
+				<tr>
+				<td>時　　間</td>
+				<td>平日｜12:00 ～ 16:00(L.O.14:30)、17:00 ～ 20:00(L.O.19:30)<br>休日｜11:00 ～ 20:00(L.O.19:30)</td>
+				</tr>
+				<tr>
+				<td>場　　所</td>
+				<td>東京都千代田区神田須田町2-12-5</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</section>
+
+<section id="bg-02">
+	<div id="yuri-floor">
+		<div class="yuri-floor-ev">
+			<div class="collabo-img"><img src="img/event03-img.jpg" width="100%" alt=""></div>
+		</div>
+	</div>
+</section>
+
+
+
+<footer id="foot"></footer>
+
+<script async>
+		var headerhtml = 'head.html';
+		$.ajax({
+			type: 'get',
+			url: headerhtml,
+			dataType: 'html',
+			success: function(data) {
+				$("#head").append(data);
+			}
+		});
+		var footerhtml = 'foot.html';
+		$.ajax({
+			type: 'get',
+			url: footerhtml,
+			dataType: 'html',
+			success: function(data) {
+				$("#foot").append(data);
+			}
+		});
+</script>
+</body>
+</html>

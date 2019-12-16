@@ -1,0 +1,385 @@
+@charset "UTF-8";
+#sp h1,#sp h2,#sp h3{font-family:'Sawarabi Mincho','Times New Roman', '游明朝', 'YuMincho', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'メイリオ', 'Meiryo', 'serif';position:relative;letter-spacing: 1px}
+/*------------------------
+SP-TOP
+------------------------*/
+#sp .floor{padding:40px 0;}
+#sp{position: relative;background:rgba(255,255,255,.85)}
+#sp:after{content: ''; background:url(../image/mv-bg-sp.jpg) center center no-repeat;background-size:cover;position:fixed;z-index:-3;width: 100%; height: 100%;top:0;}
+
+#sp section:last-of-type{padding:0 0 50px;}
+#sp h2,#sp h3{ font-size:2.4rem; line-height: 3.2rem; text-align: center}
+
+#sp-topics{font-size: 0;line-height: 0; width:100%;}
+#sp h1.subtit{ padding: 120px 0 0 }
+#sp h1.subtit:before{content:'-スペシャル-';}
+.sp-info h1.subtit:before{content:'-いつかのメモラージョ-'!important;}
+.sp-info h1.subtit:after{background: none!important}
+
+.f-left{float: left;}
+
+#sp h2.subtit{font-size:2.4rem;line-height: 2.4rem; text-align:left;margin: 0 0 10px;padding:0 10px}
+#sp h2.subtit:before{position: absolute;font-size: 1.4rem;letter-spacing:1px;bottom:0;right:10px;}
+#sp h2.subtit:after{position: absolute;content:'';height: 10px; width: 100%;;z-index: -1;;bottom:0;min-height:inherit;min-height:auto;}
+
+#sp .floor{ position: relative; z-index: 1}
+.t-cpn{background:rgba(255,211,218,.25)}
+.t-cpn h2.subtit:after{background: #ffd3da;}
+
+.t-related{background:rgba(255,227,196,.25)}
+.t-related h2.subtit:after{background: #ffe3c4;}
+
+.t-content{background:rgba(183,239,226,.25)}
+.t-content h2.subtit:after{background: #b7efe2;}
+
+.t-column{background:rgba(176,236,249,.25)}
+.t-column h2.subtit:after{background: #b0ecf9;}
+
+.t-privilege{background:rgba(246,209,244,.25)}
+.t-privilege h2.subtit:after{background: #f6d1f4;}
+
+.img-box{ margin: 10px auto; font-size: 0}
+.img-box img{ border: 2px solid #fff;box-shadow:0px 0px 8px 3px #f4dde7;}
+.img-box .img-sam{padding:5px; display:inline-block; width: 34%}
+
+/*------------------------
+見出し・sp要素
+------------------------*/
+.sub-floor,.sub-floor2{ overflow: hidden; box-sizing: border-box;text-align: center}
+.sub-floor{ padding:30px;}
+.sub-floor2{ padding:0 30px 30px;}
+.sub-floor2{max-width: 900px; margin: 0 auto}
+.sub-floor h3,.sub-floor2 h3{border-bottom:1px solid #ff376e; margin: 0 0 30px;}
+
+/*------------------------
+同梱特典情報
+------------------------*/
+.text-box{ font-size: 2.0rem; line-height: 2.0rem;text-align: center;display: block; font-weight: 600; padding:10px; border: 1px solid #9c3351; width: 50%;margin: 30px auto;position: relative}
+.text-box-sub:before{position: absolute;top: 0;bottom: 0;right:8px;margin: auto;width: 5px;height: 5px;border-top: 2px solid #9c3351;border-right: 2px solid #9c3351;-webkit-transform: rotate(45deg);transform: rotate(45deg);content: "";}
+.text-box-sub:hover{ color:#fff; background:#9c3351;text-decoration:none}
+.text-box-sub:hover:before{border-top: 2px solid #fff;border-right: 2px solid #fff;}
+
+/*------------------------
+FAQ
+------------------------*/
+.faq{ max-width:800px; margin: 0 auto}
+.faq td{ text-align: left;padding:5px 0; vertical-align:top}
+.faq tr:nth-child(2n) td:last-of-type{padding: 0 0 20px; font-size: 1.6rem;line-height: 2.6rem; font-weight:600}
+
+/*------------------------
+特典
+------------------------*/
+.sp-tokuten{ overflow: hidden; margin:10px auto 0;font-size:1.4rem; line-height:2.0rem;}
+.sp-box,
+.sp-box2,
+.sp-box3,
+.sp-box4{ width: 32%;display: inline-block; margin:0.5%;padding: 5px 0; vertical-align:top}
+.sp-box3{ width: 48.5%}
+.sp-box4{ width: 100%;font-size: 0}
+.sp-box div,
+.sp-box2 div,
+.sp-box3 div,
+.sp-box4 div{margin: 5px 0;}
+.sp-box img,
+.sp-box2 img,
+.sp-box3 img,
+.sp-box4 img{ border: 2px solid #fff; box-sizing: border-box;}
+.sp-box p:first-of-type,
+.sp-box2 p:first-of-type,
+.sp-box3 p:first-of-type,.sp-box4 p:first-of-type{background: #ff90b5;padding: 5px;color:#fff;}
+
+.sp-bpx4sub{width:48%; display:inline-block; margin:1%!important}
+.sp-bpx4sub p{background:none!important;padding:5px 0 0!important;color:#9c3351!important;}
+
+.tenpo-btn{width:100%;max-width:674px;position:relative;background:#00c09e;border-radius:25px;color:#fff;line-height:30px;-webkit-transition:none;transition:none;box-shadow:0 4px 0 #21a089;text-shadow:0 1px 1px rgba(0, 0, 0, .4);margin:10px auto 20px!important;text-align:center}
+.tenpo-btn:hover,.tenpo-btn:active{top:2px;box-shadow:0 2px 0 #21a089;background:#00d9b3;}
+.tenpo-btn a{width:100%;display:block;padding:2px 0 0;font-size:1.8rem;letter-spacing:2px;color:#fff!important;text-decoration:none!important}
+
+/*------------------------
+予約店舗
+-------------------------*/
+.yoyaku-tenpo{ width: 100%; max-width: 640px; margin: 2px auto 0;border-spacing: 2px;border-collapse: separate;}
+.yoyaku-tenpo td{ padding: 10px; background: #fff; width: 40%;text-align: left}
+.region{ text-align: center!important;background:#9c3351!important;color:#fff;letter-spacing: 5px; vertical-align: top; width: 20%!important}
+.yoyaku-tenpo a{ display: block; width: 100%;}
+
+/*------------------------
+試し読み回り
+------------------------*/
+.book-box{font-size: 0;margin: 10px auto}
+.book-mv,.book-dl{display:inline-block}
+.book-mv{width: 33%;}
+.book-dl{width: 67%;padding:0 0 0 1%}
+
+.more-box-book{width:100%; max-width:640px; margin:10px auto 20px;box-sizing:border-box;}
+.more-book{border:2px solid #00b5c5; color:#00b5c5;background:  #fff;padding:10px 0; text-align:center; font-size:1.8rem; line-height:2.4rem; width:100%; display:block;text-decoration:none; position:relative; letter-spacing: 2px;}
+.more-book:after{position:absolute;top:0;bottom:0;right:10px;margin:auto;width:8px;height:8px;border-top:2px solid #00b5c5;border-right:2px solid #00b5c5;-webkit-transform:rotate(45deg);transform:rotate(45deg);content:"";}
+.more-book:hover{color:#fff!important; background:#00b5c5!important;transition:all 0.2s ease;-webkit-transform:all 0.2s ease;}
+.more-book:hover:after{border-top:2px solid #fff;border-right:2px solid #fff;transition:all 0.2s ease;-webkit-transform:all 0.2s ease;}
+
+.book-no{display:none}
+
+/*------------------------
+イベント
+------------------------*/
+.event-info{ width: 100%; max-width: 640px; margin: 20px auto;border-spacing: 2px;border-collapse: separate;}
+.event-info td{ padding: 10px;}
+.event-info tr td:nth-of-type(2n+1){ background: #9c3351; color: #fff;width: 20%; text-align: center}
+.event-info tr td:nth-of-type(2n){text-align: left;background: #fff}
+
+.event-img01{ display:inline-block; font-size: 0; max-width: 640px; margin: 0 auto}
+.event-img01 img{ margin:0.5%;border: 2px solid #fff;box-shadow: 0px 0px 8px 2px #f4dde7;}
+
+.event-img02{font-size: 0; max-width: 800px; margin: 0 auto 20px}
+.event-img02 div{ padding:0.5% 0.5% 1%;width: 50%; display: inline-block;vertical-align: top; margin: 0 0 10px}
+.event-img02 img{border: 2px solid #fff;box-shadow: 0px 0px 8px 2px #f4dde7; margin:2px 0 10px}
+.event-img02 .bold{ font-size: 115%;}
+.event-tyu{padding: 10px; background: #fff; max-width: 728px; margin: 20px auto 0;}
+.event-img02 .sub-text{ background: rgba(104,30,51,.65);padding: 1px 5px;color:#fff; margin:-4px 0 0;font-size: 1.2rem}
+.event-img02 .more-box a{background:#fff}
+.event-img02 .more-box a:hover{background:#00b5c5!important;}
+
+.event-sub-tit{background: linear-gradient(0deg,rgba(255,152,203,1)0%,rgba(255,140,159,1)100%); color:#fff; padding:5px; margin:0 0 8px; font-size: 1.8rem; letter-spacing: 2px; font-weight: bold}
+
+.img-w33{width: 33.33%!important;}
+.img-w25{width: 25%!important;}
+.img-w20{width: 20%!important;}
+.img-w60{width: 60%!important;}
+.img-w75{width: 75%!important;}
+
+/*--リリーズ・スワンプ・ゲームショウ--*/
+.sp-yurilave h1.subtit:before{content:'-百合ゲー愛好会-'!important;}
+.sp-yurilave label{ text-align: right}
+.sp-yurilave p{ text-align: left;}
+.yurilave-floor{ max-width:768px; margin: 0 auto }
+.yurilave-movie{float: left;margin: 0 10px 0 0;}
+
+/*----------------------
+RTキャンペーン
+------------------------*/
+.rt-step:first-of-type{ margin: -10px auto 10px;}
+.rt-step{max-width: 480px; background: #9c3351; padding: 10px 0; text-align: center; color:#fff; margin: 20px auto 10px; font-size: 1.8rem; font-weight: bold}
+
+.rt-link-btn{width: 100%;max-width: 400px;background: #1da1f2;border-radius: 3px;color: #fff!important;line-height: 48px;-webkit-transition: none;transition: none;box-shadow: 0 4px 0 #1080c4;margin: 10px auto 0;text-align: center;display: block; margin:15px auto 10px; font-size: 1.8rem; font-weight: bold; text-decoration: none}
+
+.rt-tweet{max-width:500px; margin:-10px auto 10px}
+.rt-tyui{max-width: 640px; margin: 20px auto 10px; background: rgba(255,255,255,.6); padding:10px; font-size: 1.2rem;text-align: left}
+
+/*----------------------
+インタビュー
+----------------------*/
+.sp-interview{max-width: 768px; margin: 0 auto; background:rgba(255,255,255,.6);padding:20px}
+.sp-interview p{padding:0 50px}
+
+/*----------------------
+デモムービー
+----------------------*/
+.sp-demo{position: relative;width: 100%;padding: 50% 0 0 0;max-width:640px;margin:0 auto 10px;border: 3px solid #fff;background: #fff;}
+.sp-demo	iframe{position:absolute;top:0;left:0;width:100%;height:100%;background:url(http://sukerasparo.com/memorajxo/image/loading.gif) center center no-repeat;}
+
+/*----------------------
+体験版
+----------------------*/
+.exp-link .more-box{width:33.33%; display: inline-block;padding:0.5%; max-width: inherit; vertical-align: top}
+.exp-link .more-box .more{background: #fff}
+.exp-link .more-box .mini{line-height: 1.0rem;}
+
+
+/*----------------------
+セール
+----------------------*/
+.sale-item{max-width:640px; margin: 0 auto; font-size: 0; line-height: 0}
+.sale-item-box{width: 50%; display: inline-block; vertical-align: top;padding:5px}
+.sale-w{background: #ff90b5;padding: 2px;color: #fff;}
+.sale-t{padding:2px 0;}
+
+
+/*----------------------
+パッチ 表示・非表示
+----------------------*/
+.updata-back{ overflow: hidden; margin: 20px 0}
+.updata-back .updata-b-btn {float: none;width: 100%;max-width: 480px;margin: 0 auto;display: block;padding: 10px;font-weight: bold;cursor :pointer;border: 1px solid #00b5c5;color: #00b5c5;background:#fff;font-size: 1.6rem; font-weight: normal;position: relative; text-align: center;}
+
+.updata-back .updata-b-btn:after {position: absolute;top: 0;bottom: 0;right: 10px;margin: auto;width: 8px;height: 8px;border-top: 2px solid #00b5c5;border-right: 2px solid #00b5c5;-webkit-transform: rotate(135deg);transform: rotate(135deg);content: "";}
+
+.updata-back .updata-b-btn:hover{color: #fff;background:#00b5c5;}
+.updata-back .updata-b-btn:hover:after{border-top: 2px solid #fff;border-right: 2px solid #fff;}
+
+.hidden_show{background: rgba(255,255,255,.8);margin-top: 10px;}
+.hidden_show .up-tit{background:#fff0fa;padding:3px 0}
+
+.updata-back input {display: none;}
+.updata-back .hidden_show {height: 0;padding: 0;overflow: hidden;opacity: 0;transition: 0.5s;}
+
+.updata-back input:checked ~ .hidden_show {padding: 10px;height: auto;opacity: 1;
+}
+
+
+/*----------------------
+ダウンロード版
+----------------------*/
+.dl-table{max-width: 768px; margin:0 auto 30px!important;}
+.dl-img {padding: 0!important; width: 32%!important; background:rgba(0,0,0,.0)!important}
+.dl-text01{width: 25%!important; background: #9c3351!important; color:#fff; text-align: center!important;}
+.dl-text02{width: 45%!important;}
+
+.dl-link-btn .more-box{margin: 0 auto 10px!important;}
+
+@media screen and (max-width: 768px){
+	#sp h2.subtit{font-size: 2.0rem}
+	#sp h1.subtit{padding: 50px 0 0;}
+	#sp .floor{padding:20px 0}
+	.sub-floor{padding:10px 10px 30px}
+	.sub-floor2{padding:0}
+	.sub-floor h3,.sub-floor2 h3{margin: 0 0 10px;}
+	.text-box{ width: 100%;font-size:1.6rem;line-height: 1.6rem;margin: 30px auto 10px}
+	.sp-box,.sp-box2,.sp-box3{ width: 48%; margin:2% 0.5%}
+	.sp-box4{ margin:2% 0}
+	.sp-yurilave label{ text-align:left}
+	.yurilave-movie{float:none;margin: 0 auto 10px;}
+	.sp-yurilave .f-left{float:none;}
+	.sp-yurilave p{ text-align:center;}
+	.event-img01 img{width: 49%!important;}
+	.exp-link .more-box{width:50%;}
+}
+
+@media screen and (max-width: 640px){
+	.img-w33{width: 50%!important;}
+	.img-box .img-sam{width: 50%}
+	.sp-interview p{padding:0 20px}
+}
+@media screen and (max-width: 480px){
+	#sp h2, #sp h3{text-align: left;font-size:2.0rem;line-height: 2.4rem;}
+	.event-img02 div{ width: 100%}
+	.img-w20{width: 33.33%!important;}
+	.br480{display: none}
+	.sp-interview p{padding:0}
+	.exp-link .more-box{width:100%;}
+	.sale-item-box{width: 100%; display:block;padding:5px 5px 20px}
+
+}
+
+@media screen and (max-width: 420px){
+	.sub-floor,.sub-floor2{text-align: left}
+	.sp-box, .sp-box2,.sp-box3,.sp-box4{ width: 100%!important;margin:2% 0}
+	.sp-bpx4sub{width:100%; display:inline-block; margin:1% 0!important}
+	.yoyaku-tenpo{margin: 10px auto 0;border-spacing: 0;border-collapse:collapse;}
+	.yoyaku-tenpo td{width: 100%!important;text-align: center; display:block;margin:0 0 3px}
+	.region{width:100%!important;}
+	.yoyaku-tenpo .spac{display: none}
+	.sp-yurilave p{ text-align:left;}
+	.event-info td{ padding:3px 10px;}
+	.event-info td{width: 100%!important; display: block}
+	.event-img02 img{margin:0;}
+	.event-img02 .sub-text{margin: 5px 0 0}
+	.img-w33{width: 100%!important;}
+	.img-w33 .bold br{display:none}
+	.img-w33 .bold,
+	.img-w20 .bold{display: block; text-align: left;padding:5px; background: #fffdde; margin: 10px 0 0}
+	.img-w33 p{ text-align: right}
+	.img-w33 p br{display:none}
+	.br420{display: none}
+	
+	.sp-interview{padding:10px}
+}
+
+
+/*------------------------
+アンケート
+------------------------*/
+.ank-mb-lin{margin:0 0 20px;}
+.ank-nb{border-bottom: none!important;margin-bottom:0!important; background: none!important}
+.ank-floor{}
+.ank-box{ max-width: 640px; margin:15px auto 30px;text-align: left;}
+.ank-box-sub{ width:50%; display:inline-block; vertical-align: top;}
+.ank-box.mb-10{ margin:15px auto 10px;}
+.ank-box-sub input{margin-bottom: 0!important;}
+.ank-box-sub:first-of-type{ width:48%; margin-right: 2%;}
+.ank-hissu{display: inline-block;font-size:1.2rem; background: #ff376e;padding:0 5px; margin-left:5px;border-radius: 3px;position: relative;top:-2px;color:#fff;}
+
+.ank-radio label{margin-bottom:10px;}
+.ank-radio02 label{margin-bottom:10px; display: block!important;}
+.ank-radio textarea,
+.ank-radio02 textarea{margin:-6px 0 15px}{margin:-6px 0 15px}
+
+
+.ank-tit .l,
+.ank-tit .r{ display: inline-block; vertical-align: top;}
+.ank-tit .l{width: 8%;}
+.ank-tit .r{width:92%;}
+.ank-sub-tit:before{content: "★";color:#ff376e;}
+
+.ank-box label{font-size: 1.6rem; display: inline-block;float:none!important;;width: auto!important;} 
+.ank-box label:first-of-type{display:block; font-size: 1.8rem;line-height: 2.4rem; margin-bottom:10px; padding:5px 5px 2px; letter-spacing: 1px; background:#ffd3da;width: 100%!important;}
+.ank-box input[type=text],
+.ank-box input[type=email],
+.ank-box textarea,
+.ank-box select {display:block;width: 100%!important;height: 38px;padding: 6px 12px;color: #555;background-color: #fff;border-radius: 3px;}
+
+.ank-box textarea{padding: 10px 12px 6px!important;height:auto!important;}
+
+
+.check{display: none;}
+.check-sub{padding-left: 20px;position:relative;margin-right: 20px;margin-bottom:10px;}
+.check-sub::before{content: "";display: block;position: absolute;top: 3px;left: 0;bottom:-2px;width: 15px;height: 15px;border: 1px solid #9c3351;background: #fff;border-radius: 3px;}
+.check:checked + .check-sub{color: #ff376e;}
+.check:checked + .check-sub::after{content: "";display: block;position: absolute;top: 0;left: 5px;width: 7px;height: 14px;transform: rotate(40deg);border-bottom: 3px solid #00c4f5;border-right: 3px solid #00c4f5;}
+
+::placeholder{color:#ccc!important;}
+
+button,input[type=button] {
+	margin: 20px auto 0;
+	width:100%;
+	max-width: 768px;
+	letter-spacing: 2px;
+	padding: 16px 0 11px;
+	font-size: 2.0rem;
+	line-height: 1;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+	text-align: center;
+	color: #ffffff;
+	background: #ff8397;
+}
+input[type=button] {　
+	border: 1px solid #c3c3c3;
+	color: #7c7c7c;
+	background: #ffffff;
+}
+input[type=button] + button {
+	display: inline-block;
+}
+.error{font-size: 1.4rem;line-height:1;padding: 5px 0 0; color:#ff376e;}
+.error-form {border:1px solid #ff376e !important;}
+
+.ank-btn-box{width: 100%; max-width: 768px;margin:0 auto; padding: 30px 0 0;}
+.ank-btn-box input,
+.ank-btn-box button{width: 48%!important; display: inline-block!important;margin:1%;}
+
+.ank-present{margin:0 auto 30px; border-bottom:1px solid #9c3351; padding:0 0 30px;}
+
+.ank-present p{background: #ffd3da; padding:10px;max-width: 640px; margin: 0 auto; line-height: 2.4rem;}
+.ank-present img{display: block; max-width: 560px;margin: 5px auto;}
+
+
+@media screen and (max-width:640px){
+	.ank-tit .l{width:10%;}
+	.ank-tit .r{width:90%;}
+}
+
+@media screen and (max-width:480px){
+	.ank-floor{padding: 30px 10px;}
+	.ank-box-sub:first-of-type{width: 100%;margin-right:0; margin-bottom: 20px;}
+	.ank-box-sub{width: 100%}
+	.ank-box label:first-of-type{font-size: 1.6rem;}
+	.ank-tit .l{width:12%;}
+	.ank-tit .r{width:88%;}
+	.ank-btn-box input,
+	.ank-btn-box button{width:100%!important; display:block!important;margin:0 auto 10px;max-width: 320px!important;}
+}
+@media screen and (max-width:320px){
+	.ank-tit .l{width:15%;}
+	.ank-tit .r{width:85%;}
+}
+

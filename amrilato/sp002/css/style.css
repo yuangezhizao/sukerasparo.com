@@ -1,0 +1,54 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+.sp-main{width:100%;margin:0 auto;font-size:1.6rem; line-height:1.7;background: url(../../image/main-visual.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;overflow:hidden}
+.sp-floor{height:100%;background:rgba(255,235,245,0.85) url(../../image/gallery-bg2.png) center top repeat; overflow:hidden}
+#k_contents{max-width:1028px;margin: 0px auto;padding:9% 0 0;}
+#k_contents h1{ font-size:2.3rem; font-weight:bold;line-height:1.4}
+#k_contents h1.head{padding:20px 0 0; margin:0 0 20px; color:#ff8397; border-bottom:1px solid #ff8397;}
+#k_contents b{ font-weight:bold;}
+#k_contents img.mv{max-width:560px; display:block; margin:10px auto; border:2px solid #fff;}
+#k_contents img.tw{max-width:297px; display:block; margin:10px auto;}
+#k_contents .tyui{max-width:705px; text-align:left; margin:20px auto 0; color:#ff0000}
+
+#k_rt_Ttl {max-width: 280px;text-align: center;padding: 80px 0 20px;margin:0 auto;}
+.wrapper {max-width: 960px;margin: 0px auto 0px auto;clear: both;}
+.clr {clear: both}
+.hidden {display: none;}
+.k_largeBox2_body {background:rgba(255,255,255,0.5);padding:10px;box-sizing: border-box;width:90%;max-width: 980px;margin: 0 auto 50px;box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.5);border:2px solid #ffa7b5; overflow:hidden;}
+.k_largeBox2_body:before{width:90%;max-width: 980px;box-shadow: 0px 0px 5px 2px rgba(152,211,180,0.7);}
+.freeview {position: relative;}
+.Block {position: relative;text-align: center;z-index: 2;width:100%;}
+
+.aba768{ display:none}
+.aba480{ display:none}
+.head-img{ margin:-10px auto 0; max-width:789px;}
+.pop-img{ width:90%;margin:20px auto 30px; max-width:800px;box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.5)}
+.banner{ max-width:640px; margin:20px auto;box-shadow: 0px 0px 10px 1px rgba(206,146,181,0.5)}
+.banner a img:hover{transition:all 0.3s ease;opacity:0.5;-moz-opacity:0.5;filter:alpha(opacity = 50);}
+
+.bold{ font-size:110%; color:#ff8397; font-weight:bold;}
+
+@media screen and (max-width: 768px) {
+.k_largeBox2_body{ width:96%; padding:1%}
+#k_contents{padding:15% 0 0;}
+#k_contents h1{ text-align:center}
+#k_rt_Ttl{ padding:20px 0 20px}
+.sp-main{ font-size:1.4rem;line-height:1.0;}
+.Block{ text-align:left}
+.aba768{ display:block}
+.head-img{ margin:0px auto 0;}
+}
+
+@media screen and (max-width: 640px) {
+#k_contents{padding:5% 0 0;}
+#k_contents h1{ font-size:1.8rem;}
+.k_largeBox2_body{ margin:0 auto 3%}
+}
+
+@media screen and (max-width: 480px) {
+#k_contents h1{ font-size:1.4rem;}
+}
+@media screen and (max-width: 360px) {
+#k_contents h1{ font-size:1.8rem;}
+.aba480{ display:block}
+}

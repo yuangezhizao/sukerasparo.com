@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*共通*/
+body{min-width:auto;}
+
+/*header*/
+.drawer{display: flex;flex-direction: row;align-items: center;justify-content: space-between;position: relative;padding: 0 10px;height:100%;}
+.head-sp{ display:block}
+.head-btn{ display: none}
+/*-都鈴-*/
+.navbar_toggle{z-index:9999;}
+.nav-i {position: relative;display: block;height: 2px;width: 30px;background: #974349;-webkit-transition: ease .5s;transition: ease .5s;}
+.nav-i:nth-child(1) {top: 0;}
+.nav-i:nth-child(2) {margin: 8px 0;}
+.nav-i:nth-child(3) {top: 0;}
+
+/*OPEN時の動き*/
+.navbar_toggle.open .nav-i:nth-child(1) {top: 10px;-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.navbar_toggle.open .nav-i:nth-child(2){top:0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+.navbar_toggle.open .nav-i:nth-child(3)
+{-webkit-transform: translateY(-50%);transform: translateY(-50%);opacity: 0;}
+
+.menu{-webkit-transform: translateX(-110%);transform: translateX(-110%);-webkit-transition:ease .5s;transition:ease .5s;z-index:1000;top:100px;right:auto;left: 0;background: #fff;padding:10px;height:100vh}
+
+.menu ul{ display: block;font-size: 0;line-height: 0}
+.menu li{padding: 20px;border-bottom: 1px solid #CCC;}
+.menu a{display: block; width: 100%}
+.menu .tw,.menu .yt,.menu li:last-of-type{padding: 20px; box-sizing: border-box; width: 33.33%; display: inline-block; border: none; vertical-align: top}
+
+/*OPEN時の動き*/
+.menu.open {-webkit-transform:translateX(0);transform:translateX(0);overflow-y: auto;-webkit-overflow-scrolling: touch;}
+
+/*-コンテンツ(info tw 製品)--*/
+#info{width: 70%;}
+#content{width: 30%;}
+
+@media screen and (max-width: 900px){
+#info{width: 65%;}
+#content{width: 35%;}
+.info-box{ width: 50%}
+}
+
+@media screen and (max-width: 768px){
+#info{width: 60%;}
+#content{width: 40%;}
+}
+
+/*--製品情報--*/
+.pro-info-img img,
+.book-info-img img{width:100%!important;}
+.pro-info-img,
+.book-info-img{max-width: 240px;}
+.pro-info-text, .book-info-text{margin: 0 0 0 27%}
+
+/*製品ゲーム*/
+.pro-info-img{width: 26%;}
+.pro-info-tit{margin: 0 0 0 27%;}
+.pro-info-text li{width: 84%;}
+
+/*製品書籍*/
+.book-info-img{ width: 54%;}
+.book-info-text{margin:0 0 0 56%;}
+.book-info-link{margin: 0 0 0 56%;}
+
+@media screen and (max-width: 900px){
+	.book-info-link{margin: 0}
+	.book-info-text{padding:0 0 20px}
+}
+@media screen and (max-width: 768px){
+	.pro-info-img{width: 34%;}
+	.pro-info-tit,
+	.pro-info-text{margin: 0 0 0 35%;}
+	.pro-info-sub{width:60px!important;}
+	.book-info-img{ float: none; width: 100%; max-width: inherit; background: #f5f5f5;}
+	.book-info-img img{max-width:240px; width: 54%!important; display: block; margin: 0 auto}
+	.book-info-text{margin: 0}
+	.book-info-text li{display: inline-block;padding:10px 5px}
+	.book-info-text li:nth-of-type(2n){width:70%;}
+	.book-info-sub{width:16%!important; min-width:52px }
+}
+
+/*--イベント情報--*/
+.event-info{ width: 40%;}
+.event-img{width: 59%;margin:0 0 0 1%;}
+@media screen and (max-width: 768px){
+	.event-box{padding: 10px 0 0}
+	.event-info,.event-img{ display:block; width: 100%}
+	.event-img{margin:0;}
+}

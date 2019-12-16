@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/*-----------------------
+共通
+-----------------------*/
+html{font-size:62.5%;height:100%;box-sizing:border-box;} *, *:before, *:after{box-sizing:inherit;}
+body{width:100%;min-width:1024px; height:100%;color:#974349; background:#974349;font-family:游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic',sans-serif;display:block;margin:0;padding:0;font-size:10px;font-size:1.0rem;-webkit-text-size-adjust:100%;}
+
+a{color:#f771dc; font-weight: 600}
+a:visited{color:#f771dc;}
+a:hover{color:#2bc7d5;}
+a:active{color:#2bc7d5;}
+img{margin:0;padding:0;vertical-align:middle;}
+a img:hover{transition:all 0.3s ease;opacity:0.5;filter:alpha(opacity=50);-ms-filter:"alpha(opacity=50)";}
+table{border-collapse: collapse;border-spacing: 0;}
+p,b,dd,dl,td,th,a,li,time,div{font-size:1.4rem; line-height:1.8rem;}
+div{box-sizing: border-box}
+b{font-size:1.6rem; line-height:2.2rem;}
+ul{list-style:none;}
+div,li,td,p{box-sizing:border-box;}
+h1,h2,h3{ font-size:2.0rem; line-height: 2.0rem}
+
+#yuri-floor{width:1316px; margin: 0 auto;font-size:0; line-height: 0;padding:60px 10px; position: relative;}
+#bg-01{background:#fff4fc}
+#bg-02{background:#fff}
+
+.bold{font-weight: bold; font-size:120%;}
+.bold02{font-weight: bold;}
+.red{color:#e95283}
+.mini{font-size: 1.1rem;}
+
+/*-リンクボタン--*/
+.link-btn{ display:block; margin:10px 0 0; width:100%; border:1px solid #e95283; padding:10px 0; text-align:center; color:#e95283!important;font-weight:600; position:relative;font-size:1.4rem; line-height:1.8rem; text-decoration: none}
+.link-btn:before{position: absolute;top: 0;bottom: 0;right:8px;margin: auto;width: 5px;height: 5px;border-top: 2px solid #e95283;border-right: 2px solid #e95283;-webkit-transform: rotate(45deg);transform: rotate(45deg);content: "";}
+.link-btn:hover{ color:#fff!important; background:#e95283;text-decoration:none}
+.link-btn:hover:before{border-top: 2px solid #fff;border-right: 2px solid #fff;}
+
+/*-フォント-*/
+@font-face {font-family:'juliamo_c';src:url(https://dl.dropboxusercontent.com/s/5me44aeb19mxm6e/juliamo.woff) format('woff');}
+.juliamo_c{font-family:juliamo_c; font-size:130%;}
+h2 .juliamo_c{overflow: hidden;display: inline-block;}
+
+/*-ロード-*/
+#loading{position:absolute;left:50%;top:50%;-ms-transform:translate(-50%,-50%);-webkit-transform :translate(-50%,-50%);transform :translate(-50%,-50%);text-align:center; overflow: hidden}
+#loader-bg {position:fixed;width:100%;height:100%;top:0px;left:0px;background:#fff;z-index:999;}
+.loadimg{animation:load 0.3s ease 0s 1 normal;-webkit-animation:load 0.3s ease 0s 1 normal;}
+@keyframes load {0% {opacity:0}100% {opacity:1}}
+@-webkit-keyframes load {0% {opacity:0}100% {opacity:1}}
+
+@media screen and (max-width: 1316px){
+#yuri-floor{width:100%;}
+}
+
+@media screen and (max-width: 1024px){
+	body{min-width:auto;}
+}
+@media screen and (max-width: 480px){
+	#yuri-floor{padding:60px 5px;}
+}
+
+/*-----------------------
+main
+------------------------*/
+#main-bg{background:#fff url(../img/bg-img02.gif) top center repeat; position: relative; border-top:5px solid #e95283}
+.yuri-logo{margin: 0 auto;width: 90%; max-width: 449px}
+.main-link-btn{margin: 0 auto;width: 90%; max-width: 449px;font-size: 0; position: absolute; bottom:-22px;z-index: 1;left:50%;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);}
+
+.main-link-btn li{width: 25%; display: inline-block;}
+.main-link-btn img,
+.main-link-btn a{display: block; margin:0 auto;max-width: 44px} 
+.main-link-btn a{background: #fff; border-radius: 25px;}
+
+.yuri-tsuku-banner{margin: 5px auto 10px; max-width:320px;}
+
+/*-----------------------
+info
+------------------------*/
+.yuri-info-tit{position: relative;}
+.yuri-info-tit:after{width: 100%; border-top:1px solid #974349;top:50%;-ms-transform:translate(0,-50%);-webkit-transform :translate(0,-50%);transform :translate(0,-50%); position: absolute;content: ""}
+.yuri-info-tit img{display: block; margin: 0 auto;position: relative;z-index: 1}
+.yuri-info-box{padding:20px 0;border-bottom:1px solid #974349;}
+.yuri-info{padding:20px 40px; overflow-y: scroll; height: 320px;}
+
+.yuri-info::-webkit-scrollbar{width: 8px;}
+.yuri-info::-webkit-scrollbar-track{background:rgba(255,255,255,0);border: none;border-radius: 10px;box-shadow:none; }
+.yuri-info::-webkit-scrollbar-thumb{background:#fff4fc;border-radius: 10px;box-shadow: none;}
+.yuri-info:hover::-webkit-scrollbar-thumb{background:#f8a4c0;}
+
+.yuri-info li{border-bottom:1px dashed rgba(151,67,73,.5);padding:30px 0}
+.yuri-info li:first-of-type{padding:10px 0 30px}
+.yuri-info li:last-of-type{border-bottom:none;padding:30px 0 10px}
+.info-day,.info-text{display: inline-block; vertical-align: middle}
+.info-day{width: 10%; text-align: center; position: relative; font-weight: bold}
+.new .info-day:after{content: "NEW"; width: 100%;max-width: 86px; background: #e95283;padding:4px 5px 2px;position: absolute;font-size: 1.1rem;line-height: 1.0rem; color:#fff;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);left:50%;top:-16px;}
+.info-text{width: 89%; line-height: 2.2rem}
+
+@media screen and (max-width: 1024px){
+	.info-text{width: 79%;}
+	.info-day{width: 20%;}
+}
+@media screen and (max-width: 640px){
+	.yuri-info{padding:10px 5px}
+	.yuri-info li{padding:15px 0; border-bottom: none}
+	.yuri-info li:last-of-type{padding:15px 0;}
+	.info-day,.info-text{display:block;}
+	.info-day{width: 100%; text-align: left; background: #ffdcf5;padding:0 0 0 5px; margin: 0 0 5px}
+	.new .info-day:after{max-width: 50px;-ms-transform:none;-webkit-transform :none;transform:none;left:inherit;top:0; right:0; text-align: center; padding:5px 5px 3px}
+	.info-text{width:100%;}
+	
+}
+/*-----------------------
+各リンク先+Twitter
+------------------------*/
+.cont-box,.tw-box{display: inline-block; font-size: 0; vertical-align: top}
+.cont-box{width: 70%;}
+.cont-tit{ padding:5px 0; margin: 0 0 10px; border-bottom: 1px solid #974349; width: 100%;}
+.cont-img,.cont-text{display: inline-block;vertical-align: top}
+.cont-img{width:40%; max-width: 320px;}
+.cont-text{padding:0 0 0 10px;width:60%;position: relative;}
+.cont-text p{padding:0 0 4%}
+
+.cont-tit-img01,
+.cont-tit-img02,
+.cont-tit-img03{width: 32px; height: 32px;display: block; float: left;position: relative;bottom:10px;margin: 0 5px 0 0}
+.cont-tit-img01{ background: url(../img/yuri-cont-tit-img01.gif)no-repeat top center;background-size: auto 32px;}
+.cont-tit-img02{ background: url(../img/yuri-cont-tit-img02.gif)no-repeat top center;background-size: auto 32px;}
+.cont-tit-img03{ background: url(../img/yuri-cont-tit-img03.gif)no-repeat top center;background-size: auto 32px;}
+
+.cont-box-sub{margin: 0 20px 30px 0;font-size: 0}
+.link-free{margin: 0 20px 20px 0;font-size: 0}
+.link-free{background:#fff4fc; padding: 10px;}
+.link-free-box{background: #fff; padding: 10px; overflow: hidden}
+.link-free-img{ width: 200px; height: 40px;float: right}
+.link-free-text{ float: left}
+
+.tw-box{width: 30%;padding:0 10px;border-bottom: 1px solid #974349; }
+.tw-tit{border-bottom: 1px solid #974349; margin: 6px 0 10px;}
+
+@media screen and (max-width: 1024px){
+	.cont-img{width:50%;}
+	.cont-text{width:50%;}
+	.cont-box{width: 75%;}
+	.tw-box{width:25%;}
+	.link-free-text{ width: 60%;}
+}
+
+@media screen and (max-width:768px){
+	.cont-img{width:100%;max-width:inherit; margin: 0 0 10px}
+	.cont-text{width:100%;padding:0}
+	.cont-text p{padding: 0}
+	.cont-img,.cont-text{display:block;}
+	.cont-box{width: 60%;}
+	.tw-box{width:40%;}
+	.link-free-text{ width: 100%; float: none; margin: 0 0 10px}
+	.link-free-img{float:none}
+}
+
+@media screen and (max-width:640px){
+	.cont-box,.tw-box{display:block;width: 100%;}
+	.cont-box-sub{ margin: 0 0 40px}
+	.link-free{margin: 0 0 20px 0;font-size: 0}
+	.link-free-text{ width: 60%; float:left;}
+	.link-free-img{float:right}
+}
+@media screen and (max-width:640px){
+	.link-free-text{ width: 100%; float:none;}
+	.link-free-img{float:none; max-width: 200px; margin: 0 auto}
+}
+
+/*-----------------------
+相互リンク
+------------------------*/
+
+.link-box{ font-size: 0}
+.link-box div{ display: inline-block; width: 25%; padding: 10px;}
+.link-box a{display: block; max-width: 200px; margin: 0 auto 5px}
+.link-box p{display: block; max-width: 200px;margin: 0 auto}
+
+@media screen and (max-width: 900px){
+	.link-box div{ width: 33.33%;}
+}
+@media screen and (max-width: 640px){
+	.link-box div{ width:50%;}
+}
+@media screen and (max-width: 480px){
+	.link-box img{ width:100%!important;}
+}
+@media screen and (max-width: 420px){
+	.link-box div{ display:block; width: 100%;}
+	.link-box img{max-width: 200px}
+}
+/*-----------------------
+foot
+------------------------*/
+.foot{ background:#fddaf1; position: relative;box-shadow: 0 10px 24px -8px rgba(251,204,235,1) inset;-moz-box-shadow: 0 10px 24px -8px rgba(251,204,235,1) inset;-mz-box-shadow: 0 10px 24px -8px rgba(251,204,235,1) inset;-webkit-box-shadow: 0 10px 24px -8px rgba(251,204,235,1) inset;}
+.f-floor{max-width: 1316px; padding:20px 5px; position: relative; margin: 0 auto; overflow: hidden}
+.f-logo,
+.f-menu{float:left;}
+.f-link{float:right;right:10px; top:38px; position: absolute}
+.f-link li{display:inline-block;text-align:center;margin:0 10px 0 0;}
+.f-link li:last-of-type{margin:0; position: relative; bottom:-8px}
+.f-note{float:right;right:5px;bottom:18px; text-align: right; font-size: 1.0rem; position: absolute}
+.copy{ background: #e95283;padding:5px 0; text-align: center; color:#fff; font-size: 1.2rem; letter-spacing: 2px}
+
+@media screen and (max-width: 768px){
+	.f-link{top:auto;bottom:24px}
+	.f-note{bottom:0;}
+}
+
+@media screen and (max-width:640px){
+	.foot{position:static;}
+	.f-floor{position:static;}
+	.f-floor:last-of-type{padding:0;}
+	.f-logo,.f-menu{float:none;}
+	.f-logo{ margin: 10px auto; width: 120px;}
+	.f-logo img{width: 100%!important}
+	.f-link{float:none;right:0; bottom:0; position:static; font-size: 0;line-height: 0;}
+	.f-link img{ width:100%!important;}
+	.f-link .l-icn{ width: 13%!important}
+	.f-link li{ width: 30%; margin: 0;padding:5px 5px 10px;box-sizing:border-box;}
+	.f-link li:last-of-type{bottom:0}
+	.f-menu{font-size: 0;line-height: 0;}
+	.f-menu li{ width:50%;margin:0; padding: 10px; border-bottom: 1px solid #974349; box-sizing: border-box; line-height: 2.0rem}
+	.f-menu li:nth-of-type(2n){border-left: 1px solid #974349;}
+	.f-menu a{ display: block}
+	.f-note{text-align: left;padding:5px; box-sizing: border-box;line-height:1.2rem; padding: 5px; position: static}
+	.copy{ font-size: 1.0rem;}
+}
+
+/*-----------------------
+SUPPORT
+------------------------*/
+.sup-tit-text{max-width: 320px; margin: 0 auto 10px; border: 1px solid #9c3351; text-align: center; padding: 10px; display: block}
+.sup-text{max-width:768px; margin:30px auto;line-height: 2.4rem;}
+fieldset {max-width:768px; margin:0 auto;padding:20px 0;border:none; position:relative}
+button, input, select,textarea{font-size: 1.4rem!important;line-height: 1.8rem!important;color:#9c3351!important;width: 100%; padding:8px 8px 0;box-sizing:border-box;margin:0 0 35px;}
+button, input, select{height: 32px;border-bottom: 1px solid #9c3351!important;}
+textarea{height: 120px;background: #f6f6f6!important;}
+
+input:focus{background-color:#ffecf1!important;outline:none;}
+textarea:focus{background-color:#ffecf1!important;outline:none;}
+select:focus{background-color:#ffecf1!important;outline:none;}
+
+input.submit{
+width:80%;
+height:40px;
+line-height:30px;
+border: 2px solid #e95283!important;
+color:#e95283!important;
+padding:0;
+cursor:pointer;
+font-size:2.2rem!important;
+letter-spacing:5px;
+margin: 0 auto;
+display: block
+}
+input.submit:hover{background: #e95283;color:#fff!important;}
+#submit_press input{border:none}
+
+.select-wep{width: 100%;
+	position: relative;
+	display: inline-block;}
+
+.select-wep:after{
+	content: '';
+	width: 6px;
+	height: 6px;
+	border: 0px;
+	border-bottom: solid 2px #b4b3b3;
+	border-right: solid 2px #b4b3b3;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 16px;
+	right: 10px;
+	margin-top: -4px;
+}
+
+
+.sup-text-sub{border: 1px solid #e95283; padding:10px; text-align: center}
+.sup-text-sub-tit{ display: block; margin: 0 auto 5px; width: 100%; background:#e95283; color:#fff; font-size: 120%; padding:5px 0 3px}
+
+
+@media screen and (max-width: 480px){
+	.sup-text-sub{text-align: left}
+	.sup-text-sub-tit{text-align: center}
+	.sup-text-sub .bold{text-align: center; display: block}
+
+}
+
+@media screen and (max-width: 420px){
+	input.submit{width:90%;}
+}

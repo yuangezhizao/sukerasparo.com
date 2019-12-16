@@ -1,0 +1,132 @@
+@charset "UTF-8";
+.t-center{text-align: center}
+.mt-40{margin-top: 40px;}
+#event .yuri-logo{margin: 0 auto;max-width: 180px}
+#event .event-floor{padding:30px 10px 60px!important}
+
+.yuri-floor-ev{max-width: 928px; margin:0 auto}
+.br640b {display: none}
+/*--見出し--*/
+#event .ev-title{padding:10px 10px 8px; width: 100%; color:#fff;font-size:2.0rem; line-height:2.0rem; background:#e95283; margin:30px 0 15px; letter-spacing: 1px;}
+#event .ev-title-sub,
+#event .ev-title-sub02{font-size:2.4rem; line-height:2.4rem; letter-spacing:2px;}
+#event .ev-title-sub{ border-bottom:1px solid #974349; text-align: center; margin:0 auto 20px;}
+#event .ev-title-sub02{ color:#e95283; border:1px solid #e95283;margin:0 auto 10px; width: 80%; max-width: 560px; padding:12px 5px 10px; text-align: center}
+
+/*--スケジュール--*/
+.ev-schedule{ width: 100%; margin: 0 auto;border-collapse: separate;border-spacing: 5px;}
+.ev-schedule td{ padding:8px 5px;}
+.ev-schedule td:nth-of-type(2n+1){ width:8%; background: #e95283; color:#fff; text-align: center}
+.ev-schedule td:nth-of-type(2n){ width:42%; background: #fff;}
+
+/*--出品物--*/
+.ev-item-box{ font-size: 0; line-height: 0;margin: 0 0 40px;}
+.ev-item{ display: inline-block; width: 32.33%; padding: 5px 5px 20px; background: #fff; margin: 0.5%;vertical-align: top; position: relative}
+
+.ev-new{position: absolute;color:#fff; background:#e95283;width: 40px;height: 40px; position: absolute;top:5px;left:5px; text-align: center;padding:11px 0 0; font-weight: bold; transform: rotate(-25deg);-webkit-transform: rotate(-25deg); border-radius: 25px}
+.ev-new:before{content: ""; border-style: solid;border-width: 20px 10px 0 10px;border-color: #e95283 transparent transparent transparent;position: absolute;bottom:-6px;left:50%;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);z-index: -1}
+
+.item-n{ font-weight: bold; padding: 5px 5px 2px; margin: 5px 0; min-height: 42px;font-size: 1.3rem;line-height: 1.7rem;}
+.item-n .new{color:#e95283}
+.item-p{ text-align: right;background: #fff5f6; padding: 5px 5px 2px;font-size: 1.3rem;line-height: 1.7rem;}
+.item-s{ text-align:center; margin: 5px 0 0;font-size: 1.1rem;line-height: 1.3rem;}
+
+/*--百合つく--*/
+.yuri-tsuku-p{text-align: center;padding: 10px 0}
+.yuri-tsuku-theme{ padding: 20px; max-width: 768px; margin: 10px auto; background: #fff; text-align: center}
+.p-kigen{ display: block; background:#fff5f6; padding: 5px 0; max-width: 480px; margin: 0 auto;}
+
+/*--ニコ生--*/
+.ch-gate{padding:20px;max-width: 800px;margin: 10px auto;background: #fff;}
+.ch-gate .nico{float: left;margin: 0 10px 0 0;}
+.ch-gate .text02{ text-align: center;display: block;background: #fff5f6;padding: 5px 0; line-height: 2.4rem; margin: 5px auto;}
+
+/*--コラボイベント--*/
+.collabo-img{max-width: 800px; margin: 0 auto;}
+
+
+/*--ゆり百合ユリアーモ--*/
+.yuriyuri{padding:20px;max-width: 800px;margin: 30px auto 10px;background: #fff;}
+.yuriyuri img{margin: 0 auto 5px; display: block}
+.yuriyuri p{text-align: center}
+.yuriyuri-sub-tit{text-align: center;display: block;background: #fff5f6;padding: 5px 0;
+line-height: 2.4rem;margin: 20px auto 5px;}
+
+
+/*--百合ゲーサミット--*/
+.ev-mv{ background: #fff;margin-bottom: 10px;}
+.ev-gt-coment{max-width: 800px; margin: 40px auto 0; overflow: hidden;}
+.ev-gt-coment:first-of-type{margin: 20px auto 0;}
+.ev-gt-coment p{line-height: 2.4rem}
+.img-photo,
+.img-text{}
+.img-photo{max-width:150px;float: left; font-size: 0}
+.img-photo .img50{display: inline-block; width: 50%;}
+.img-text{margin-left: 160px; display: block;}
+
+.coment-name{font-size: 1.8rem;padding-top:4px}
+.coment-name img{position: relative; top:-3px}
+.coment-name-item{padding:10px; margin: 5px 0 10px; background:#fff4fc}
+
+@media screen and (max-width: 900px){
+	.ev-schedule td:nth-of-type(2n+1){ width:12%;}
+	.ev-schedule td:nth-of-type(2n){ width:38%;}
+}
+@media screen and (max-width:768px){
+	.br768{ display:none;}
+	.item-n{ font-size: 1.2rem;line-height: 1.6rem;}
+	.item-p{ font-size: 1.2rem;line-height: 1.6rem;}
+}
+@media screen and (max-width: 640px){
+	.br640{ display: none}
+	.br640b{display:block}
+	.t-center{text-align: left}
+	.ev-item{width: 49%;}
+	.ev-schedule td{font-size: 1.2rem;line-height: 1.6rem;}
+	.ev-schedule td:nth-of-type(2n+1){ width:18%;}
+	.ev-schedule td:nth-of-type(2n){ width:32%;}
+	.ch-gate .nico{float:none;margin: 0 auto 10px; max-width: 312px;}
+	.ch-gate .nico iframe{ width: 100%!important}
+}
+@media screen and (max-width: 480px){
+	.br480{ display: none}
+	.br640b{display: none}
+	#event .ev-title-sub02{font-size:1.6rem; line-height:1.6rem; width: 100%; background:#fff;margin: 0 auto; padding:10px 5px 8px}
+	.ev-item{width:100%; display: block;margin:0; font-size: 0; line-height: 0;border-bottom:1px dashed #974349; padding: 10px 5px;}
+	.ev-item:last-of-type{border-bottom:none;}
+	.ev-item-img,.ev-item-text{display:inline-block;vertical-align:top}
+	.ev-item-img{ width:49%; margin: 0 1% 0 0}
+	.ev-item-text{ width:50%;}
+
+	.ev-new{width: 30px;height: 30px;font-size: 1.1rem; padding: 6px 0;top:10px;left:0}
+	
+	.item-n{background: #fff5f6;margin: 0;min-height:inherit;padding:5px}
+	.item-p{ background: #fff;}
+	.item-s{ text-align: left}
+	
+	.nico-h{font-size:1.8rem!important; line-height:1.8rem!important; letter-spacing: 0!important;margin:0 auto 10px!important}
+	.ch-gate{padding:10px 5px;}
+
+	.ch-gate .text{padding:10px}
+	.ch-gate .text02{ text-align:left; margin: 5px; padding: 5px;}
+	
+	.yuriyuri{padding:10px 5px;margin: 10px auto 10px;}
+	
+	.img-photo{max-width:inherit;float:none; font-size: 0; background: #f5f5f5; text-align-last: center}
+	.img-photo img{display: inline-block; width: 33.33%;}
+	.img-text{margin-left:0;}
+	.img-photo .img50{width:33.33%;}
+	.ev-gt-coment{margin:30px auto 0; padding-top:30px; border-top:1px solid #974349}
+	.ev-gt-coment:first-of-type{border-top:none;}
+	.coment-name{margin-top: 5px}
+}
+
+@media screen and (max-width: 400px){
+	.br400{display: none}
+	.ev-schedule{border-collapse:inherit;border-spacing:0;}
+	.ev-schedule td:nth-of-type(2n+1){ width:100%;display:block; background:#974349}
+	.ev-schedule td:nth-of-type(2n){ width:100%;display: block}
+}
+@media screen and (max-width: 320px){
+	.ev-item{width:100%; display: block;margin:0}
+}

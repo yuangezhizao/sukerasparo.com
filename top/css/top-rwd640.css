@@ -1,0 +1,96 @@
+@charset "UTF-8";
+.sub-tit{ font-size: 3.0rem;}
+.sub-tit:after{ font-size: 1.2rem; line-height: 1.2rem; bottom:-20px}
+#p-tit{padding: 85px 0 40px;}
+
+@media screen and (max-width: 480px){
+.h2-tit{ font-size: 1.6rem; line-height: 1.8rem}
+}
+/*-head-*/
+
+nav{border-bottom:2px solid #eb6b7a}
+.drawer{ height: auto}
+.n-logo{ margin: 0 auto; width: 160px;}
+.n-logo img{width: 100%!important;}
+.menu{top:74px;padding:0 10px 10px;}
+.menu li{padding:15px 10px;}
+.menu .tw,.menu .yt{width: 50%;padding:15px 10px;}
+.menu li:last-of-type{width: 100%; border-top:1px solid #CCC;padding:15px 10px;}
+.menu li:last-of-type img{ display: block;margin: 0 auto}
+
+/*-main-*/
+#slider{padding:80px 0 0}
+.sp-button{ width:8px!important; height:8px!important;}
+
+/*-コンテンツ(info tw 製品)--*/
+#info{width: 100%; display: block}
+#content{width: 100%; display: block;max-width:inherit;margin: 30px 0 0;padding:0}
+.tw-box{ width: 49%; display: inline-block;vertical-align: top; margin: 0 1% 0 0}
+.tw-box iframe{ height: 422px!important;}
+.pro-item-box {width:50%; margin: 0;display: inline-block; vertical-align: top;}
+.pro-item-box a{ margin: 0 0 10px}
+
+@media screen and (max-width: 480px){
+.info-box{ width: 100%;font-size: 0; line-height: 0;padding:5px 0 15px}
+.info-img,.info-text{ display: inline-block; width:50%; vertical-align: top}
+.info-img{width:40%;}
+.info-text{width:60%;padding:0 0 0 1%;}
+.tw-box{ width: 100%; display: block; margin: 0 0 10px}
+.pro-item-box {width:100%; margin: 0;display:block;}
+.pro-item-box a{ margin: 0 0 5px}
+}
+
+
+/*-foot-*/
+.foot{position:static;}
+.f-floor{position:static;}
+.f-floor:last-of-type{padding:0;}
+.f-logo,.f-menu{float:none;}
+.f-logo{ margin: 0 auto 10px; width: 160px;}
+.f-link{float:none;right:0; bottom:0; position:static; font-size: 0;line-height: 0;}
+.f-link .l-icn{ width: 18%!important}
+.f-link li{ width: 32%; margin: 0;padding:5px 5px 10px;box-sizing:border-box;}
+.f-menu{font-size: 0;line-height: 0;}
+.f-menu li{ width:50%;margin:0; padding: 10px; border-bottom: 1px solid #974349; box-sizing: border-box; line-height: 2.0rem}
+.f-menu li:nth-of-type(2n){border-left: 1px solid #974349;}
+.f-menu a{ display: block}
+.f-note{text-align: left;padding:5px; box-sizing: border-box;line-height:1.2rem; padding: 5px;}
+.copy{ font-size: 1.0rem;}
+}
+
+/*--製品情報--*/
+.product:after{max-width: 136px;}
+
+.pro-info-tit, .pro-info-text{ margin: 10px 0 0;}
+.pro-info-text{padding:0 0 20px}
+.pro-info-img{ float: none; max-width: inherit; width: 100%; background: #f5f5f5;}
+.pro-info-img img{display: block;margin: 0 auto; max-width: 480px; width: 100%;}
+.pro-info-link{position: static;text-align:left;}
+.pro-info-link a{ display: inline-block; width: 49%; margin:0.5%; padding: 12px 0;text-align: center;}
+
+.book-info-img img{ width: 100%;}
+.book-info-link a{padding: 12px 0;}
+.book-info-text li:nth-of-type(2n){ width: 100%!important}
+.book-info-sub{ width: 100%!important}
+.book-info-text li{padding:0 5px}
+
+@media screen and (max-width: 480px){
+	.pro-info-text li,.pro-info-sub{ width: 100%!important}
+	.pro-info-link a{width: 48%; margin:1%;}
+	.pro-info-link a:first-of-type{width: 98%;}
+	#book-info{ width: 100%}
+	.book-info-img img{ width: 100%!important;max-width: inherit;}
+}
+
+/*--イベント情報--*/
+.eve-end .event-tit{padding:0;}
+.eve-end .event-tit:before{position:static;font-size: 1.0rem;width:100%; display: block;text-align: center;margin: 0 0 5px}
+.eve-end .event-tit{border-bottom: none}
+
+/*--サポート--*/
+@media screen and (max-width: 480px){
+	.sup-text-sub{text-align: left}
+	.sup-text-sub-tit{text-align: center}
+	.sup-text-sub .bold{text-align: center; display: block}
+	
+}

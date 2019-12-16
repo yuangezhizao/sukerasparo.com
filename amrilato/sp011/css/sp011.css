@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* --------------------------------
+file name   : style.css
+last update : 20180205
+-------------------------------- */
+/*================================================
+メインビジュアル
+ ================================================*/
+.main { overflow:hidden;}
+.mv-main1{height:100%;background:#fff url(../image/mv01.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative; overflow:hidden}
+.mv-main2{height:100%;background:#fff url(../image/mv02.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative; overflow:hidden}
+/*---0926変更分----*/
+.mv-main3{height:100%;background:#fff url(../image/mv03.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative; overflow:hidden}
+.mv-main3 .main .logo{ width:30%; max-width:520px;position:absolute;top:14%; left:5%}
+.mv-main3 .main .day{ width:100%; max-width:500px;position:absolute;bottom:2%; right:2%}
+
+.mv-main3 .catch{ width:10%; left:8%;right:inherit;top:13%;max-width:166px;}
+.mv-text{ padding:1%;box-sizing: border-box; font-size:1.4rem; max-width:980px; margin:0 auto; text-align:center}
+.mv-text .tit{background:#ff8397; color:#fff; text-align:center; padding:0.5% 0; margin:0 0 1%; font-size:1.6rem; font-weight:bold}
+.mv-text .mv-text-sub{ margin:3% 0}
+.mv-text .bold2{ letter-spacing:10px; font-weight:bold; font-size:16px}
+.mv-text .linebox{ border-top:1px dashed #c78598;border-bottom:1px dashed #c78598; overflow:hidden; padding:2% 0; margin:2% 0}
+.mv-cg{ max-width:800px; margin:1% auto 0; overflow:hidden}
+.mv-cg div{ width:49%; padding:0.5%; float:left}
+.mv-cg img{box-shadow: 0px 0px 10px 1px rgba(255,131,151,0.2)}
+.spaclist{padding:2% auto; background:rgba(255,131,151,0.2)}
+
+#table1 tr:first-child .textfont2{ border-top:1px solid #c78598}
+
+@media screen and (max-width: 768px){
+.main {border-bottom:1px solid #c78598;}
+.mv-main3 .main .logo{ width:90%; max-width:480px;top:auto; left:0;right:0; bottom:23%; margin:auto}
+.mv-main3 .main .day{ margin:auto;right:0;left:0}
+}
+
+@media screen and (max-width: 480px){
+.mv-cg div{ width:100%; margin:0.5% 0%; float:none;}
+
+}
+
+@media screen and (max-width: 420px){
+.mv-main1{background-size:120%;}
+.mv-main2{background-size:120%;}
+.mv-main3 .main .logo{max-width:300px;}
+.mv-main3 .main .day{max-width:300px;}
+}
+@media screen and (max-width: 320px){
+.mv-main3 .main .logo{max-width:280px; bottom:27%; }
+.mv-main3 .main .day{max-width:280px;}
+}

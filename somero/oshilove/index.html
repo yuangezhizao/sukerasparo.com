@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>推しのラブより恋のラブ - SukeraSomero</title>
+<meta name="author" content="SukeraSomero"/>
+<meta name="copyright" content="(c)SukeraSomero"/>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="description" content="『推しのラブより恋のラブ』の公式サイトです。"/>
+<meta name="keywords" content="推しのラブより恋のラブ,SukeraSomero,SukeraSomero"/>
+<link href="img/icon.ico" rel="shortcut icon">
+<link href="css/ress.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Candal|M+PLUS+1p:800&display=swap" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!-- Google Analytics-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-100381791-1', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+<body id="top">
+<style>
+	#mv-contents{height:100%;position: relative;min-height: 768px;}
+	#mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
+	.mv-bg{width:100%;height:100%;top:0;background:url(img/mv-img.jpg) top/cover no-repeat;position: fixed;}
+
+	.mv-logo{width:100%;height:100%;position:absolute;z-index:5;right:5%;bottom:6%;max-width:520px;max-height: 440px;}
+	.mv-logo-img01,
+	.mv-logo-img02,
+	.mv-logo-img03{width:100%;height:100%;position:absolute;-webkit-transform: translatez(0);-webkit-transform: translate3d(0,0,0);}
+	.mv-logo-img01{background:url(img/logo.png) no-repeat;background-size:contain;z-index:6}
+	.mv-logo-img02{background:url(img/logo_release01.png) no-repeat;background-size:contain;z-index:6}
+	.mv-logo-img03{background:url(img/logo_release02.png) no-repeat;background-size:contain;z-index:6}
+
+	.mv-catch{position: absolute; top:10%;left:5%; max-width: 170px;z-index:6}
+
+	.mas-up{position: absolute; top:10%;left:5%; max-width: 280px; border-radius: 150px; background: #fff;z-index: 10;}
+	.mas-up02{position: absolute;top:420px; left:0;z-index:10; background: #fff; border: 2px solid #fff;}
+
+	.load-none{opacity:0;}
+	.load-block{opacity:1;}
+
+	@media screen and (max-width:1680px){
+		.mv-logo{right:2%;}
+		.mv-catch{top:8%;left:2%;}
+	}
+	@media screen and (max-width:1366px){
+		.mv-logo{max-width:420px;max-height:358px; bottom:5%;}
+		.mv-catch{max-width: 120px;}
+		.mas-up{max-width: 240px; border-radius: 120px;}
+		.mas-up02{top:360px;}
+	}
+	@media screen and (max-width:1024px){
+		.mv-logo{max-width:370px;max-height:304px; bottom:14%;}
+		.mas-up{top:8%;max-width: 180px;}
+		.mas-up02{top:306px;}
+	}
+	@media screen and (max-width: 768px){
+		.mv-bg{background:url(img/mv-img.jpg) 26%/cover no-repeat!important;}
+
+		.mv-logo{-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);left:50%;bottom:3%;width: 80%; max-width: 480px;max-height:394px; text-align: center;}
+		.mv-catch{left:inherit; right:3%;}
+		.mas-up{ left:2%; top:8%;}
+		.mas-up02{top:280px;}
+	}
+	@media screen and (max-width: 640px){
+		.mv-bg{top:65px;}		
+		#mv-contents{min-height:inherit}
+		.mv-logo{max-width: 350px; max-height: 298px}
+		.mv-catch{top:10%;right:2%; max-width: 100px;}
+
+		.mas-up02{top:inherit; bottom:2%;}
+	}
+	@media screen and (max-width: 480px){
+		.mv-bg{background:url(img/mv-img.jpg) 47%/cover no-repeat!important;top:64px;}
+		.mv-logo{bottom:2%;max-width: 300px; max-height:255px;}
+		.mv-catch{display: none!important}
+		.mas-up{max-width: 100px;}
+	}
+	@media screen and (max-width: 400px){
+
+	}
+	@media screen and (max-width: 320px){
+		.mv-logo{height: 200px;}
+		.mas-up{max-width: 85px; top:11%;}
+	}
+	@media screen and (max-height: 479px){
+		.mv-bg{background:url(img/mv-img.jpg) top/cover no-repeat!important;}
+		#mv-contents{min-height:400px!important}
+		.mv-logo{left:initial!important;max-width: 195px!important;
+			max-height:162px!important;transform: translate(0,0)!important;-webkit-transform :translate(0,0)!important;transform :translate(0,0)!important;right:1%;bottom:15%;}
+		.mas-up{max-width: 100px!important;top:15%;right:2%;}
+		.mas-up02{top:auto!important; bottom:0}
+	}
+</style>
+	
+<div id="loader-bg">
+	<div id="loading">
+		<img src="img/loading-img.gif" width="100%" alt="" class="loadimg loadanime">
+	</div>
+</div>
+
+<div class="drawer">
+	<div class="navbar_toggle"><span class="nav-i"></span><span class="nav-i"></span><span class="nav-i"></span></div>
+</div>
+
+<!--header-->
+<header id="header"></header>
+		
+<main id="mv-contents">
+	<article id="mv-main">
+		<section>
+			<div class="mv-bg"></div><!--.mv-anime-->
+			<div class="mv-catch"><img src="img/logo_catch.png" width="100%"></div>
+			<div class="mv-logo">
+				<div class="mv-logo-img01"></div>
+				<div class="mv-logo-img02"></div>
+				<div class="mv-logo-img03"></div>
+			</div>
+		</section>
+	</article>
+</main>
+
+
+<!--NEWS-->
+<section id="news">
+	<div class="floor">
+		<div class="news-box">
+			<div class="head-tit01"><h2 class="font02 news-tit"><span>NEWS</span></h2></div>
+			<ul class="news-list"></ul>
+			<div class="news-bbline"></div>
+		</div>
+		<div class="tw-box">
+			<a class="twitter-timeline" data-width="100%" data-height="460" data-theme="light" data-chrome="nofooter noheader" data-link-color="#E81C4F" href="https://twitter.com/SukeraSparo?ref_src=twsrc%5Etfw">Twitterが表示されない方はコチラ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<div class="t-right tw-text"><a class="news-more" href="https://twitter.com/sukerasparo" target="_blank">ツイートを見る</a></div>
+		</div>
+	</div>
+	<!---->
+	<div id="sp-topics">
+		<div class="floor">
+			<div class="cont">
+
+				<div class="topics-box">
+					<p class="privilege">特典情報</p>
+					<p class="c-new">NEW</p>
+					<a class="topics-btn" href="sp/privilege.html">
+						<img src="img/topic01.jpg" width="100%" alt="限定版同梱特典情報">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="no-cont">Coming Soon</p>
+					<img src="img/topic-no.gif" width="100%" alt="Coming Soon">
+				</div>
+				<div class="topics-box">
+					<p class="no-cont">Coming Soon</p>
+					<img src="img/topic-no.gif" width="100%" alt="Coming Soon">
+				</div>
+				<div class="topics-box">
+					<p class="no-cont">Coming Soon</p>
+					<img src="img/topic-no.gif" width="100%" alt="Coming Soon">
+				</div>
+
+
+			</div>
+			<div class="more-box"><a class="more" href="special.html">もっと見る</a></div>
+		</div>
+		
+	</div>
+</section>
+	
+<!--story-->
+<section id="story" class="bg-change03">
+	<div class="floor">
+		<div class="head-tit01"><h2 class="font02 st-tit"><span>STORY</span></h2></div>
+		<p class="st-text"><span class="font01 big st-catch"><span class="red">「――結婚しよ」</span>の一言から始まる、<span class="st-c-sub">&female;</span>と<span class="st-c-sub">&female;</span>の追いかけっこ！</span></p>
+		<div class="st-img"><img src="img/story.png" width="100%"></div>
+		<p class="st-text">
+			『私がまだ子供のころに憧れていたわくわくするような恋の物語。<br>
+			その物語の中では、宇宙からやってきた女の子が地球人の男の子にたくさんの大きな愛を叫んでいた。<br>
+			でもまさか、十数年たった今、こんな配役で物語が実現するなんて思ってもみなかった……』<br><br>
+
+
+			<span class="bold">ソシャゲのガチャに大金を投入しつつも、推しは絶対引けない不運なオタクＯＬ・<span class="red big">『速星 あくる』</span>。<br>
+				そんなあくるの前に突然現れた、ガチャ運最強ギャル・<span class="grn big">『古館 恋』</span>。<br><br></span>
+
+			ひょんな勘違いから求婚した事になってしまったあくるは恋からの恋の猛アタックを受け、<br class="br480n">
+			さらには推しを引くため同居？同衾！？することに！？<br>
+			ギャルで百合な恋の存在は、あくるにとってまさに宇宙人！<br><br>
+
+			推しを追いかけたいあくると、あくるを捕まえたい恋……<br>
+			二人の距離が縮まる日はくるのか―！？<br><br>
+
+
+			<span class="big font01">ドタバタ王道百合コメディ、ここに誕生！</span>
+		</p>
+
+		<div class="st-brand">
+			<p class="st-brand-tit"><span class="big font1">SukeraSomeroとは？</span></p>
+			<div class="st-brand-img"><img src="img/loading-img.gif" width="100%"></div>
+			<p class="st-brand-text">
+				<a href="../../amrilato/index.html" target="_blank">『ことのはアムリラート』</a><a href="../../folklore/index.html" target="_blank">『クダンノフォークロア』</a>でおなじみの百合ゲームブランド【SukeraSparo】の姉妹ブランドです。<br><br>
+
+				スケラソメーロ＝SukeraSomero。<br>
+				エスペラントの砂糖の甘さ(sukera)と夏(somero)の合成語で、甘酸っぱくてちょっぴりエッチな夏の思い出を意味する！？<br><br>
+				ブランドコンセプトは世界を百合で溢れさせる！！<br><br>
+				第一弾『推しのラブより恋のラブ』はみんな大好きラブコメディ！<br>
+				日本語・英語・繁体字・簡体字に対応！全世界同時販売予定！！<br>
+				国際的に活躍するイラストレーターDSマイル氏をキャラクターデザインに起用した世界へ向けた百合作品です！！
+			</p>
+		</div>
+
+	</div>					
+</section>
+
+<!--point-->
+<section id="point" class="bg-change02">
+	<div class="floor">
+		<div class="head-tit01"><h2 class="font02 cont-tit"><span>POINT</span></h2></div>
+		<div class="cont-box-table">
+			<div class="cont-box">
+				<p class="p-tit font02">POINT<span>1</span></p>
+				<div class="p-text">
+					<p>
+						<span class="point font01"><span>恋の追いかけっこin百合</span></span>
+						追ったら逃げて逃げれば追いかける、ドタバタ恋愛追いかけっこ。
+						少年漫画の王道ジャンルを、百合で目指した気軽で明るい百合ゲーム。
+					</p>
+				</div>
+			</div>
+
+			<div class="cont-box">
+				<p class="p-tit font02">POINT<span>2</span></p>
+				<div class="p-text">
+					<p>
+						<span class="point font01"><span>美麗グラフィックof百合</span></span>
+						キャラクターデザインは人気イラストレーターDSマイル氏！！
+						透明感のある色彩で描かれた、女性ｘ女性の物語。
+					</p>
+				</div>
+			</div>
+
+			<div class="cont-box">
+				<p class="p-tit font02">POINT<span>3</span></p>
+				<div class="p-text">
+					<p><span class="point font01"><span>ちょっとエッチな百合18禁アペンド</span></span>
+						18禁アペンドパッチによる、エッチな後日談！</p>
+					<div class="more-box"><a class="more" href="append/index.html">詳細はコチラ</a></div>
+				</div>
+			</div>
+		</div>
+	</div>			
+</section>
+
+
+<!--chara1-->
+<section id="chara" class="bg-change01">
+
+	<div class="floor" id="chara-tit">
+		<div class="head-tit01"><h2 class="font02 chara-tit"><span>CHARACTER</span></h2></div>
+		<ul class="tab-sam">
+			<li><a href="index.html#akuru"><img src="img/chara_sam01.jpg" width="100%" alt=""></a></li>
+			<li><a href="index.html#ren"><img src="img/chara_sam02.jpg" width="100%" alt=""></a></li>
+			<li><a href="index.html#shino"><img src="img/chara_sam03.jpg" width="100%" alt=""></a></li>
+		</ul>
+	</div>
+
+	<div class=" chara-line01">
+	<div class="floor" id="akuru">
+			<div id="chara-box01b" class="chara-box-main">
+				<div class="chara-info">
+					<div class="chara-name">
+						<h3 class="c-name"><span class="font01">速星 あくる</span></h3>
+						<div class="c-cv font01"><p>cv:猫村ゆき</p></div>
+
+						<div class="chara-voice">
+							<div class="sv-box">
+								<img class="svb1" src="img/character_btn1.png" alt="1" width="48">
+								<img class="svb2" src="img/character_btn2.png" alt="2" width="48">
+								<img class="svb3" src="img/character_btn3.png" alt="3" width="48">
+								<audio id="sv1" preload="auto" src="img/sv/sv01.mp3"></audio>
+								<audio id="sv2" preload="auto" src="img/sv/sv02.mp3"></audio>
+								<audio id="sv3" preload="auto" src="img/sv/sv03.mp3"></audio>
+							</div>
+						</div>
+					</div>
+
+					<!---->
+					<div class="chara-cos">
+						<span class="cloth-1 active"><img src="img/chara01_btn.png" alt="1" width="100%"></span>
+						<span class="cloth-2"><img src="img/chara02_btn.png" alt="2" width="100%"></span>
+					</div>
+
+					<!---->
+					<p class="chara-cach font01 t-shadow01">
+						<span class="cach-l">「こ、恋人じゃないわよ。</span><span class="cach-r">ただの同居人」</span>
+					</p>
+					<p class="chara-text t-shadow01 t-center">
+						日々、二次元キャラ（推し）を追いかけ続ける夢女子ＯＬ。<br>
+						しかしながら推しのみ、ガチャで絶対に引けないという不運の持ち主。<br>
+						現在ソシャゲにドはまり中で、生活費がピンチに……<br>
+						恋との出会いにより思わぬ方向へ人生が一変する。<br>
+					</p>
+
+					<div class="chara-sub-text">
+						<p>身　長</p><p class="t-shadow01">168cm</p>
+						<p>バスト</p><p class="t-shadow01">80㎝（C65）</p>
+						<p>誕生日</p><p class="t-shadow01">3月4日</p>	
+					</div>
+				</div>
+
+				<div class="chara-img">
+					<img src="img/chara01_full.png" alt="" width="100%">
+				</div>
+			</div><!--//chara-box01b-->
+		</div>
+	</div>
+
+<!--chara2-->
+	<div class="chara-line02">
+		<div class="floor" id="ren">
+			<div id="chara-box02b" class="chara-box-main">
+				<div class="chara-info">
+					<div class="chara-name">
+						<h3 class="c-name"><span class="font01">古館 恋</span></h3>
+						<div class="c-cv font01"><p>cv:北大路ゆき</p></div>
+						<div class="chara-voice">
+							<div class="sv-box">
+								<img class="svb4" src="img/character_btn4.png" alt="4" width="48">
+								<img class="svb5" src="img/character_btn5.png" alt="5" width="48">
+								<img class="svb6" src="img/character_btn6.png" alt="6" width="48">
+								<audio id="sv4" preload="auto" src="img/sv/sv04.mp3"></audio>
+								<audio id="sv5" preload="auto" src="img/sv/sv05.mp3"></audio>
+								<audio id="sv6" preload="auto" src="img/sv/sv06.mp3"></audio>
+							</div>
+						</div>
+					</div>
+
+					<!---->
+					<div class="chara-cos">
+						<span class="cloth-3 active"><img src="img/chara03_btn.png" alt="1" width="100%"></span>
+						<span class="cloth-4"><img src="img/chara04_btn.png" alt="2" width="100%"></span>
+					</div>
+
+					<!---->
+					<p class="chara-cach font01 t-shadow01">
+						<span class="cach-l">「だって、あくるは</span><span class="cach-r">あたしの運命の人でしょ？」</span>
+					</p>
+					<p class="chara-text t-shadow01 t-center">
+						カワイイもの、キラキラしたもの――<br>つまり、テンションがあがるものが大好き。<br>
+						好みのタイプど真ん中だったあくるに出会い、一目惚れ。<br>
+						その心をゲットしようと、なかば強制的にあくるの家に転がり込む。<br>
+					</p>
+
+					<div class="chara-sub-text">
+						<p>身　長</p><p class="t-shadow01">159cm</p>
+						<p>バスト</p><p class="t-shadow01">90㎝（E70）</p>
+						<p>誕生日</p><p class="t-shadow01">4月22日</p>
+
+					</div>
+				</div>
+
+				<div class="chara-img">
+					<img src="img/chara03_full.png" alt="" width="100%">
+				</div>				
+			</div><!--//chara-box02b-->
+		</div>
+	</div>
+
+<!--chara3-->
+	<div class="chara-line03">
+		<div class="floor" id="shino">
+			<div id="chara-box03b" class="chara-box-main">
+				<div class="chara-info">
+					<div class="chara-name">
+						<h3 class="c-name"><span class="font01">錦 志乃</span></h3>
+						<div class="c-cv font01"><p>cv:和央きりか</p></div>
+
+						<div class="chara-voice">
+							<div class="sv-box">
+								<img class="svb7" src="img/character_btn7.png" alt="7" width="48">
+								<img class="svb8" src="img/character_btn8.png" alt="8" width="48">
+								<img class="svb9" src="img/character_btn9.png" alt="9" width="48">
+								<audio id="sv7" preload="auto" src="img/sv/sv07.mp3"></audio>
+								<audio id="sv8" preload="auto" src="img/sv/sv08.mp3"></audio>
+								<audio id="sv9" preload="auto" src="img/sv/sv09.mp3"></audio>
+							</div>
+						</div>
+					</div>
+					
+					<div class="chara-cos"></div>
+					
+					<!---->
+					<p class="chara-cach font01 t-shadow01">
+						<span class="cach-l">「へぇ、ここがあーちゃんと</span><span class="cach-r">ギャルっ子の愛の巣か～」</span>
+					</p>
+					<p class="chara-text t-shadow01 t-center">
+						あくるの幼馴染であり、オタク友達であり、同僚。<br>
+						同人サークルを3つ掛け持ちするパワフル腐女子であり、<br class="br640n">あくるを沼に引き込む常習犯。<br>
+						恋から見れば次々とワルい男を紹介する邪魔者だが、<br class="br640n">本人はむしろこの状況を楽しんでいる様子。<br>
+					</p>
+
+					<div class="chara-sub-text">
+						<p>身　長</p><p class="t-shadow01">150cm</p>
+						<p>バスト</p><p class="t-shadow01">98cm（F75）</p>
+						<p>誕生日</p><p class="t-shadow01">5月25日</p>		
+					</div>
+				</div>
+
+				<div class="chara-img">
+					<img src="img/chara05_full.png" alt="" width="100%">
+				</div>
+			</div><!--//chara-box03b-->					
+		</div>
+	</div>
+</section>
+
+
+
+<!--gallery-->
+<section id="gallery" class="bg-change02 ">
+	<div class="floor">
+		<div class="head-tit01"><h2 class="font02 gallery-tit"><span>GALLERY</span></h2></div>
+		<div class="cg-box">			
+			<div class="cg-img">
+				<a href="index.html#cg001" class="inline group1">
+					<img src="img/cg01sam.jpg" alt="" width="480"></a>
+			</div>
+			<div style="display:none;">
+				<section id="cg001">
+					<div class="cg-on cg001h"><img src="img/cg01.jpg" width="100%" alt=""/></div>
+					<p class="hover-text">イラストの上にマウスオーバーすると、イラストが変化します。</p>
+				</section>
+			</div><!--//-->
+			<div class="cg-img">
+				<a href="index.html#cg002" class="inline group1">
+					<img src="img/cg02sam.jpg" alt="" width="480"></a>
+			</div>
+			<div style="display:none;">
+				<section id="cg002">
+					<div class="cg-on cg002h"><img src="img/cg02.jpg" width="100%" alt=""/></div>
+					<p class="hover-text">イラストの上にマウスオーバーすると、イラストが変化します。</p>
+				</section>
+			</div><!--//-->
+			<div class="cg-img">
+				<a href="img/cg03.jpg" class="group1"><img src="img/cg03sam.jpg" alt="" width="480"></a>
+			</div>
+			<div class="cg-img">
+				<a href="img/cg04.jpg" class="group1"><img src="img/cg04sam.jpg" alt="" width="480"></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--spec-->
+<section id="spec" class="bg-change03">
+	<div class="floor">
+		<div class="head-tit01"><h2 class="font02 spec-tit"><span>SPEC</span></h2></div>
+		<p class="spec-tit02">タイトル</p>
+		<b class="spec-tit">推しのラブより恋のラブ</b>
+		<ul class="spec-text">
+			<li><span class="s-name">ブランド</span>SukeraSomero</li>
+			<li><span class="s-name">ジャンル</span>ドタバタ王道百合コメディ</li>
+			<li><span class="s-name">販売区分</span>全年齢作品<span class="mini">（18禁アペンドあり）</span></li>
+		</ul>			
+		<ul class="spec-text">
+			<li><span class="s-name">発売日</span>2020年2月28日（金）</li>
+			<li><span class="s-name">予約開始日</span>2019年12月20日（金）</li>
+			<li><span class="s-name">対応OS</span>Windows 7 / 8 / 8.1 / 10</li>
+		</ul>
+		<ul class="spec-text">
+			<li><span class="s-name">パッケージ限定版</span>6,800円（税抜）</li>
+			<li><span class="s-name">ダウンロード版</span>同時発売予定</li>
+		</ul>
+
+		<ul class="spec-text">
+			<li>
+				<span class="s-name block">限定版同梱特典</span>
+				18禁アペンドパッチ、描き下ろしB2タペストリー、主題歌CD、設定資料集、ボイスドラマ<br>
+			</li>
+		</ul>
+	</div>
+
+	<div class="floor">
+		<p class="spec-tit02">スタッフ</p>
+		<ul class="spec-text">
+			<li><span class="s-name block">キャラクターデザイン</span>DSマイル<br></li>
+			<li><span class="s-name block">シナリオ</span>オグリアヤ<br></li>
+			<li><span class="s-name block">背景</span>アトリエ空機関 プシュケー</li>
+		</ul>
+		<ul class="spec-text">
+			<li><span class="s-name block">音楽</span>よる。<br></li>
+			<li><span class="s-name block">オープニングムービー</span>gram6design<br></li>
+			<li><span class="s-name block">ブランドロゴデザイン</span>齋藤渉(chipco design)</li>
+		</ul>
+		<ul class="spec-text">
+			<li><span class="s-name block">企画／ディレクション</span>ちゃた<br></li>
+			<li><span class="s-name block">プロデューサー</span>古賀秀一<br></li>
+			<li><span class="s-name block">制作</span>SukeraSomero</li>
+		</ul>
+		<ul class="spec-text">
+			<li><span class="s-name block">OP曲</span><span class="bold">『Love Emotion！』</span><br>
+				<span class="mini">歌：鈴湯<br>作詞・作曲・編曲：よる。<br>Guitar：masaki<br>Piano：山本佳祐<br>(All Other Instruments & Programming：よる。)</span></li>
+		</ul>
+		<ul class="spec-text">
+			<li><span class="s-name block">ED曲</span><span class="bold">『チョコスプレー』</span><br>
+				<span class="mini">歌：杏花<br>作詞：杏花<br>作曲：福田和也、Rick Sakurai</span></li>
+		</ul>
+		<ul class="spec-text">
+			<li><span class="s-name block">キャスト</span>
+				<span class="s-name">速星 あくる</span><span class="mini">CV：</span>猫村ゆき　<span class="s-name">古館 恋</span><span class="mini">CV：</span>北大路ゆき　<span class="s-name">錦 志乃</span><span class="mini">CV：</span>和央きりか<br> ...and more
+			</li>
+		</ul>
+	</div>
+</section>
+
+<!--footer-->
+<footer id="footer"></footer>
+
+<script src="js/menu.js"></script>
+<script src="js/parts.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script>
+	$(function(){
+	var tgElm = $('p,li,td'), 
+	tagType = "span";
+	tgElm.each(function(){
+	var tgText = $(this).html();
+	tgText = tgText.replace(/[「『（【｛［〔〈《“]/g, '<' + tagType + ' style="display: inline-block; margin-left: -0.2em;">$&</' + tagType + '>');
+	tgText = tgText.replace(/[」』）】｝］〕〉》”，、]/g, '<' + tagType + ' style="display: inline-block; margin-right: -0.2em;">$&</' + tagType + '>');
+	tgText = tgText.replace(/[・；：]/g, '<' + tagType + ' style="margin-left: -0.2em; margin-right: -0.2em;">$&</' + tagType + '>');
+	$(this).html(tgText);
+	});
+	});
+</script>
+
+<script async>
+	var headerhtml = '/somero/oshilove/header.html';
+	$.ajax({
+		type: 'get',
+		url: headerhtml,
+		dataType: 'html',
+		success: function(data) {
+			$("#header").append(data);
+		}
+	});
+	var footerhtml = '/somero/oshilove/footer.html';
+	$.ajax({
+		type: 'get',
+		url: footerhtml,
+		dataType: 'html',
+		success: function(data) {
+			$("#footer").append(data);
+		}
+	});
+	var footerhtml = '/somero/oshilove/news.html';
+	$.ajax({
+		type: 'get',
+		url: footerhtml,
+		dataType: 'html',
+		success: function(data) {
+			$(".news-list").append(data);
+		}
+	});
+</script>
+
+</body>
+</html>
