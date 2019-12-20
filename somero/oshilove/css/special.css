@@ -3,6 +3,7 @@
 special-top
 ---------------------------*/
 #special{position: relative; width: 100%;}
+#special div,#special p{box-sizing:border-box;}
 #special .bg-change02 .head-tit01:before{border-bottom: 58px solid #ff7bac}
 #special .bg-change02 .head-tit01:after{border-top: 58px solid #ff7bac}
 
@@ -11,7 +12,9 @@ special-top
 
 #sp-floor{position: relative;background:#fff; padding:0 0 80px;}
 #sp-floor .floor{padding:80px 10px 0}
-#sp-floor .c-new{right:inherit;left:5px}
+#sp-floor .c-new{width: 36px;right:inherit;left:5px;padding: 3px 0 0!important;}
+#sp-floor .c-new:before{height: 32px;border: 18px solid #ed1e78;border-bottom: 8px solid transparent;}
+
 
 .cont-tit{width: 100%; margin: 0 auto 10px; padding:10px 10px 5px; font-size: 2.0rem;color:#fff; letter-spacing:1px }
 
@@ -37,15 +40,19 @@ special-top
 .sp-head-tit h2:after{content: "";position: absolute;height: 1px;width: 100%;bottom: 3px;left:0;background: #ed1e78;}
 
 .sp-tit-blu{padding:5px;background:rgba(0,192,235,.7);color:#fff;}
+.sp-tit-pnk{padding:5px;background:rgba(255,222,236,.65);color:#000;}
 
 @media screen and (max-width: 480px){
 	#special .head-tit01 .sp-tit span{padding: 5px 0;}
 }
 
+
+
 /*---------------------------
 限定版同梱特典情報
 ---------------------------*/
-.privi-box{font-size: 0; line-height: 0; text-align: center}
+.privi-box{font-size: 0; line-height: 0; text-align: center;margin-bottom:50px}
+.privi-box:last-of-type{margin-bottom:0}
 
 .privi-sub{width: 32.33%; margin: 0.5%; padding:5px; display: inline-block; vertical-align: top; background: #fff;}
 
@@ -58,6 +65,11 @@ special-top
 
 .privi-img{margin:5px auto;max-width: 480px;}
 .privi-text p{text-align:left; font-size: 1.4rem; line-height: 2rem;}
+
+
+.privi-move .privi-sub{width: 99%;}
+{background: rgba(255,222,236,.65);}
+
 
 @media screen and (max-width: 768px){
 	.privi-sub:nth-of-type(n+4) .privi-img{width:100%}
@@ -73,11 +85,38 @@ special-top
 }
 
 @media screen and (max-width:480px){
+	.privi-box{margin-bottom:0}
 	.privi-sub{width:100%; margin: 0 0 20px}
 	.privi-sub:nth-of-type(n+4){width:100%;}
 	.privi-sub:last-of-type{width: 100%}
 	.privi-sub:last-of-type .privi-img{width:100% }
 	.privi-sub:last-of-type .privi-text{width:100%;}
+}
+
+/*---------------------------
+店舗特典情報
+---------------------------*/
+.privi-sub02{width: 49%; margin: 0 0.5% 30px; padding:5px; display: inline-block; vertical-align: top; background: #fff;}
+.privi-sub02:first-of-type{width: 99%;}
+
+.privi-img02{width: 100%; display: inline-block; vertical-align: top;margin:10px 0;}
+.privi-img02 div{height: 100%;min-height: 380px;position: relative;background: #f5f5f5; margin: 5px 0 0}
+.privi-img02 div img{width:100%;position: absolute;top:50%;left:50%;-ms-transform:translate(-50%,-50%);-webkit-transform :translate(-50%,-50%);transform :translate(-50%,-50%);}
+
+.privi-sub02:first-of-type .more-box{max-width: 640px}
+
+.animate.privi-img02{width: 49%;margin:10px 0 0;}
+.animate.privi-img02:first-of-type{margin:10px 2% 0 0;}
+.animate.privi-img02:first-of-type div{width: 49%;display: inline-block; vertical-align: top; background: #fff}
+
+.sofmap.privi-img02 img{max-width: 240px}
+
+@media screen and (max-width:640px){
+	.privi-sub02{width:100%; margin: 0 0 30px;}
+	.animate.privi-img02{width: 100%;}
+	.privi-img02 div{min-height: inherit}
+	.privi-img02 div img{position: static;top:inherit;left:inherit;ms-transform:none;-webkit-transform :none;transform:none;}
+	.privi-sub02:first-of-type .more-box{max-width:320px}
 }
 
 /*---------------------------
@@ -102,3 +141,13 @@ special-top
 }
 
 
+/*---------------------------
+Twitterヘッダー+アイコン
+---------------------------*/
+.tw-item-box{font-size: 0; line-height: 0; max-width:768px; margin: 0 auto 30px }
+.tw-icn a{ width: 49%; margin: 0.5%; display: inline-block; vertical-align: top}
+.tw-head a{width: 100%;display:block; margin:10px 0 5px}
+
+@media screen and (max-width:480px){
+	.tw-icn a{ width:100%; margin:10px 0 5px}
+}

@@ -23,9 +23,9 @@ h1,h2,h3{box-sizing: border-box;transform: rotate(.03deg);-webkit-transform: rot
 .bg-change02{background:url(../img/page_bg_pnk.png) top center repeat;}
 .bg-change03{background:url(../img/page_bg_yel.png) top center repeat;}
 
-.t-center{text-align: center}
-.t-left{text-align: left}
-.t-right{text-align: right}
+.t-center{text-align: center!important}
+.t-left{text-align: left!important}
+.t-right{text-align: right!important}
 
 .red{color:#ed1e78}
 .grn{color:#29a563}
@@ -36,7 +36,7 @@ h1,h2,h3{box-sizing: border-box;transform: rotate(.03deg);-webkit-transform: rot
 .bold{font-weight: bold;}
 .big{font-size: 150%; font-weight: bold;}
 .big02{font-size: 120%; font-weight: bold;}
-.mini{font-size: 80%;}
+.mini{font-size: 80%; font-weight:normal!important;}
 .font01{font-family: 'M PLUS 1p', sans-serif;}
 .font02{font-family:'Candal', sans-serif;}
 
@@ -69,7 +69,7 @@ h1,h2,h3{box-sizing: border-box;transform: rotate(.03deg);-webkit-transform: rot
 @media screen and (max-width: 640px){
 	.br640{display:block}
 	.br640n{display: none}
-	.t-center{text-align: left}
+	.t-center{text-align: left!important}
 }
 
 @media screen and (max-width: 480px){
@@ -79,6 +79,7 @@ h1,h2,h3{box-sizing: border-box;transform: rotate(.03deg);-webkit-transform: rot
 	.br480{display:block}
 	.big{font-size: 130%;}
 	.big02{font-size: 110%;}
+	.bn480{display: none;}
 }
 
 @media screen and (max-width: 320px){
@@ -388,6 +389,20 @@ banner
 	.b-img{width: 100%; display: block;margin:5px 0;}
 }
 
+/*---------------------------
+動画埋め込み
+---------------------------*/
+.movie{font-size:0; line-height:0; text-align: center;background: #f5f5f5;}
+.m-box{width:70%;display:inline-block; padding:5px;box-sizing: border-box;}
+.m-img{position: relative;width: 100%;padding: 58% 0 0 0;}
+.m-img iframe{position: absolute;top: 0;left: 0;width: 100%; height: 100%;}
+
+@media screen and (max-width:640px){
+	.m-box{ width:100%;}
+}
+
+
+
 
 /*---------------------------
 News
@@ -409,13 +424,16 @@ News
 .news-list li:last-of-type{border-bottom:none}
 .news-list time{font-weight: bold;font-size: 1.6rem;position: relative;display: block;color:#ff7bac}
 .news-list time:before{content: "★";color:#ff7bac;}
-.news-list p{padding:2px 5px 0;font-size: 1.4rem; line-height:1.6rem;margin: 0 0 6px;}
+.news-list a,.news-list p{font-size: 1.4rem; line-height:1.6rem;}
+.news-list p{padding:2px 5px 0;margin: 0 0 6px;}
 .news-list p:last-of-type{margin: 0}
 time.new{padding:0 5px; color:#2fcc50;font-size: 1.8rem;}
 time.new:after{content: "NEW"; background:#2fcc50;color:#fff;padding:0 5px; margin: 0 0 0 5px;border-radius: 3px; font-size: 1.2rem; position: relative;top:-3px;}
 
-.news-list a:hover{text-decoration: underline}
-.news-list a:active{text-decoration: underline}
+.news-list a{color:#39a7f2;text-decoration: underline}
+.news-list a:visited{color:#39a7f2;text-decoration: underline}
+.news-list a:hover{color:#ed1e78;}
+.news-list a:active{color:#ed1e78;}
 
 .news-more{position: relative;top:5px;font-size: 1.2rem}
 .news-more:before{position: absolute;top: 0;bottom: 0;left: -15px;margin: auto;width: 8px;height: 8px;border-top: 2px solid #1cc9a6;border-right: 2px solid #1cc9a6;-webkit-transform: rotate(45deg);transform: rotate(45deg);content: "";}
@@ -462,6 +480,10 @@ span.cont-btn:hover{border:1px solid #e0e0e0;}
 
 .c-new{width:40px; height:25px; position:absolute;top:-2px;right:5px;background:#ed1e78; text-align:center;z-index:10;padding:5px 0 0!important;font-weight:600;font-size: 1.2rem;}
 .c-new:before{content:"";border:20px solid #ed1e78;border-bottom:10px solid transparent;position:absolute;top:0;left:0;width:0;height:45px;z-index:-1}
+
+.t-end a{ position: relative; background:#000;width: 100%; height: 100%}
+.t-end a img{opacity:0.5;filter:alpha(opacity=50);-ms-filter:"alpha(opacity=50)";}
+.t-end a:before{content: "このイベントは\A終了しました"; position: absolute;top:50%;left:50%;-ms-transform:translate(-50%,-50%);-webkit-transform :translate(-50%,-50%);transform :translate(-50%,-50%);color:#fff; z-index: 1;width: 100%; max-width: 120px; text-align: center;white-space: pre;}
 
 
 @media screen and (max-width: 768px){
