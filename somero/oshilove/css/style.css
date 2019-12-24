@@ -444,7 +444,7 @@ time.new:after{content: "NEW"; background:#2fcc50;color:#fff;padding:0 5px; marg
 }
 
 @media screen and (max-width: 640px){
-	.news-list{height:auto;}/*--320--*/
+	.news-list{height:320px;}
 	.news-box{width:100%; float: none;padding:0; margin: 0 auto}
 	.tw-box{width:100%; float: none; margin: 0 auto}
 	.tw-box{max-width: inherit; margin: 30px auto 0; background: #f5f5f5; text-align: center}
