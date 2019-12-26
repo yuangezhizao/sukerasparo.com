@@ -35,9 +35,9 @@ ga('send', 'pageview');
 <style>
 	#mv-contents{height:100%;position: relative;min-height: 768px;}
 	#mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
-	.mv-bg{width:100%;height:100%;top:0;background:url(img/mv-img.jpg) top/cover no-repeat;position: fixed;}
+	.mv-bg{width:100%;height:100%;top:0;background:url(img/mv-img.jpg) top/cover no-repeat;position: fixed;z-index:-1}
 
-	.mv-logo{width:100%;height:100%;position:absolute;z-index:5;right:5%;bottom:6%;max-width:520px;max-height: 440px;}
+	.mv-logo{width:100%;height:100%;position:absolute;z-index:5;right:5%;bottom:230px;max-width:420px;max-height:358px;}
 	.mv-logo-img01,
 	.mv-logo-img02,
 	.mv-logo-img03{width:100%;height:100%;position:absolute;-webkit-transform: translatez(0);-webkit-transform: translate3d(0,0,0);}
@@ -52,21 +52,32 @@ ga('send', 'pageview');
 
 	.load-none{opacity:0;}
 	.load-block{opacity:1;}
+	
+	#mv-demo{bottom:30px;right:5%; position: absolute;max-width:420px;width:100%; z-index:10}
+	.demo{position: relative;width: 100%;padding:56% 0 0 0;max-width:480px;margin:0 auto;box-shadow: 0px 0px 10px 2px rgba(238,80,162,.25);border: 3px solid #fff;background: #fff;}
+	.demo	iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
 
 	@media screen and (max-width:1680px){
-		.mv-logo{right:2%;}
+		.mv-logo{max-width:370px;max-height:304px;right:2%;bottom: 210px;}
+		#mv-demo{max-width:370px;right:2%;}
 		.mv-catch{top:8%;left:2%;}
 	}
 	@media screen and (max-width:1366px){
-		.mv-logo{max-width:420px;max-height:358px; bottom:5%;}
+		.mv-logo{max-width:320px;max-height:270px;right:1%;bottom: 184px;}
+		#mv-demo{max-width:320px;right:1%;}
+
 		.mv-catch{max-width: 120px;}
 		.mas-up{max-width: 240px; border-radius: 120px;}
 		.mas-up02{top:360px;}
 	}
 	@media screen and (max-width:1024px){
-		.mv-logo{max-width:370px;max-height:304px; bottom:14%;}
+		.mv-logo{max-width:370px;max-height:304px; bottom:4%;}
 		.mas-up{top:8%;max-width: 180px;}
 		.mas-up02{top:306px;}
+		
+		#mv-demo{bottom:auto;left:auto; position:static; width: 100%; max-width: inherit;background:rgba(63,169,245,.9);padding:20px}		
+		.demo{padding:53% 0 0 0;margin: 0 auto;box-shadow:none; width:100%; max-width:inherit;}
+
 	}
 	@media screen and (max-width: 768px){
 		.mv-bg{background:url(img/mv-img.jpg) 26%/cover no-repeat!important;}
@@ -87,11 +98,10 @@ ga('send', 'pageview');
 	@media screen and (max-width: 480px){
 		.mv-bg{background:url(img/mv-img.jpg) 47%/cover no-repeat!important;top:64px;}
 		.mv-logo{bottom:2%;max-width: 300px; max-height:255px;}
+		#mv-demo{padding:10px}
 		.mv-catch{display: none!important}
 		.mas-up{max-width: 100px;}
-	}
-	@media screen and (max-width: 400px){
-
+		
 	}
 	@media screen and (max-width: 320px){
 		.mv-logo{height: 200px;}
@@ -100,10 +110,15 @@ ga('send', 'pageview');
 	@media screen and (max-height: 479px){
 		.mv-bg{background:url(img/mv-img.jpg) top/cover no-repeat!important;}
 		#mv-contents{min-height:400px!important}
-		.mv-logo{left:initial!important;max-width: 195px!important;
-			max-height:162px!important;transform: translate(0,0)!important;-webkit-transform :translate(0,0)!important;transform :translate(0,0)!important;right:1%;bottom:15%;}
+		.mv-logo{left:initial!important;max-width: 220px!important;
+			max-height:186px!important;transform: translate(0,0)!important;-webkit-transform :translate(0,0)!important;transform :translate(0,0)!important;right:1%;bottom:1%;}
 		.mas-up{max-width: 100px!important;top:15%;right:2%;}
 		.mas-up02{top:auto!important; bottom:0}
+		
+		.mv-catch{position: absolute; right:auto;top:0;left:5%; max-width: 88px;}
+		
+		#mv-demo{bottom:auto;right:auto; position:relative; width: 100%; max-width: inherit;background:rgba(63,169,245,.9);padding:10px}
+		.demo{padding:55% 0 0!important;margin: 0 auto;box-shadow:none; width:100%;}
 	}
 </style>
 	
@@ -128,11 +143,16 @@ ga('send', 'pageview');
 			<div class="mv-logo">
 				<div class="mv-logo-img01"></div>
 				<div class="mv-logo-img02"></div>
-				<div class="mv-logo-img03"></div>
+				<!--<div class="mv-logo-img03"></div>-->
 			</div>
 		</section>
 	</article>
 </main>
+
+	<!--mv-demo-->
+	<section id="mv-demo">
+		<div class="demo"><iframe width="100%" src="https://www.youtube.com/embed/iHezuj7isyQ?rel=0" frameborder="0" allowfullscreen></iframe></div>
+	</section>
 
 
 <!--NEWS-->
@@ -155,20 +175,18 @@ ga('send', 'pageview');
 				<div class="topics-box">
 					<p class="privilege">特典情報</p>
 					<p class="c-new">NEW</p>
-					<a class="topics-btn" href="sp/privilege.html">
-						<img src="img/topic01.jpg" width="100%" alt="限定版同梱特典情報">
-					</a>
-				</div>
-				<div class="topics-box">
-					<p class="privilege">特典情報</p>
-					<p class="c-new">NEW</p>
 					<a class="topics-btn" href="sp/privilege02.html">
 						<img src="img/topic03.jpg" width="100%" alt="店舗特典">
 					</a>
 				</div>
 				<div class="topics-box">
+					<p class="privilege">特典情報</p>
+					<a class="topics-btn" href="sp/privilege.html">
+						<img src="img/topic01.jpg" width="100%" alt="限定版同梱特典情報">
+					</a>
+				</div>
+				<div class="topics-box">
 					<p class="content">コンテンツ情報</p>
-					<p class="c-new">NEW</p>
 					<a class="topics-btn" href="sp/tw.html">
 						<img src="img/topic04.jpg" width="100%" alt="TW画像">
 					</a>
