@@ -342,7 +342,7 @@ bottom:20px
 .sp-previous-arrow:before {
 content:' ' !important;
 display: block;
-background: url(../img/arrow-prev.png) no-repeat left top;
+background: url(http://sukerasparo.com/folklore/img/arrow-prev.png) no-repeat left top;
 text-indent: -9999px;
 width: 40px;
 height: 100px;
@@ -350,7 +350,7 @@ height: 100px;
 .sp-next-arrow:before {
 content:' ' !important;
 display: block;
-background: url(../img/arrow-next.png) no-repeat left top;
+background: url(http://sukerasparo.com/folklore/img/arrow-next.png) no-repeat left top;
 text-indent: -9999px;
 width: 40px;
 height: 100px;

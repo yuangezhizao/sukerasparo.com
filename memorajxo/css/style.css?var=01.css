@@ -16,7 +16,7 @@ ul{list-style:none;}
 h1,h2,h3{font-family:'Playfair Display','Sawarabi Mincho','Times New Roman', '游明朝', 'YuMincho', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'メイリオ', 'Meiryo', 'serif';position:relative;}
 h1.subtit,h2.subtit{font-size:3.2rem;text-align:center;letter-spacing:5px;margin:0 0 40px;}
 h1.subtit:before,h2.subtit:before{position:absolute;font-size:1.4rem;letter-spacing:5px;text-align:center; bottom:-20px;left:0;right:0; margin:auto}
-h1.subtit:after,h2.subtit:after{content:''; position:absolute;background:url(../image/sub-tit-bg.png) top center no-repeat;width:100%;height:100%;min-height:60px;left:50%;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);}
+h1.subtit:after,h2.subtit:after{content:''; position:absolute;background:url(http://sukerasparo.com/memorajxo/image/sub-tit-bg.png) top center no-repeat;width:100%;height:100%;min-height:60px;left:50%;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);}
 
 h3.subtit{font-size:2.4rem;line-height:2.4rem; text-align:left;letter-spacing:3px;margin:0 0 10px;padding:0 10px}
 h3.subtit:before{position:absolute;font-size:1.4rem;letter-spacing:1px;bottom:0;right:10px;}
@@ -63,14 +63,14 @@ header{position:fixed;z-index:998;width:100%;min-width:1024px;box-sizing:border-
 .menu .new{height:16px; position:absolute; width:100%;font-size:1.3rem;line-height:1.5rem; background:#ff90b5; color:#fff;bottom:-18px;left:0;right:0;margin:auto; padding:1px 0; border-radius:10px;}
 .b01,.b02,.b03,.b04,.b05,.b06,.b07,.b08{height:35px;display:block;text-indent:-9999px;}
 .b01:hover,.b02:hover,.b03:hover,.b04:hover,.b05:hover,.b06:hover,.b07:hover,.b08:hover{background-position:0 -35px; animation:menu-btn 0.3s;}
-.b01{background:url(../image/menu-news.png) no-repeat; width:83px;}
-.b02{background:url(../image/menu-story.png) no-repeat; width:74px;}
-.b03{background:url(../image/menu-chara.png) no-repeat; width:87px;}
-.b04{background:url(../image/menu-gallery.png) no-repeat; width:79px;}
-.b05{background:url(../image/menu-sp.png) no-repeat; width:83px;}
-.b06{background:url(../image/menu-spec.png) no-repeat; width:83px;}
-.b07{background:url(../image/menu-shop.png) no-repeat; width:65px;}
-.b08{background:url(../image/menu-sup.png) no-repeat; width:62px;}
+.b01{background:url(http://sukerasparo.com/memorajxo/image/menu-news.png) no-repeat; width:83px;}
+.b02{background:url(http://sukerasparo.com/memorajxo/image/menu-story.png) no-repeat; width:74px;}
+.b03{background:url(http://sukerasparo.com/memorajxo/image/menu-chara.png) no-repeat; width:87px;}
+.b04{background:url(http://sukerasparo.com/memorajxo/image/menu-gallery.png) no-repeat; width:79px;}
+.b05{background:url(http://sukerasparo.com/memorajxo/image/menu-sp.png) no-repeat; width:83px;}
+.b06{background:url(http://sukerasparo.com/memorajxo/image/menu-spec.png) no-repeat; width:83px;}
+.b07{background:url(http://sukerasparo.com/memorajxo/image/menu-shop.png) no-repeat; width:65px;}
+.b08{background:url(http://sukerasparo.com/memorajxo/image/menu-sup.png) no-repeat; width:62px;}
 @keyframes menu-btn {
 0% {opacity:.3;}
 100% {opacity:1;}
@@ -85,7 +85,7 @@ header{position:fixed;z-index:998;width:100%;min-width:1024px;box-sizing:border-
 @-webkit-keyframes load {0% {opacity:0}100% {opacity:1}}
 
 /*-MV-anime--*/
-#perticle_1{background-image:url(../image/bg_perticle_01.png), url(../image/bg_perticle_02.png), url(../image/bg_perticle_03.png);position:fixed;left:0;top:0;width:100%;height:100%;background-blend-mode:screen;-webkit-animation:snow 30s ease-in-out infinite;-moz-animation:snow 30s ease-in-out infinite;-ms-animation:snow 30s ease-in-out infinite;animation:snow 30s ease-in-out infinite;z-index:0;background-repeat:repeat}
+#perticle_1{background-image:url(http://sukerasparo.com/memorajxo/image/bg_perticle_01.png), url(http://sukerasparo.com/memorajxo/image/bg_perticle_02.png), url(http://sukerasparo.com/memorajxo/image/bg_perticle_03.png);position:fixed;left:0;top:0;width:100%;height:100%;background-blend-mode:screen;-webkit-animation:snow 30s ease-in-out infinite;-moz-animation:snow 30s ease-in-out infinite;-ms-animation:snow 30s ease-in-out infinite;animation:snow 30s ease-in-out infinite;z-index:0;background-repeat:repeat}
 
 @keyframes snow{
 	0%{opacity:0.1;transform:scale(0.5);background-position:0px 0px, 0px 0px, 0px 0px;transform:rotate(0deg)}
@@ -191,7 +191,7 @@ background:linear-gradient(90deg,rgba(167,177,230,.9)0,rgba(186,186,230,.9)5.98%
 /*--キャラクター--*/
 #chara{position:relative;z-index:10; background:#fff;}
 
-#chara h2.subtit:after{background:url(../image/sub-tit-bg-cha.png) top center no-repeat!important}
+#chara h2.subtit:after{background:url(http://sukerasparo.com/memorajxo/image/sub-tit-bg-cha.png) top center no-repeat!important}
 #chara h2.subtit:before{content:'-キャラクター-';}
 #chara .floor{width:100%;max-width:inherit}
 
@@ -214,27 +214,27 @@ background:linear-gradient(90deg,rgba(167,177,230,.9)0,rgba(186,186,230,.9)5.98%
 #chara02 .voice,#chara04 .voice{left:60px;right:auto;bottom:124px;}
 
 .posi-abso{position:absolute;}
-#chara01{background:url(../image/chara1-bg.png) center center no-repeat;}
+#chara01{background:url(http://sukerasparo.com/memorajxo/image/chara1-bg.png) center center no-repeat;}
 .chara-img01{left:10%;height:800px;z-index:10;}
 .chara-icn01{max-width:128px;left:25%;bottom:9%;z-index:9;}
 .chara-bg01{left:5%;bottom:5%;z-index:0;}
 .chara-text01{right:0;top:80px;}
 #chara01b{display:none}
 
-#chara02{background:url(../image/chara2-bg.png) center center no-repeat;}
+#chara02{background:url(http://sukerasparo.com/memorajxo/image/chara2-bg.png) center center no-repeat;}
 .chara-img02{right:10%;height:800px;z-index:10;}
 .chara-icn02{max-width:107px;right:30%;bottom:7%;z-index:9;}
 .chara-bg02{right:5%;bottom:5%;z-index:0;}
 .chara-text02{right:auto;left:0;}
 #chara02b{display:none}
 
-#chara03{background:url(../image/chara3-bg.png) center center no-repeat;}
+#chara03{background:url(http://sukerasparo.com/memorajxo/image/chara3-bg.png) center center no-repeat;}
 #chara03b{display:none}
 
-#chara04{background:url(../image/chara4-bg.png) center center no-repeat;}
+#chara04{background:url(http://sukerasparo.com/memorajxo/image/chara4-bg.png) center center no-repeat;}
 #chara04b{display:none}
 
-#chara05{background:url(../image/chara5-bg.png) center center no-repeat;}
+#chara05{background:url(http://sukerasparo.com/memorajxo/image/chara5-bg.png) center center no-repeat;}
 #chara05b{display:none}
 
 .sp-thumbnail img{cursor:pointer;cursor:hand;}
@@ -242,9 +242,9 @@ background:linear-gradient(90deg,rgba(167,177,230,.9)0,rgba(186,186,230,.9)5.98%
 
 
 /*--ギャラリー--*/
-#gallery{position:relative;z-index:10;background:url(../image/gallery-bg.jpg) center top no-repeat; background-size:cover;}
+#gallery{position:relative;z-index:10;background:url(http://sukerasparo.com/memorajxo/image/gallery-bg.jpg) center top no-repeat; background-size:cover;}
 #gallery:before{content:''; background:rgba(172,237,219,0.5);width:100%;height:100%;position:absolute; top:0;left:0;z-index:-1 }
-#gallery:after{content:''; background:url(../image/bg01.png) center top repeat; width:100%;height:100%;position:absolute; top:0;left:0;z-index:-1}
+#gallery:after{content:''; background:url(http://sukerasparo.com/memorajxo/image/bg01.png) center top repeat; width:100%;height:100%;position:absolute; top:0;left:0;z-index:-1}
 #gallery h2.subtit:before{content:'-ギャラリー-';}
 
 .gallery-box{line-height:0; font-size:0;}
@@ -256,8 +256,8 @@ background:linear-gradient(90deg,rgba(167,177,230,.9)0,rgba(186,186,230,.9)5.98%
 
 .cg-on{width: 100%; max-width: 800px;}
 .cg-on img:hover{transition:0.3s; opacity: 0;}
-.cg002h{background: url(../image/gallery02-on.jpg); background-size: cover}
-.cg008h{background: url(../image/gallery08-on.jpg); background-size: cover}
+.cg002h{background: url(http://sukerasparo.com/memorajxo/image/gallery02-on.jpg); background-size: cover}
+.cg008h{background: url(http://sukerasparo.com/memorajxo/image/gallery08-on.jpg); background-size: cover}
 
 .g-text{text-align: right; padding: 10px 0 0}
 
@@ -294,7 +294,7 @@ background:linear-gradient(90deg,rgba(167,177,230,.9)0,rgba(186,186,230,.9)5.98%
 /*--footer--*/
 footer{position:relative;min-width:1024px;}
 #footer{position:relative;background:#9c3351;padding:20px 0 10px;z-index:10;}
-#footer:after{content:''; background:url(../image/foot-bg.png) bottom center no-repeat;width:900px; height:73px; bottom:0; position:absolute;left:50%;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);z-index:-1;}
+#footer:after{content:''; background:url(http://sukerasparo.com/memorajxo/image/foot-bg.png) bottom center no-repeat;width:900px; height:73px; bottom:0; position:absolute;left:50%;-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);z-index:-1;}
 .copy{color:#fff;font-size:1.2rem; text-align:center}
 .footimg{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
 .footimg div{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;padding:5px 15px;}
@@ -309,12 +309,12 @@ footer{position:relative;min-width:1024px;}
 
 /*--support--*/
 #support{position:relative;background:rgba(255,255,255,.85);}
-#support:after{content:''; background:url(../image/mv-bg-sp.jpg) center center no-repeat;background-size:cover;position:fixed;z-index:-3;width:100%; height:100%;top:0;}
+#support:after{content:''; background:url(http://sukerasparo.com/memorajxo/image/mv-bg-sp.jpg) center center no-repeat;background-size:cover;position:fixed;z-index:-3;width:100%; height:100%;top:0;}
 #support .floor{padding:40px 0;}
 
 #support h1.subtit{padding:120px 0 0 }
 #support h1.subtit:before{content:'-サポート-';}
-#support h1.subtit:after{background:url(../image/sub-tit-bg-cha.png) top center no-repeat!important}
+#support h1.subtit:after{background:url(http://sukerasparo.com/memorajxo/image/sub-tit-bg-cha.png) top center no-repeat!important}
 #support p{padding:0 20px; box-sizing:border-box; line-height:2.8rem; text-align:center}
 
 .sup-tit{margin:0 0 20px;color:#ff8397;border-bottom:1px solid #ff8397; font-size:2.40rem;line-height:3.4rem; text-align:center; letter-spacing:2px;}

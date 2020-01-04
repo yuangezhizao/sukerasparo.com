@@ -21,13 +21,13 @@ div{ box-sizing: border-box}
 @font-face {
 	font-family:'Noto Serif JP';
 	font-style: normal;
-	src: url('/folklore/css/NotoSerifCJKjp-Regular.woff') format('woff');
+	src: url('http://sukerasparo.com/folklore/css/NotoSerifCJKjp-Regular.woff') format('woff');
 		font-weight: 400;
 }
 @font-face {
 	font-family: 'Noto Serif JP';
 	font-style: normal;
-	src: url('/folklore/css/NotoSerifCJKjp-Regular.woff') format('woff');
+	src: url('http://sukerasparo.com/folklore/css/NotoSerifCJKjp-Regular.woff') format('woff');
 	font-weight: 700;
 }
 
@@ -309,7 +309,7 @@ article{z-index: 10; position: relative;box-sizing: border-box}
 .hover-text{ text-align: center; font-size: 1.0rem; color:#fff}
 .cg-on{width: 100%; max-width: 800px;}
 .cg-on img:hover{transition:0.3s; opacity: 0;}
-.cg02h{background: url(../img/cg02-on.jpg); background-size: cover}
+.cg02h{background: url(http://sukerasparo.com/folklore/img/cg02-on.jpg); background-size: cover}
 
 /*--spec--*/
 #spec{padding:50px 0}
