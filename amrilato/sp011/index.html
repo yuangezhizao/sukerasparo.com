@@ -222,44 +222,4 @@ ga('create', 'UA-100381791-1', 'auto');
       <iframe src="http://sukerasparo.com/amrilato/footer.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
     </div><!--//footer-->
   
-    <div class="copyright"><span>Copyright © sukerasparo All Rights Reserved.</span></div>
-    <div class="hob"><a href="http://hublots.net/" target="_blank"><img src="http://sukerasparo.com/amrilato/image/alogo.png" width="100%"></a></div>
-  </footer><!--//footer-->
-
-  
-</article>
-
-<script>
-$(function(){
-	var tgElm = $('div.freeview'), //対象となる要素をここで指定
-		tagType = "span"; //括弧を囲うタグ名をここで指定
-	tgElm.each(function(){
-		var tgText = $(this).html();
-		tgText = tgText.replace(/[「『（【｛［〔〈《]/g, '<' + tagType + ' style="display: inline-block; margin-left: -0.4em;">$&</' + tagType + '>');
-		tgText = tgText.replace(/[」』）】｝］〕〉》]/g, '<' + tagType + ' style="display: inline-block; margin-right: -0.4em;">$&</' + tagType + '>');
-		tgText = tgText.replace(/・/g, '<' + tagType + ' style="margin-left: -0.1em; margin-right: -0.1em;">$&</' + tagType + '>');
-		$(this).html(tgText);
-	});
-});
-
-new WOW().init();
-$(function(){
-    echo.init({
-	offset: 50 ,	// オフセット値
-	throttle: 0 ,	// 処理の間隔
-});
-});
-$(function(){
-	$('.jslink').click(function(){
-		var speed = 800;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
-		$("html, body").animate({scrollTop:position}, speed, "swing");
-		return false;
-	});
-});
-
-</script>
-</body>
-</html>
+    <div class="copyright"><span>C
