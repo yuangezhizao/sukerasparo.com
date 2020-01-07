@@ -19,9 +19,9 @@ h1,h2,h3{box-sizing: border-box;transform: rotate(.03deg);-webkit-transform: rot
 
 .floor{width: 100%; max-width: 1024px; padding:80px 10px; margin: 0 auto;position:relative;z-index:1;overflow: hidden;scroll-behavior: smooth;}
 
-.bg-change01{background:url(http://sukerasparo.com/somero/oshilove/img/page_bg_wht.png) top center repeat;}
-.bg-change02{background:url(http://sukerasparo.com/somero/oshilove/img/page_bg_pnk.png) top center repeat;}
-.bg-change03{background:url(http://sukerasparo.com/somero/oshilove/img/page_bg_yel.png) top center repeat;}
+.bg-change01{background:url(../img/page_bg_wht.png) top center repeat;}
+.bg-change02{background:url(../img/page_bg_pnk.png) top center repeat;}
+.bg-change03{background:url(../img/page_bg_yel.png) top center repeat;}
 
 .t-center{text-align: center!important}
 .t-left{text-align: left!important}
@@ -624,7 +624,7 @@ chara
 .chara-name{position: relative;height: 80px;letter-spacing:2px;}
 .chara-name:after{content:"";position: absolute; height: 1px; width: 100%;bottom:5px}
 .c-name{padding:0 0 0 5px;position: absolute;bottom:10px}
-.c-name:after{content:url(http://sukerasparo.com/somero/oshilove/img/chara_sei_icn.png);display: inline-block;max-width: 36px;max-height:36px;width: 100%; height: 100%;position: relative; bottom:-5px;margin-left: 5px;}
+.c-name:after{content:url(../img/chara_sei_icn.png);display: inline-block;max-width: 36px;max-height:36px;width: 100%; height: 100%;position: relative; bottom:-5px;margin-left: 5px;}
 
 .c-name:first-letter{font-size:150%;}
 .c-name span{font-size:4.0rem;line-height: 4.0rem; position: relative}
@@ -882,8 +882,8 @@ gallery
 .hover-text{ text-align: center; font-size: 1.0rem; color:#fff}
 .cg-on{width: 100%; max-width: 800px;z-index:0;position: relative;}
 .cg-on img:hover{transition:0.3s; opacity: 0;}
-.cg001h{background: url(http://sukerasparo.com/somero/oshilove/img/cg01b.jpg); background-size: cover;}
-.cg002h{background: url(http://sukerasparo.com/somero/oshilove/img/cg02b.jpg); background-size: cover;}
+.cg001h{background: url(../img/cg01b.jpg); background-size: cover;}
+.cg002h{background: url(../img/cg02b.jpg); background-size: cover;}
 
 
 @media screen and (max-width: 480px){
