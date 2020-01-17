@@ -257,11 +257,11 @@ info
 .info .rireki dt{float:left;width:16%;font-size:1.8rem;font-weight:bold;margin:0px;padding:0px;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);color:#ff90b5}
 .info .rireki dd{width:84%;margin:0 0 0 16%;font-size:1.4rem;line-height:1.5}
 .info .rireki dd p{margin:0px;padding:0px;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
-.info .rireki dd .new{background:#ff90b5;border-radius:25px;padding:0 10px 0;box-sizing:border-box;color:#fff;font-size:1.2rem;}
+.info .rireki dd .new{background:#ff90b5;border-radius:25px;padding:0 10px 0;box-sizing:border-box;color:#fff;font-size:1.2rem;display: inline-block;margin-left: 10px;}
 .info .rireki dl:last-child{border-bottom:none}
 .info .rireki dl:last-child dt{display:none}
 .info .rireki dl:last-child dd{width:100%;margin:0 0 0 0;text-align:left}
-.info .rireki dl:last-child p{width:100%;text-align:right}
+/*--.info .rireki dl:last-child p{width:100%;text-align:right}--*/
 .info .pnk{font-size:110%;color:#ff90b5}
 .info .bold{font-size:110%;font-weight:bold}
 .info .mini{font-size:90%;}

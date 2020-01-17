@@ -4,7 +4,7 @@
 共通
 ---------------------------*/
 html{font-size:62.5%;height:100%;box-sizing:border-box;scroll-behavior:smooth;} *, *:before, *:after{box-sizing:inherit;}
-body{width:100%;min-width:1024px; height:100%;min-height: 768px; font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Geneva, Verdana, sans-serif;display:block;margin:0;padding:0;font-size:10px;font-size:1.0rem;-webkit-text-size-adjust:100%;color:#000;position: relative;line-height: 1;}
+body{width:100%;min-width:1024px; height:100%;min-height: 768px; font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Geneva, Verdana, sans-serif;display:block;margin:0;padding:0;font-size:10px;font-size:1.0rem;-webkit-text-size-adjust:100%;color:#000;position: relative;line-height: 1;word-wrap: break-word;overflow-wrap: break-word;}
 
 img{margin:0;padding:0;vertical-align:middle;-webkit-backface-visibility: hidden;}
 a{color:#ed1e78;outline:none;text-decoration: none;}
@@ -491,7 +491,7 @@ span.cont-btn:hover{border:1px solid #e0e0e0;}
 
 .topics-box p{ font-size: 1.4rem;}
 	
-.c-new{width:20px;-webkit-writing-mode: vertical-rl;-ms-writing-mode: tb-rl;writing-mode: vertical-rl; font-size: 1.2rem!important; right:4px}
+.c-new{width:20px;height: 42px; -webkit-writing-mode: vertical-rl;-ms-writing-mode: tb-rl;writing-mode: vertical-rl; font-size: 1.2rem!important; right:4px; text-align: left}
 .c-new:before{border:10px solid #ed1e78;border-bottom: 5px solid transparent;height: 48px}
 }
 

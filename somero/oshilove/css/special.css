@@ -15,7 +15,6 @@ special-top
 #sp-floor .c-new{width: 36px;right:inherit;left:5px;padding: 3px 0 0!important;}
 #sp-floor .c-new:before{height: 32px;border: 18px solid #ed1e78;border-bottom: 8px solid transparent;}
 
-
 .cont-tit{width: 100%; margin: 0 auto 10px; padding:10px 10px 5px; font-size: 2.0rem;color:#fff; letter-spacing:1px }
 
 @media screen and (max-width: 768px){
@@ -28,6 +27,7 @@ special-top
 	#special .bg-change02 .head-tit01:before{border-bottom: 48px solid #ff7bac}
 	#special .bg-change02 .head-tit01:after{border-top: 48px solid #ff7bac}
 }
+
 
 /*---------------------------
 見出し
@@ -46,6 +46,25 @@ special-top
 	#special .head-tit01 .sp-tit span{padding: 5px 0;}
 }
 
+/*---------------------------
+メイン画像
+---------------------------*/
+#sp-floor .main-img{max-width: 768px;margin: 0 auto 10px}
+
+/*---------------------------
+テーブルリスト
+---------------------------*/
+.table-list{ width: 100%;margin: 0 auto 10px;border-spacing: 2px;border-collapse: separate;padding:10px}
+.table-list td{ padding: 10px;}
+.table-list tr td:nth-of-type(2n+1){width: 10%; background: #ff7bac; color: #fff; text-align: center}
+.table-list tr td:nth-of-type(2n){width: 40%;text-align: left;    background: rgba(255,222,236,.25);}
+
+.table-list .tyui td{background: #fff!important; text-align: left!important; color:#000!important}
+
+@media screen and (max-width: 480px){
+	.table-list td{ width: 100%!important;display: block; padding: 5px;}
+	.table-list tr td:nth-of-type(2n){margin: 0 0 5px}
+}
 
 
 /*---------------------------
@@ -66,9 +85,7 @@ special-top
 .privi-img{margin:5px auto;max-width: 480px;}
 .privi-text p{text-align:left; font-size: 1.4rem; line-height: 2rem;}
 
-
 .privi-move .privi-sub{width: 99%;}
-{background: rgba(255,222,236,.65);}
 
 
 @media screen and (max-width: 768px){
@@ -140,7 +157,6 @@ special-top
 	.append-mv{margin: 0 0 -20%}
 }
 
-
 /*---------------------------
 Twitterヘッダー+アイコン
 ---------------------------*/
@@ -151,3 +167,40 @@ Twitterヘッダー+アイコン
 @media screen and (max-width:480px){
 	.tw-icn a{ width:100%; margin:10px 0 5px}
 }
+
+/*---------------------------
+店舗一覧情報
+---------------------------*/
+.shop-list{display: table;width: 100%;margin: 0 auto 20px;}
+.shop-region,
+.shop-name{display: table-cell;}
+.shop-region{width: 20%; background:#ff7bac;color:#fff;padding:10px;text-align: center;letter-spacing: 5px}
+.shop-name{width: 80%; font-size: 0;}
+.shop-name li{display: inline-block; width: 48%; margin: 0 1%;padding:10px;height: 50px; vertical-align: middle;position: relative;border-bottom: 1px solid #ffcde0}
+.shop-name li p,
+.shop-name li a{position: absolute;top:50%;-ms-transform:translate(0,-50%);-webkit-transform :translate(0,-50%);transform :translate(0,-50%);}
+
+.shop-name li a{color:#39a7f2;text-decoration: underline}
+.shop-name li a:visited{color:#39a7f2;text-decoration: underline}
+.shop-name li a:hover{color:#ed1e78;}
+.shop-name li a:active{color:#ed1e78;}
+
+@media screen and (max-width: 640px){
+	.shop-list{display: block; margin: 0 auto 40px}
+	.shop-region,.shop-name{display: block; width: 100%}
+	.shop-region{margin: 0 0 2px;padding:5px}
+	.shop-name li{width:49.5%;height:40px;}
+	.shop-name li:nth-child(2n+1){margin:0.5% 1% 0.5% 0!important}
+	.shop-name li:nth-child(2n){margin:0.5% 0!important}
+
+}
+
+@media screen and (max-width: 400px){
+	.shop-name li{width:100%;height:40px;}
+}
+
+
+
+
+
+

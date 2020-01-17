@@ -173,8 +173,21 @@ ga('send', 'pageview');
 		<div class="floor">
 			<div class="cont">
 				<div class="topics-box">
-					<p class="content">コンテンツ情報</p>
+					<p class="privilege">店舗情報</p>
 					<p class="c-new">NEW</p>
+					<a class="topics-btn" href="sp/shoplist.html">
+						<img src="img/topic06.jpg" width="100%" alt="取り扱い店舗一覧">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="privilege">店舗情報</p>
+					<p class="c-new">NEW</p>
+					<a class="topics-btn" href="sp/shoplist02.html">
+						<img src="img/topic07.jpg" width="100%" alt="小冊子配布店舗">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="content">コンテンツ情報</p>
 					<a class="topics-btn" href="../../yuri-game-love/radio/oshilove.html">
 						<img src="img/topic05.jpg" width="100%" alt="ラジオ">
 					</a>
@@ -197,8 +210,14 @@ ga('send', 'pageview');
 						<img src="img/topic04.jpg" width="100%" alt="TW画像">
 					</a>
 				</div>
-				
-				
+				<div class="topics-box">
+					<p class="no-cont">Coming Soon</p>
+					<img src="img/topic-no.gif" width="100%" alt="Coming Soon">
+				</div>
+				<div class="topics-box">
+					<p class="no-cont">Coming Soon</p>
+					<img src="img/topic-no.gif" width="100%" alt="Coming Soon">
+				</div>
 
 
 			</div>
@@ -592,10 +611,10 @@ ga('send', 'pageview');
 			$("#footer").append(data);
 		}
 	});
-	var footerhtml = '/somero/oshilove/news.html';
+	var newshtml = '/somero/oshilove/news.html';
 	$.ajax({
 		type: 'get',
-		url: footerhtml,
+		url: newshtml,
 		dataType: 'html',
 		success: function(data) {
 			$(".news-list").append(data);
