@@ -37,7 +37,7 @@ ga('send', 'pageview');
 	#mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
 	.mv-bg{width:100%;height:100%;top:0;background:url(img/mv-img.jpg) top/cover no-repeat;position: fixed;z-index:-1}
 
-	.mv-logo{width:100%;height:100%;position:absolute;z-index:5;right:5%;bottom:230px;max-width:420px;max-height:358px;}
+	.mv-logo{width:100%;height:100%;position:absolute;z-index:5;right:2%;bottom:230px;max-width:420px;max-height:358px;}
 	.mv-logo-img01,
 	.mv-logo-img02,
 	.mv-logo-img03{width:100%;height:100%;position:absolute;-webkit-transform: translatez(0);-webkit-transform: translate3d(0,0,0);}
@@ -46,14 +46,14 @@ ga('send', 'pageview');
 	.mv-logo-img03{background:url(img/logo_release02.png) no-repeat;background-size:contain;z-index:6}
 
 	.mv-catch{position: absolute; top:10%;left:5%; max-width: 170px;z-index:6}
-
-	.mas-up{position: absolute; top:10%;left:5%; max-width: 280px; border-radius: 150px; background: #fff;z-index: 10;}
-	.mas-up02{position: absolute;top:420px; left:0;z-index:10; background: #fff; border: 2px solid #fff;}
+	.mv-catch.c-sub{top:inherit;bottom:1%;left:2%;max-width: 124px;transform: rotate(-12deg);}
+	
+	.mas-up{position: absolute; top:80px;left:2%; max-width: 280px; border-radius: 150px; background: #fff;z-index: 10;transform: rotate(-32deg);}
 
 	.load-none{opacity:0;}
 	.load-block{opacity:1;}
 	
-	#mv-demo{bottom:30px;right:5%; position: absolute;max-width:420px;width:100%; z-index:10}
+	#mv-demo{bottom:30px;right:2%; position: absolute;max-width:420px;width:100%; z-index:10}
 	.demo{position: relative;width: 100%;padding:56% 0 0 0;max-width:480px;margin:0 auto;box-shadow: 0px 0px 10px 2px rgba(238,80,162,.25);border: 3px solid #fff;background: #fff;}
 	.demo	iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
 
@@ -67,13 +67,15 @@ ga('send', 'pageview');
 		#mv-demo{max-width:320px;right:1%;}
 
 		.mv-catch{max-width: 120px;}
-		.mas-up{max-width: 240px; border-radius: 120px;}
-		.mas-up02{top:360px;}
+		.mv-catch.c-sub{max-width:100px;}
+		.mas-up{max-width: 220px; border-radius: 120px;}
+	}
+	@media screen and (max-width:1280px){
+		.mas-up{top:65px}
 	}
 	@media screen and (max-width:1024px){
 		.mv-logo{max-width:370px;max-height:304px; bottom:4%;}
 		.mas-up{top:8%;max-width: 180px;}
-		.mas-up02{top:306px;}
 		
 		#mv-demo{bottom:auto;left:auto; position:static; width: 100%; max-width: inherit;background:rgba(63,169,245,.9);padding:20px}		
 		.demo{padding:53% 0 0 0;margin: 0 auto;box-shadow:none; width:100%; max-width:inherit;}
@@ -84,8 +86,8 @@ ga('send', 'pageview');
 
 		.mv-logo{-ms-transform:translate(-50%,0);-webkit-transform :translate(-50%,0);transform :translate(-50%,0);left:50%;bottom:3%;width: 80%; max-width: 480px;max-height:394px; text-align: center;}
 		.mv-catch{left:inherit; right:3%;}
-		.mas-up{ left:2%; top:8%;}
-		.mas-up02{top:280px;}
+		.mv-catch.c-sub{ right:inherit;bottom:inherit;top:10%;}
+		.mas-up{ left:inherit; top:inherit; right: 2%; bottom:30%;transform: rotate(20deg);}
 	}
 	@media screen and (max-width: 640px){
 		.mv-bg{top:65px;}		
@@ -93,29 +95,28 @@ ga('send', 'pageview');
 		.mv-logo{max-width: 350px; max-height: 298px}
 		.mv-catch{top:10%;right:2%; max-width: 100px;}
 
-		.mas-up02{top:inherit; bottom:2%;}
 	}
 	@media screen and (max-width: 480px){
 		.mv-bg{background:url(img/mv-img.jpg) 47%/cover no-repeat!important;top:64px;}
-		.mv-logo{bottom:2%;max-width: 300px; max-height:255px;}
+		.mv-logo{bottom:0;max-width: 300px; max-height:255px;}
 		#mv-demo{padding:10px}
 		.mv-catch{display: none!important}
-		.mas-up{max-width: 100px;}
+		.mas-up{max-width: 100px;bottom:230px;}
 		
 	}
 	@media screen and (max-width: 320px){
-		.mv-logo{height: 200px;}
-		.mas-up{max-width: 85px; top:11%;}
+		.mv-logo{height:190px; max-width: 230px;}
+		.mas-up{max-width: 100px;bottom:32%;}
 	}
 	@media screen and (max-height: 479px){
 		.mv-bg{background:url(img/mv-img.jpg) top/cover no-repeat!important;}
 		#mv-contents{min-height:400px!important}
 		.mv-logo{left:initial!important;max-width: 220px!important;
 			max-height:186px!important;transform: translate(0,0)!important;-webkit-transform :translate(0,0)!important;transform :translate(0,0)!important;right:1%;bottom:1%;}
-		.mas-up{max-width: 100px!important;top:15%;right:2%;}
-		.mas-up02{top:auto!important; bottom:0}
+		.mas-up{top: 75px;left: 2%;right:inherit;bottom:inherit; width: 110px;transform: rotate(-32deg)}
 		
 		.mv-catch{position: absolute; right:auto;top:0;left:5%; max-width: 88px;}
+		.mv-catch.c-sub{display:none!important}
 		
 		#mv-demo{bottom:auto;right:auto; position:relative; width: 100%; max-width: inherit;background:rgba(63,169,245,.9);padding:10px}
 		.demo{padding:55% 0 0!important;margin: 0 auto;box-shadow:none; width:100%;}
@@ -139,11 +140,16 @@ ga('send', 'pageview');
 	<article id="mv-main">
 		<section>
 			<div class="mv-bg"></div><!--.mv-anime-->
+			<!--↓c-sub-->
 			<div class="mv-catch"><img src="img/logo_catch.png" width="100%" alt=""></div>
+			
+			<!--<div class="mas-up">
+				<a href="img/cg02sam.jpg" class="no-group"><img src="img/mas-up-sam.png" width="100%"></a>
+			</div>-->
+			
 			<div class="mv-logo">
 				<div class="mv-logo-img01"></div>
 				<div class="mv-logo-img02"></div>
-				<!--<div class="mv-logo-img03"></div>-->
 			</div>
 		</section>
 	</article>
@@ -174,9 +180,28 @@ ga('send', 'pageview');
 		<div class="floor">
 			<div class="cont">
 				<div class="topics-box">
-					<p class="cpn">イベント</p>
+					<p class="privilege">特典情報</p>
 					<p class="c-new">NEW</p>
-					<a class="topics-btn" href="../../event/eve25.html">
+					<a class="topics-btn" href="sp/privilege.html">
+						<img src="img/topic01.jpg" width="100%" alt="限定版同梱特典情報">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="content">コンテンツ情報</p>
+					<a class="topics-btn" href="sp/movie.html">
+						<img src="img/topic10.jpg" width="100%" alt="デモムービー">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="cpn">イベント情報</p>
+					<p class="c-new">NEW</p>
+					<a class="topics-btn" href="/event/eve26.html">
+						<img src="img/topic09.jpg" width="100%" alt="ライブイベント">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="cpn">イベント情報</p>
+					<a class="topics-btn" href="/event/eve25.html">
 						<img src="img/topic08.jpg" width="100%" alt="無料+予約者配布">
 					</a>
 				</div>
@@ -194,7 +219,7 @@ ga('send', 'pageview');
 				</div>
 				<div class="topics-box">
 					<p class="content">コンテンツ情報</p>
-					<a class="topics-btn" href="../../yuri-game-love/radio/oshilove.html">
+					<a class="topics-btn" href="/yuri-game-love/radio/oshilove.html">
 						<img src="img/topic05.jpg" width="100%" alt="ラジオ">
 					</a>
 				</div>
@@ -204,25 +229,6 @@ ga('send', 'pageview');
 						<img src="img/topic03.jpg" width="100%" alt="店舗特典">
 					</a>
 				</div>
-				<div class="topics-box">
-					<p class="privilege">特典情報</p>
-					<a class="topics-btn" href="sp/privilege.html">
-						<img src="img/topic01.jpg" width="100%" alt="限定版同梱特典情報">
-					</a>
-				</div>
-				<div class="topics-box">
-					<p class="content">コンテンツ情報</p>
-					<a class="topics-btn" href="sp/tw.html">
-						<img src="img/topic04.jpg" width="100%" alt="TW画像">
-					</a>
-				</div>
-				
-				<div class="topics-box">
-					<p class="no-cont">Coming Soon</p>
-					<img src="img/topic-no.gif" width="100%" alt="Coming Soon">
-				</div>
-
-
 			</div>
 			<div class="more-box"><a class="more" href="special.html">もっと見る</a></div>
 		</div>
@@ -260,7 +266,7 @@ ga('send', 'pageview');
 			<p class="st-brand-tit"><span class="big font1">SukeraSomeroとは？</span></p>
 			<div class="st-brand-img"><img src="img/loading-img.gif" width="100%" alt=""></div>
 			<p class="st-brand-text">
-				<a href="../../amrilato/index.html" target="_blank">『ことのはアムリラート』</a><a href="../../folklore/index.html" target="_blank">『クダンノフォークロア』</a>でおなじみの百合ゲームブランド【SukeraSparo】の姉妹ブランドです。<br><br>
+				<a href="/amrilato/" target="_blank">『ことのはアムリラート』</a><a href="/folklore/" target="_blank">『クダンノフォークロア』</a>でおなじみの百合ゲームブランド【SukeraSparo】の姉妹ブランドです。<br><br>
 
 				スケラソメーロ＝SukeraSomero。<br>
 				エスペラントの砂糖の甘さ(sukera)と夏(somero)の合成語で、甘酸っぱくてちょっぴりエッチな夏の思い出を意味する！？<br><br>
@@ -306,7 +312,7 @@ ga('send', 'pageview');
 				<div class="p-text">
 					<p><span class="point font01"><span>ちょっとエッチな百合18禁アペンド</span></span>
 						18禁アペンドパッチによる、エッチな後日談！</p>
-					<div class="more-box"><a class="more" href="append/index.html">詳細はコチラ</a></div>
+					<div class="more-box"><a class="more" href="append/">詳細はコチラ</a></div>
 				</div>
 			</div>
 		</div>
@@ -320,9 +326,9 @@ ga('send', 'pageview');
 	<div class="floor" id="chara-tit">
 		<div class="head-tit01"><h2 class="font02 chara-tit"><span>CHARACTER</span></h2></div>
 		<ul class="tab-sam">
-			<li><a href="index.html#akuru"><img src="img/chara_sam01.jpg" width="100%" alt="あくる"></a></li>
-			<li><a href="index.html#ren"><img src="img/chara_sam02.jpg" width="100%" alt="恋"></a></li>
-			<li><a href="index.html#shino"><img src="img/chara_sam03.jpg" width="100%" alt="志乃"></a></li>
+			<li><a href="#akuru"><img src="img/chara_sam01.jpg" width="100%" alt="あくる"></a></li>
+			<li><a href="#ren"><img src="img/chara_sam02.jpg" width="100%" alt="恋"></a></li>
+			<li><a href="#shino"><img src="img/chara_sam03.jpg" width="100%" alt="志乃"></a></li>
 		</ul>
 	</div>
 
@@ -484,8 +490,8 @@ ga('send', 'pageview');
 		<div class="head-tit01"><h2 class="font02 gallery-tit"><span>GALLERY</span></h2></div>
 		<div class="cg-box">			
 			<div class="cg-img">
-				<a href="index.html#cg001" class="inline group1">
-					<img src="img/cg01sam.jpg" alt="" width="480"></a>
+				<a href="#cg001" class="inline group1">
+					<img src="img/cg01sam.jpg" alt="" width="100%"></a>
 			</div>
 			<div style="display:none;">
 				<section id="cg001">
@@ -494,8 +500,8 @@ ga('send', 'pageview');
 				</section>
 			</div><!--//-->
 			<div class="cg-img">
-				<a href="index.html#cg002" class="inline group1">
-					<img src="img/cg02sam.jpg" alt="" width="480"></a>
+				<a href="#cg002" class="inline group1">
+					<img src="img/cg02sam.jpg" alt="" width="100%"></a>
 			</div>
 			<div style="display:none;">
 				<section id="cg002">
@@ -504,10 +510,10 @@ ga('send', 'pageview');
 				</section>
 			</div><!--//-->
 			<div class="cg-img">
-				<a href="img/cg03.jpg" class="group1"><img src="img/cg03sam.jpg" alt="" width="480"></a>
+				<a href="img/cg03.jpg" class="group1"><img src="img/cg03sam.jpg" alt="" width="100%"></a>
 			</div>
 			<div class="cg-img">
-				<a href="img/cg04.jpg" class="group1"><img src="img/cg04sam.jpg" alt="" width="480"></a>
+				<a href="img/cg04.jpg" class="group1"><img src="img/cg04sam.jpg" alt="" width="100%"></a>
 			</div>
 		</div>
 	</div>

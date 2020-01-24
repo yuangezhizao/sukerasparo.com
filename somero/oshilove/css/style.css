@@ -49,10 +49,13 @@ h1,h2,h3{box-sizing: border-box;transform: rotate(.03deg);-webkit-transform: rot
 .br480{display: none}
 .br320{display: none}
 
+.mw-no{max-width: inherit!important;}
 .w100{width: 100%!important}
 .h100{height: 100%;}
 .w50{width: 50%!important}
 .w33{width: 33.33%!important}
+
+.mt10{margin-top: 10px}
 
 @media screen and (max-width: 1024px){
 	body{min-height:inherit!important;min-width:inherit!important;}
