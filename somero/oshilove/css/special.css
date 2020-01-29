@@ -303,5 +303,19 @@ RTキャンペーン
 	.m-box.w50{width:100%}
 }
 
+/*-----------------------------------
+インタビュー
+-----------------------------------*/
+.view-tit{padding:0 0 10px;border-bottom: 2px solid #ed1e78; color:#ed1e78; font-size: 2.0rem; line-height: 2.6rem}
+.view-text{margin: 20px auto;}
+.view-2retu{overflow: hidden}
+.view-2retu p{float: left; width: 75%}
+.view-2retu div{float:right; padding:0 0 10px 10px;width:25%}
 
+@media screen and (max-width:640px){
+	.view-tit{font-size: 1.8rem; line-height: 2.4rem}
+	.view-2retu p{width: 100%; float: none}
+	.view-2retu div{width: 100%; float: none; padding: 0;margin: 0 auto 10px; background: #f5f5f5; text-align: center}
+	.view-2retu div img{max-width: 480px;}
+}
 
