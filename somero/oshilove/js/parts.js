@@ -54,7 +54,7 @@ $(document).ready(function(){
 	});
 	$(".no-group").colorbox({
 		maxWidth:"96%",
-		maxHeight:"96%"
+		maxHeight:"96%",
 	});
 	$(".inline").colorbox({
 		inline:true,

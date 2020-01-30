@@ -605,6 +605,7 @@ chara
 
 #chara-tit.floor{padding:80px 10px 0!important;}
 #chara .floor{padding:0 10px 40px;}
+#soukan{max-width: 800px;}
 
 .chara-line01,.chara-line02,.chara-line03{position: relative; width: 100%;overflow: hidden;}
 
