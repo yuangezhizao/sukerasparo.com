@@ -21,7 +21,7 @@
 .mv2 .taiken a{border-radius:178px;overflow:hidden;display:block}
 
 /*---0801変更分 マスターアップ----*/
-.mv-mas{height:100%;background:url(../image/main-masterup.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
+.mv-mas{height:100%;background:url(http://sukerasparo.com/amrilato/image/main-masterup.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
 .mv-mas .main .logo{width:28%;max-width:440px;right:2%;bottom:2%;top:inherit;left:inherit;}
 .mv-mas .catch{width:10%;left:8%;right:inherit;top:13%;max-width:166px;}
 .mv-mas .taiken{width:14%;max-width:300px;right:7%;top:9%;}
@@ -35,28 +35,28 @@
 .mv-up .taiken a{border-radius:178px;overflow:hidden;display:block}
 
 /*---0926変更分----*/
-.mv-ruka{height:100%;background:url(../image/main-ruka.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
+.mv-ruka{height:100%;background:url(http://sukerasparo.com/amrilato/image/main-ruka.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
 .mv-ruka .main .logo{width:28%;max-width:440px;right:2%;bottom:2%;top:inherit;left:inherit;}
 .mv-ruka .catch{width:10%;left:8%;right:inherit;top:13%;max-width:166px;}
 .mv-ruka .taiken{width:14%;max-width:300px;right:7%;top:12%;}
 .mv-ruka .taiken a{border-radius:178px;overflow:hidden;display:block}
 
 /*---1010変更分----*/
-.mv-rin{height:100%;background:url(../image/main-rin.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
+.mv-rin{height:100%;background:url(http://sukerasparo.com/amrilato/image/main-rin.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
 .mv-rin .main .logo{width:28%;max-width:440px;right:2%;bottom:2%;top:inherit;left:inherit;}
 .mv-rin .catch{width:10%;left:8%;right:inherit;top:13%;max-width:166px;}
 .mv-rin .taiken{width:14%;max-width:300px;right:7%;top:9%;}
 .mv-rin .taiken a{border-radius:178px;overflow:hidden;display:block}
 
 /*---1124変更分----*/
-.mv-rei{height:100%;background:url(../image/main-rei.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
+.mv-rei{height:100%;background:url(http://sukerasparo.com/amrilato/image/main-rei.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
 .mv-rei .main .logo{width:20%;max-width:440px;right:2%;bottom:2%;top:inherit;left:inherit;}
 .mv-rei .catch{width:10%;left:8%;right:inherit;top:13%;max-width:166px;}
 .mv-rei .taiken{width:14%;max-width:300px;right:4%;top:9%;}
 .mv-rei .taiken a{border-radius:178px;overflow:hidden;display:block}
 
 /*---ブック変更分----*/
-.mv-book{height:100%;background:#fff url(../image/main-book3.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
+.mv-book{height:100%;background:#fff url(http://sukerasparo.com/amrilato/image/main-book3.jpg) center top no-repeat;background-size:cover;position:relative;z-index:0;position:relative;overflow:hidden}
 .mv-book .main .logo{width:15%;max-width:320px;right:2%;bottom:2%;top:inherit;left:inherit;}
 .mv-book .catch{width:16%;left:18%;top:15%;right:inherit;max-width:212px;}
 .mv-book .taiken{width:14%;max-width:240px;right:4%;top:12%;}
