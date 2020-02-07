@@ -1,14 +1,17 @@
 $(window).on('load', function(){
 	$("#loader-bg").delay(500).fadeOut();
 	setTimeout(function(){
-		$(".mv-chara-rin,.mv-chara-bg").stop().delay(0).queue(function(){
+		$(".mv-chara-bg").stop().delay(0).queue(function(){
 			$(this).fadeIn(500).animate({bottom:0},{duration: 500,queue: false}).dequeue();
 		});
-		$(".mv-chara-ruka").stop().delay(800).queue(function(){
-			$(this).fadeIn(800).animate({duration: 500,queue: false}).dequeue();
+		$(".mv-chara-onsale").stop().delay(800).queue(function(){
+			$(this).fadeIn(800).animate({bottom:0},{duration: 500,queue: false}).dequeue();
 		});
 		$(".mv-logo").stop().delay(1850).queue(function(){
 			$(this).fadeIn(800).animate({bottom:20},{duration: 800,queue: false}).dequeue();
+		});
+		$(".mv-banner02").stop().delay(1000).queue(function(){
+			$(this).fadeIn(800).animate({duration: 500,queue: false}).dequeue();
 		});
 		$("#mv-demo").stop().delay(1000).queue(function(){
 			$(this).fadeIn(800).animate({duration: 500,queue: false}).dequeue();
@@ -19,25 +22,36 @@ $(window).on('load', function(){
 		$(".mv-catch div").stop().delay(2000).queue(function(){
 			$(this).fadeIn(800).animate({duration: 500,queue: false}).dequeue();
 		});
+		$(".mas-up div").stop().delay(2000).queue(function(){
+			$(this).fadeIn(800).animate({duration: 500,queue: false}).dequeue();
+		});
 
 	},500);
 });
 $(document).ready(function(){
-	$(".mv-chara-rin,.mv-chara-ruka,.mv-logo,.mv-chara-bg,.mv-catch div,#perticle_1,#mv-demo").css({display: "none"});
-	$(".mv-chara-rin").css({bottom: -100});
+	$(".mv-chara-onsale,.mv-logo,.mv-chara-bg,.mv-catch div,#perticle_1,.mv-banner02").css({display: "none"});
 	$(".mv-logo").css({bottom: 40});
 })
-if($(window).innerWidth() <= 640){
-	$("#mv-demo").stop().delay(1000).queue(function(){
-		$(this).fadeIn(800).animate({duration: 500,queue: false}).dequeue();
-	});
-	$(document).ready(function(){
-		$("#mv-demo").css({display: "none"});
-	})
-};
+
 
 
 $(function() {
+	$(".f-link").click(function(event){
+		event.preventDefault();
+		var url = this.href;
+		var parts = url.split("#");
+		var target = parts[1];
+		var target_offset = $("#"+target).offset();
+		var target_top = target_offset.top;
+		$('html, body').animate({
+			opacity: 0,
+			scrollTop: target_top
+		}, 650, function() {
+			$('html, body').animate({
+				opacity: 1,
+			}, 150);
+		});
+	});
 	$('a.p-top').on('click', function(e) {
 		e.preventDefault();
 		$('html, body').animate({
@@ -51,8 +65,6 @@ $(function() {
 		});
 	});
 });
-
-
 //キャラ差分
 function showimg1(){
 	document.imgLink.src = "image/chara1-01.png";

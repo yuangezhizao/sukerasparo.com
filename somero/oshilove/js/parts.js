@@ -8,6 +8,9 @@ $(window).on('load', function(){
 		$(".mv-catch").stop().delay(3000).queue(function(){
 			$(this).fadeIn(1000).animate({duration:1000,queue: false}).dequeue();
 		});
+		$(".mas-up").stop().delay(3000).queue(function(){
+			$(this).fadeIn(1000).animate({duration:1000,queue: false}).dequeue();
+		});
 		$(".mv-logo-img02").stop().delay(4000).queue(function(){
 			$(this).fadeIn(1000).animate({top:0},{duration:500,queue: false}).dequeue();
 		});
@@ -17,7 +20,7 @@ $(window).on('load', function(){
 	},500);
 });
 $(document).ready(function(){
-	$(".mv-logo-img01,.mv-logo-img02,.mv-catch,#mv-demo").css({display: "none"});
+	$(".mv-logo-img01,.mv-logo-img02,.mas-up,.mv-catch,#mv-demo").css({display: "none"});
 	$(".mv-logo-img01").css({top:-50});
 	$(".mv-logo-img02").css({top:50});
 
@@ -32,13 +35,16 @@ if($(window).innerWidth() <= 1024){
 		$(".mv-catch").stop().delay(1500).queue(function(){
 			$(this).fadeIn(1000).animate({duration:1000,queue: false}).dequeue();
 		});
+		$(".mas-up").stop().delay(1500).queue(function(){
+			$(this).fadeIn(1000).animate({duration:1000,queue: false}).dequeue();
+		});
 		$(".mv-logo-img02").stop().delay(2500).queue(function(){
 			$(this).fadeIn(1000).animate({top:0},{duration:1000,queue: false}).dequeue();
 		});
 		
 	},500);
 	$(document).ready(function(){
-		$(".mv-logo-img01,.mv-logo-img02,.mv-catch").css({display: "none"});
+		$(".mv-logo-img01,.mv-logo-img02,.mas-up,.mv-catch").css({display: "none"});
 		$("#mv-demo").css({display: "block"});
 		$(".mv-logo-img01").css({top:-50});
 		$(".mv-logo-img02").css({top:50});
