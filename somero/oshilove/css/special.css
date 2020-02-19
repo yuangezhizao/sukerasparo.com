@@ -17,6 +17,9 @@ special-top
 
 .cont-tit{width: 100%; margin: 0 auto 10px; padding:10px 10px 5px; font-size: 2.0rem;color:#fff; letter-spacing:1px }
 
+.topics-box.end {background-color: #000000;}
+.topics-box.end img {opacity: 0.7;}
+
 @media screen and (max-width: 768px){
 	#sp-floor{padding:0 0 40px;}
 	#sp-floor .floor{padding:40px 10px 0}
