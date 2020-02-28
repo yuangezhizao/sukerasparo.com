@@ -51,8 +51,8 @@ ga('send', 'pageview');
 	.mv-catch{position: absolute; top:10%;left:5%; max-width: 170px;z-index:6}
 	.mv-catch.c-sub{top:inherit;bottom:1%;left:2%;max-width: 124px;transform: rotate(-12deg);}
 	
-	.mas-up{position: absolute; top:8%; left:2%; max-width: 280px; border-radius: 150px; background: #fff;z-index: 10;}
-
+	.mas-up{position: absolute; top:6%; left:2%; max-width: 280px;  background: #fff;z-index: 10;}
+	/* border-radius: 150px; */
 	.load-none{opacity:0;}
 	.load-block{opacity:1;}
 	
@@ -64,7 +64,8 @@ ga('send', 'pageview');
 		.mv-logo{max-width:370px;max-height:304px;right:2%;bottom: 210px;}
 		#mv-demo{max-width:370px;right:2%;}
 		.mv-catch{max-width: 120px; top:38%; left:2%; transform: rotate(-10deg); }
-		.mas-up{max-width: 240px; border-radius: 120px; }
+		.mas-up{max-width: 240px;  }
+		/* border-radius: 120px; */
 	}
 	@media screen and (max-width:1366px){
 		.mv-logo{max-width:320px; max-height:270px;right:1%;bottom: 184px;}
@@ -72,7 +73,8 @@ ga('send', 'pageview');
 
 		.mv-catch{max-width: 120px;}
 		.mv-catch.c-sub{max-width:100px;}
-		.mas-up{max-width: 220px; border-radius: 120px; }
+		.mas-up{max-width: 220px; }
+		/* border-radius: 120px;  */
 	}
 	@media screen and (max-width:1280px){
 		.mas-up{top:65px;}
@@ -98,7 +100,7 @@ ga('send', 'pageview');
 		#mv-contents{min-height:inherit}
 		.mv-logo{max-width: 350px; max-height: 298px}
 		.mv-catch{top:10%; right:2%;}
-		.mas-up{ bottom:38%;}
+		.mas-up{ bottom:42%;}
 
 	}
 	@media screen and (max-width: 480px){
@@ -110,7 +112,7 @@ ga('send', 'pageview');
 	}
 	@media screen and (max-width: 320px){
 		.mv-logo{height:190px; max-width: 230px;}
-		.mas-up{max-width: 100px;bottom:32%;}
+		.mas-up{max-width: 100px;bottom:46%;}
 	}
 	@media screen and (max-height: 479px){
 		.mv-bg{background:url(img/mv-img.jpg) top/cover no-repeat!important;}
@@ -146,8 +148,11 @@ ga('send', 'pageview');
 		<section>
 			<div class="mv-bg"></div><!--.mv-anime-->
 			<!--↓c-sub-->
-			<div class="mas-up">
+			<!-- <div class="mas-up">
 				<a href="img/mas-up.png" class="no-group"><img src="img/mas-up-sam.png" width="100%"></a>
+			</div> -->
+			<div class="mas-up">
+				<a href="img/released.png" class="no-group"><img src="img/released-thamb.png" width="100%"></a>
 			</div>
 			<div class="mv-catch"><img src="img/logo_catch.png" width="100%" alt=""></div>
 			
@@ -189,13 +194,25 @@ ga('send', 'pageview');
 			<div class="cont">
 				<div class="topics-box">
 					<p class="c-new">NEW</p>
+					<p class="content">コンテンツ情報</p>
+					<a class="topics-btn" href="sp/download.html">
+						<img src="img/topic20.png" width="100%" alt="ダウンロード販売">
+					</a>
+				</div>
+				<div class="topics-box">
+					<p class="c-new">NEW</p>
+					<p class="content">コンテンツ情報</p>
+					<a class="topics-btn" href="sp/updata.html">
+						<img src="img/topic19.png" width="100%" alt="アップデートパッチ">
+					</a>
+				</div>
+				<div class="topics-box">
 					<p class="cpn">イベント情報</p>
 					<a class="topics-btn" href="sp/eve02.html">
 						<img src="img/topic17.png" width="100%" alt="発売記念イベント">
 					</a>
 				</div>
 				<div class="topics-box">
-					<p class="c-new">NEW</p>
 					<p class="column">コラム</p>
 					<a class="topics-btn" href="sp/interview04.html">
 						<img src="img/topic18.png" width="100%" alt="声優チームインタビュー">
@@ -223,18 +240,6 @@ ga('send', 'pageview');
 					<p class="cpn">キャンペーン情報</p>
 					<a class="topics-btn" href="sp/rt-cpn.html">
 						<img src="img/topic13.jpg" width="100%" alt="マスターアップ記念RTキャンペーン">
-					</a>
-				</div>
-				<div class="topics-box">
-					<p class="column">コラム</p>
-					<a class="topics-btn" href="sp/interview02.html">
-						<img src="img/topic12.jpg" width="100%" alt="楽曲チーム（鈴湯さん&よる。さん＆杏花さん）インタビュー">
-					</a>
-				</div>
-				<div class="topics-box">
-					<p class="content">コンテンツ情報</p>
-					<a class="topics-btn" href="sp/movie.html">
-						<img src="img/topic10.jpg" width="100%" alt="デモムービー">
 					</a>
 				</div>
 			</div>
