@@ -48,11 +48,13 @@ ga('send', 'pageview');
 	.mv-logo-img02{background:url(img/logo_release01.png) no-repeat;background-size:contain;z-index:6}
 	.mv-logo-img03{background:url(img/logo_release02.png) no-repeat;background-size:contain;z-index:6}
 
-	.mv-catch{position: absolute; top:10%;left:5%; max-width: 170px;z-index:6}
+	.mv-catch{position: absolute; top:100px; left:5%; max-width: 170px;z-index:6}
+
 	.infomation{ 
 		display: flex; display: -ms-flexbox; display: -webkit-flex;
-		position: absolute; bottom:30px; left: 0;right: 0;margin: auto;width: 500px;  z-index: 5; }
+		position: absolute; bottom:30px; left: 30px; width: auto;  z-index: 5; }
 	.infomation > * { width: 160px; margin-right: 50px; }
+
 	.mv-catch.c-sub{top:inherit;bottom:1%; left:2%; max-width: 124px;transform: rotate(-12deg);}
 	.mas-up{position: absolute; top:6%; left:2%; max-width: 420px;  background: #fff;z-index: 10;}
 	/* border-radius: 150px; */
@@ -66,12 +68,12 @@ ga('send', 'pageview');
 	@media screen and (max-width:1680px){
 		.mv-logo{max-width:370px;max-height:304px;right:2%;bottom: 210px;}
 		#mv-demo{max-width:370px;right:2%;}
-		.mv-catch{max-width: 120px; top:38%; left:2%; transform: rotate(-10deg); }
+		.mv-catch{max-width: 120px; top:100px; left:30px; transform: rotate(-10deg); }
 		.mas-up{max-width: 240px;  }
 		/* border-radius: 120px; */
 	}
 	@media screen and (max-width:1366px){
-		.mv-logo{max-width:320px; max-height:270px;right:1%;bottom: 184px;}
+		.mv-logo{max-width:320px; max-height:70px;right:1%;bottom: 184px;}
 		#mv-demo{max-width:320px; right:1%;}
 
 		.mv-catch{max-width: 120px;}
@@ -79,16 +81,16 @@ ga('send', 'pageview');
 		.mas-up{max-width: 220px; }
 		/* border-radius: 120px;  */
 	}
-	@media screen and (max-width:1280px){
-		.mas-up{top:65px;}
-	}
 	@media screen and (max-width:1024px){
 		.mv-logo{max-width:370px;max-height:304px; bottom:4%;}
 		.mas-up{top:12%; max-width: 160px;}
-		.infomation > * { width: 140px; margin-right: 10px; }
+		.infomation > * { width: 140px; margin-right: 10px; margin-bottom: 30px;}
 		#mv-demo{bottom:auto;left:auto; position:static; width: 100%; max-width: inherit;background:rgba(63,169,245,.9);padding:20px}		
 		.demo{padding:53% 0 0 0;margin: 0 auto;box-shadow:none; width:100%; max-width:inherit;}
 
+	}
+	@media screen and (max-width:1280px){
+		.mas-up{top:65px;}
 	}
 	@media screen and (max-width: 768px){
 		.mv-bg{background:url(img/mv-img.jpg) 26%/cover no-repeat!important;}
@@ -109,7 +111,6 @@ ga('send', 'pageview');
 		#mv-contents{min-height:inherit}
 		.mv-logo{max-width: 350px; max-height: 298px}
 		.mv-catch{top:10%; right:2%;}
-		.mas-up{ bottom:42%;}
 
 	}
 	@media screen and (max-width: 480px){
@@ -160,15 +161,13 @@ ga('send', 'pageview');
 			<!-- <div class="mas-up">
 				<a href="img/mas-up.png" class="no-group"><img src="img/mas-up-sam.png" width="100%"></a>
 			</div> -->
-			<div class="mas-up">
-				<a href="img/released.png" class="no-group"><img src="img/released-thamb.png" width="100%"></a>
-			</div>
 			
 			<div class="mv-catch"><img src="img/logo_catch.png" width="100%" alt=""></div>
 			
 			<div class="infomation">
 				<a href="sp/updata.html"><img src="img/topic19_bnr.png"></a>
 				<a href="sp/download.html"><img src="img/topic20_bnr.png"></a>
+				<a class="no-group" href="img/released.png"><img src="img/topic99_bnr.png"></a>
 			</div>
 			
 			
@@ -561,7 +560,7 @@ ga('send', 'pageview');
 			<li><span class="s-name">ブランド</span>SukeraSomero</li>
 			<li><span class="s-name">ジャンル</span>ドタバタ王道百合コメディ</li>
 			<li><span class="s-name">販売区分</span>全年齢作品<span class="mini">（18禁アペンドあり）</span></li>
-		</ul>			
+		</ul>
 		<ul class="spec-text">
 			<li><span class="s-name">発売日</span>2020年2月28日（金）</li>
 			<li><span class="s-name">予約開始日</span>2019年12月20日（金）</li>
