@@ -5,7 +5,7 @@
 #mv-contents{position: relative;}
 #mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
 .mv-bg{width:100%;height:100%;top:0}
-.mv-bg{background:url(../img/mv-bg.jpg) center 46% no-repeat; background-size:cover;position: fixed;}
+.mv-bg{background:url(http://sukerasparo.com/folklore/img/mv-bg.jpg) center 46% no-repeat; background-size:cover;position: fixed;}
 
 .sp-bg-col01{background: linear-gradient(to bottom,rgba(40,0,15,.9) 0%,rgba(255,0,15,.7) 25%,rgba(40,0,15,.95) 100%);
 	background: -webkit-linear-gradient(top,rgba(40,0,15,.9) 0%,rgba(40,0,15,.7) 25%,rgba(40,0,15,.95) 100%);}

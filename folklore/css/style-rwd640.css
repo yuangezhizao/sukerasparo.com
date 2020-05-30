@@ -3,7 +3,7 @@
 .br640n{display: none}
 
 @media screen and (max-width: 480px){
-	body:before {background:url(../img/mv-bg.jpg) center/cover no-repeat;}
+	body:before {background:url(http://sukerasparo.com/folklore/img/mv-bg.jpg) center/cover no-repeat;}
 	#floor-box{padding:0 5px;}
 	.font01{font-family:'Sawarabi Mincho',"游明朝", YuMincho, 'Noto Serif JP', serif;}
 	.br480{display: none}
