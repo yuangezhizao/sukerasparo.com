@@ -12,7 +12,7 @@ body{min-width:auto;}
 }
 
 @media screen and (max-width: 768px){
-body:before {content:"";display:block;position:fixed;top:0;left:0;z-index:-1;width:100%;height:100vh;background:url(http://sukerasparo.com/folklore/img/mv-bg.jpg) center/cover no-repeat!important;-webkit-background-size:cover;/*Android4*/}
+body:before {content:"";display:block;position:fixed;top:0;left:0;z-index:-1;width:100%;height:100vh;background:url(../img/mv-bg.jpg) center/cover no-repeat!important;-webkit-background-size:cover;/*Android4*/}
 }
 /*header*/
 .drawer{display: flex;z-index:999}
