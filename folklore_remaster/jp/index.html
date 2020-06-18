@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>クダンノフォークロア - sukerasparo</title>
+<title>クダンノフォークロア HDリマスター版 - sukerasparo</title>
 <meta name="author" content="sukerasparo"/>
 <meta name="copyright" content="(c)sukerasparo"/>
 <meta name="description" content="sukerasparo「クダンノフォークロア」公式サイト"/>
@@ -61,10 +61,11 @@ ga('send', 'pageview');
 	.mv-text04{background:url(img/mv-text04.png) bottom no-repeat;background-size:contain;z-index:5}
 	.mv-text05{background:url(img/mv-text05.png) bottom no-repeat;background-size:contain;z-index:6}
 	.mv-text06{background:url(img/mv-text06.png) bottom no-repeat;background-size:contain;z-index:5}
-	.mv-text07{background:url(img/mv-text07b.png) bottom no-repeat;background-size:contain;z-index:6}
+	.mv-text07{background:url(img/mv-text07.png) bottom no-repeat;background-size:contain;z-index:6}
 	.mv-text-logo{background:url(img/mv-text-logo.png) bottom no-repeat;background-size:contain;z-index:5}
 	
 	.mv-banner{bottom:-28%; right: 0; max-width: 550px; position: absolute;}
+	.mv-logo iframe {bottom:-58%; right: 20px; width: 480px; height: 270px; position: absolute;}
 	
 	.icn-tw-copy{ position: absolute;top:10px; right:10px;z-index:10}
 	.copy-icn,.tw-icn{ max-width: 60px; background: #fff;margin: 0 0 5px;}
@@ -80,52 +81,62 @@ ga('send', 'pageview');
 	.menu-banner a:after{content: none}
 	
 	@media screen and (max-width: 1366px){
+		.mv-bg{ background: url(img/mv-bg-tb.jpg) 25% no-repeat;background-size:cover;}
 		.mv-logo{width:100%;height:100%;right:5%;max-width:400px;max-height:320px;}
+		.mv-logo iframe {bottom:-80%; right: 30px; width: 336px; height: 189px; position: absolute;}
 		#mv-demo{right:4%;max-width:400px;}
 		.demo{padding: 55% 0 0 0;}
 		.mas-up{max-width:220px;}
 	}
 	@media screen and (max-width: 1280px){
+		.mv-bg{ background: url(img/mv-bg-tb.jpg) 25% no-repeat;background-size:cover;}
 		.mv-logo{top: 2%;}
 		#mv-demo{bottom:4%;max-width:inherit; right:3%}
 		.demo{padding: 20% 0 0 0;max-width:420px; margin: 0 0 0 auto}
 	}
 	@media screen and (max-width: 1027px){
+		.mv-bg{ background: url(img/mv-bg-tb.jpg) 25% no-repeat;background-size:cover;}
 		.tw-icn{display: none}
 		.mas-up{top:10%;left:3%}
 	}
 	@media screen and (max-width: 1024px){
+		.mv-bg{ background: url(img/mv-bg-tb.jpg) 25% no-repeat;background-size:cover;}
 		#mv-demo{bottom:3%right:auto;left:0}
 		.demo{padding: 24% 0 0 0;max-width:480px;margin: 0 auto}
 		.mas-up{top:8%;width: 50%;}
 	}
 	@media screen and (max-width: 768px){
+		.mv-bg{ background: url(img/mv-bg-tb.jpg) 25% no-repeat;background-size:cover;}
 		.icn-tw-copy{top:inherit;bottom:10px}
 		#mv-demo{bottom:3%;right:auto;left:0}
 		.demo{padding: 36% 0 0 0;max-width:480px; margin: 0 auto}
 		.mas-up{top:7%; left: 2%;max-width:200px;}
 		.mv-logo{max-width:312px;max-height:280px;}
-		.mv-bg{background:none;}
+		.mv-logo iframe { width: 304px; height: 171px; bottom:-70%; right: 0; max-width: 560px; position: absolute;}
 	}
 	@media screen and (max-width:640px){
+		.mv-bg{ background: url(img/mv-bg-tb.jpg) 25% no-repeat;background-size:cover;}
 		#mv-demo{bottom:auto;right:auto; position:relative; width: 100%; max-width: inherit;background:rgba(95,0,11,.75);padding:20px 0}
 		.demo{padding:42% 0 0!important;margin: 0 auto;box-shadow:none; width:94%;}
 		.mas-up{top:auto;bottom:3%;}
 		.mv-logo{max-width:300px;max-height:270px;right: 3%;}
+		.mv-logo iframe { width: 304px; height: 171px; bottom:-70%; right: 0; max-width: 560px; position: absolute;}
 	}
 	@media screen and (max-width: 480px){
 		.copy-icn{max-width: 40px!important}
 		.copy-icn img{width: 100%!important}
 		.demo{padding:55% 0 0!important;}
 		.mas-up{top:70px;right:1%; left:auto;bottom:auto; max-width: 150px}
-		.mv-bg{ background: url(img/mv-bg.jpg) 25% no-repeat;background-size:cover;}
+		.mv-bg{ background: url(img/mv-bg-sp.jpg) 25% no-repeat;background-size:cover;}
 		.mv-logo{max-width: 240px;max-height: 220px;bottom:12%; top:inherit;left: 50%;-ms-transform: translate(-50%,0);-webkit-transform : translate(-50%,0);transform : translate(-50%,0);}
-	}
+		.mv-logo .mv-trailer {width: 0 ; height: 0;}
+		}
 	
 	@media screen and (max-width:360px){
 		.mas-up{max-width: 120px}
-		.mv-bg{ background: url(img/mv-bg.jpg) 30% no-repeat;background-size:cover;}
+		.mv-bg{ background: url(img/mv-bg-sp.jpg) 30% no-repeat;background-size:cover;}
 		.mv-logo{max-width: 200px;max-height: 160px;bottom:12%;}
+		.mv-logo iframe { display: none; }
 	}
 	
 	@media screen and (max-height: 420px){
@@ -161,14 +172,15 @@ ga('send', 'pageview');
 				<div class="mv-text06"></div>
 				<div class="mv-text-logo"></div>
 				<div class="mv-text07"></div>
-				<div class="mv-banner"><a href="sp/download.html"><img src="img/topic-img22b.jpg" width="100%" alt=""></a></div>
+				<!-- <div class="mv-banner"><a href="sp/download.html"><img src="img/topic-img22b.jpg" width="100%" alt=""></a></div> -->
+				<iframe class="mv-trailer" width="560" height="315"  frameborder="0" src="https://www.youtube.com/embed/x48JJif_aYg"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<div class="mas-up">
+			<!-- <div class="mas-up">^
 				<a href="sp/sp-dl.html"><img src="img/mv-sale-sam03.png" width="100%"></a>
-			</div>
+			</div> -->
 			<div class="icn-tw-copy">
 				<div class="copy-icn"><a href="/" target="_blank"><img src="img/copy.gif" width="50"></a></div>
-				<div class="tw-icn"><a href="http://twitter.com/share?text=少女＋百合＋都市伝説＝クダンノフォークロア%0a%0aSukeraSparo新作『クダンノフォークロア』公式サイト公開!!%0a2019年4月26日（金）発売予定！%0a&url=http://sukerasparo.com/folklore/&hashtags=クダンノフォークロア" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow',personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="hover" target="_blank"><img src="img/tw-icon.gif" width="50"></a></div>
+				<div class="tw-icn"><a href="https://twitter.com/SukeraSparo" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow',personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="hover" target="_blank"><img src="img/tw-icon.gif" width="50"></a></div>
 			</div>
 		</section>
 	</article>
@@ -178,131 +190,29 @@ ga('send', 'pageview');
 <div class="demo"></div>
 </section>-->
 
-<article id="floor-box" class="bg-col02"><!--01-->
-	<section class="floor" id="news">
-		<div class="news-box">
-			<h2 class="h2-tit news-tit font01">NEWS</h2>
-			<ul class="news-list">
-				<!---->
-				<li class="news-info">
-					<a href="../folklore_remaster/jp/index.html"></a>
-					<time>■2020.06.18</time>
-					<p><span class="bold yel">クダンノフォークロア　リマスター版</span>のホームページを公開しました。※日本語、英語、簡体字、繁体字対応のページです。</p>
-				</li>
-				<!---->
-				<li class="news-info">
-					<a href="sp/event03.html"></a>
-					<time>■2020.06.10</time>
-					<p><span class="bold yel">『クダンノフォークロア』&#9829;『スープカレーカムイ』コラボイベント情報</span>を公開しました。</p>
-				</li>
-				<!---->
-				<li class="news-info">
-					<a href="https://www.ichijinsha.co.jp/yurihime/"></a>
-					<time class="info-new">■2020.05.18</time>
-					<p>『クダンノフォークロア』コミック百合姫にて来月よりコミカライズ連載開始します！</p>
-				</li>
-				<!---->
-				<li class="news-info">
-					<a href="/yuri-game-love/event13.html"></a>
-					<time class="info-new">■2020.02.21</time>
-					<p>『百合ゲー愛好会』<span class="yel">大人百合中心同人誌即売会「2OL《expo》」</span>の情報を公開しました。</p>
-				</li>
-				<!---->
-				<li class="news-info">
-					<a href="/yuri-game-love/event12.html"></a>
-					<time>■2020.01.30</time>
-					<p>『百合ゲー愛好会』<span class="yel">COMITIA131</span>の物販情報を公開しました。</p>
-				</li>
-				<!---->
-			</ul>
-			<div class="more-box"><a href="info.html" class="more">もっと見る</a></div>
-		</div>
-		
-		<div class="tw-box">
-			<a class="twitter-timeline" data-width="580" data-height="562" data-theme="light" data-chrome="nofooter noheader" data-link-color="#E81C4F" href="https://twitter.com/SukeraSparo?ref_src=twsrc%5Etfw">Twitterが表示されない方はコチラ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
+<!-- ニュースとTwitterはバックアップ済み -->
+
+<!--remaster--->
+<article id="floor-box" class="bg-col03">
+	<section class="floor" id="remaster">
+		<h2 class="h2-tit re-tit font01">REMASTER</h2>
+		<ul class="st-text font02 big">
+			<li>日本語の他、<br class="sp"><span class="st-text font02 big">英語・中国語<br class="sp">(簡体字・繁体字)</span>の<br class="sp">4言語対応！</li>
+			<li><span class="st-text font02 big">画面解像度</span>が<br class="sp">720Pから<br class="sp"><span class="st-text font02 big">フルHDの1080P</span>へ<br class="sp">パワーアップ！</li>
+			<li>バックログ画面から<br class="sp"><span class="st-text font02 big">任意の場所</span>まで<br class="sp"><span class="st-text font02 big">バックジャンプ機能</span>を追加！</li>
+		</ul>
 	</section>
 </article>
-
-<!--topics--->
-<article id="floor-box" class="bg-col02">
-	<section class="floor" id="topic">
-		<div class="topic-box">
-			<ul class="topic-list">
-				<!---->
-				<li class="topic-info t-new">
-					<a href="sp/sp-dl.html"></a>
-					<p class="topic-tit t-content">コンテンツ情報</p>
-					<div><img src="img/topic-img23.jpg" width="100%" alt="スマホ版"></div>
-					<p class="t-info">2019.11.08 update</p>
-				</li>	
-				<!---->
-				<li class="topic-info">
-					<a href="sp/download.html"></a>
-					<p class="topic-tit t-content">コンテンツ情報</p>
-					<div><img src="img/topic-img22.jpg" width="100%" alt="ダウンロード版"></div>
-					<p class="t-info">2019.08.30 update</p>
-				</li>
-				<!---->
-				<li class="topic-info">
-					<a href="sp/updata.html"></a>
-					<p class="topic-tit t-content">コンテンツ情報</p>
-					<div><img src="img/topic-img19a.jpg" width="100%" alt="アップデート"></div>
-					<p class="t-info">2019.08.30 update</p>
-				</li>
-				<!---->
-				<li class="topic-info">
-					<a href="sp/ank01.html"></a>
-					<p class="topic-tit t-content">コンテンツ情報</p>
-					<div><img src="img/topic-img21.jpg" width="100%" alt="アンケート"></div>
-					<p class="t-info">2019.06.14 update</p>
-				</li>				
-				<!---->
-				<li class="topic-info">
-					<a href="https://gyutto.jp/pd/folklore" target="_blank"></a>
-					<p class="topic-tit t-content">コンテンツ情報</p>
-					<div><img src="img/topic-img18.jpg" width="100%" alt="データDL"></div>
-					<p class="t-info">2019.04.26 update</p>
-				</li>
-				
-				<!---->
-				<li class="topic-info">
-					<a href="sp/privilege.html"></a>
-					<p class="topic-tit t-tokuten">特典情報</p>
-					<div><img src="img/topic-img03.jpg" width="100%" alt="限定版特典情報"></div>
-					<p class="t-info">2019.04.25 update</p>
-				</li>
-				<!---->
-				<li class="topic-info">
-					<a href="sp/experience.html"></a>
-					<p class="topic-tit t-content">コンテンツ情報</p>
-					<div><img src="img/topic-img14.jpg" width="100%" alt="体験版"></div>
-					<p class="t-info">2019.04.19 update</p>
-				</li>
-				<!---->
-				<li class="topic-info t-end">
-					<a href="sp/rt-cpn.html"></a>
-					<p class="topic-tit t-cpn">キャンペーン情報</p>
-					<div><img src="img/topic-img24.jpg" width="100%" alt="RTキャンペーン"></div>
-					<p class="t-info">このキャンペーンは終了しました</p>
-				</li>
-				
-			</ul>
-			<div class="more-box"><a href="special.html" class="more">もっと見る</a></div>
-		</div>
-	</section>
-</article>
-
 
 <!--story--->
 <article id="floor-box" class="bg-col03">
 	<section class="floor" id="story">
 		<h2 class="h2-tit st-tit font01">STORY</h2>
 		<p class="st-text">
-			巷説に“クダン”という<span class="st-sub-text st-text01"><span class="font02 big">フォークロア</span></span>が広まっていた。<br><br>
+			巷説に“クダン”という<span class="st-sub-text st-text01"><span class="font02 big">フォークロア</span></span>（都市伝説）が広まっていた。<br><br>
 			<span class="font02 big">曰く、クダンは西洋の喪服を着た女の姿をし、<br>右手首はなく、素顔を黒いヴェールで隠している。<br><br>
-				曰く、クダンを目にしてしまった者の元へ、<br>七日のときを掛け近づき“災いの予言”をするという……。</span><br><br>
-
+			曰く、クダンを目にしてしまった者の元へ、<br>七日のときを掛け近づき“災いの予言”をするという……。</span><br><br>
+			
 			１６歳の少女、九段朔夜は奇縁から料理教室講師である志摩塔子という女性と出逢い<br>
 			――ふれ合ううちに仄かな想いを募らせていく。<br>
 			しかし、災厄を予言する“クダン”を塔子が目にしたことで、<br class="br480">穏やかだった日常は狂いだしていった。<br>
@@ -311,7 +221,6 @@ ga('send', 'pageview');
 			神秘学研究会の戸を叩き、会の長である春夏冬小兎とともに<br class="br480">朔夜は大切な人を守るため<span class="st-sub-text st-text02"><span class="font02 big">フォークロア</span></span>に挑む――――。
 		</p>
 	</section>
-
 	<!--point--->
 	<section class="floor bg-pt" id="point">
 		<div class="point-box point-box-sub">
@@ -383,8 +292,6 @@ ga('send', 'pageview');
 			</div>
 		</div>
 	</section>
-	
-	
 </article>
 <!--chara--->
 <article id="floor-box" class="bg-col04 chara-sp-box">
@@ -600,27 +507,24 @@ ga('send', 'pageview');
 		</div>
 	</section>
 </article>
-
 <article id="floor-box" class="bg-col05">
 	<section class="floor" id="gallery">
 		<h2 class="h2-tit cg-tit font01">GALLARY</h2>
 		<ul class="cg-box">
-			<li class="cg-sam cg-new"><a class="group1" href="img/cg14.png"><img src="img/cg14sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/mv-mas-up.png"><img src="img/cg12sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg08.jpg"><img src="img/cg08sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg09.jpg"><img src="img/cg09sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg10.jpg"><img src="img/cg10sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg11.jpg"><img src="img/cg11sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg05.jpg"><img src="img/cg05sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg06.jpg"><img src="img/cg06sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg07.jpg"><img src="img/cg07sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg03.jpg"><img src="img/cg03sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1" href="img/cg04.jpg"><img src="img/cg04sam.jpg" width="332" alt=""></a></li>
 			<li class="cg-sam"><a class="group1" href="img/cg01.jpg"><img src="img/cg01sam.jpg" width="332" alt=""></a></li>
-			<li class="cg-sam"><a class="group1 inline" href="#cg02"><img src="img/cg02sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg02.jpg"><img src="img/cg02sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg04.jpg"><img src="img/cg04sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg03.jpg"><img src="img/cg03sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg07.jpg"><img src="img/cg07sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg06.jpg"><img src="img/cg06sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg05.jpg"><img src="img/cg05sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg11.jpg"><img src="img/cg11sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg10.jpg"><img src="img/cg10sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1" href="img/cg09.jpg"><img src="img/cg09sam.jpg" width="332" alt=""></a></li>
+			<li class="cg-sam"><a class="group1 inline" href="#cg02"><img src="img/cg08sam.jpg" width="332" alt=""></a></li>			
 			<div style="display: none;">
 				<section id="cg02">
-					<div class="cg-on cg02h"><img src="img/cg02.jpg" width="100%" alt=""/></div>
+					<div class="cg-on cg02h"><img src="img/cg08.jpg" width="100%" alt=""/></div>
 					<p class="hover-text">イラストの上にマウスオーバーすると、イラストが変化します。</p>
 				</section>
 			</div><!--//-->
@@ -641,27 +545,13 @@ ga('send', 'pageview');
 				<li><span class="s-name">販売区分</span>全年齢作品</li>
 			</ul>			
 			<ul class="spec-text">
-				<li><span class="s-name">発売日</span>2019年4月26日(金)</li>
-				<li><span class="s-name">予約開始日</span>2019年1月25日(金)</li>
-				<li class="spec100"><span class="s-name">対応OS</span>Windows 7 / 8 / 8.1 / 10</li>
-			</ul>
-			<ul class="spec-text">
-				<li class="w100 spec100"><span class="s-name block400">価格</span>限定版：5,800円<span class="mini">(税抜)</span><span class="s-kakaku">｜</span><br class="br480b">通常版：3,800円<span class="mini">(税抜)</span></li>
+				<!-- <li><span class="s-name">発売日</span>2019年4月26日(金)</li>
+				<li><span class="s-name">予約開始日</span>2019年1月25日(金)</li> -->
+				<li class="spec100"><span class="s-name">対応OS</span>Windows  8 / 8.1 / 10</li>
 			</ul>
 		</div>
 		
 		<div class="spec-box">
-			<p class="spec-tit02 spec-tit02sub">限定版 同梱特典</p>
-			<ul class="spec-text">
-				<li class="spec100">主題歌CD、ドラマDLカード、設定資料集</li>
-			</ul>
-			<p class="spec-tit02 spec-tit02sub4">予約キャンペーン</p>
-			<ul class="spec-text">
-				<li class="spec100">
-				はねこと先生描き下ろしミニ色紙<br>
-				<div class="shikishi"><img src="sp/img/yoyaku-img02.jpg" width="100%" alt=""></div>
-				</li>
-			</ul>
 			<p class="spec-tit02 spec-tit02sub4">スタッフ</p>
 			<ul class="spec-text">
 				<li><span class="s-name">キャラデザ・原画</span>はねこと</li>
@@ -685,17 +575,7 @@ ga('send', 'pageview');
 				<li><span class="s-name block">吾妻佳恋</span>岡本理絵</li>
 				<li><span class="s-name block">岩井紗和子</span>森なな子</li>
 			</ul>
-			<p class="spec-tit02 spec-tit02sub4">スマートフォン版</p>
-			<ul class="spec-text">
-				<li><span class="s-name">配信日</span>2019年11月8日(金)</li>
-				<li><span class="s-name">価格</span>2,820円(税込)</li>
-			</ul>
-			<p class="spec-tit04 spec-tit02sub4">対応OS</p>
-			<ul class="spec-text spec-text-sub spec-app">
-				<li><span class="s-name block">iPhone版</span>iOS 8.0以上<br>
-				<a class="spec-app-img" href="https://itunes.apple.com/jp/app/id1483877446?mt=8" target="_blank"><img src="sp/img/sp-dl-app-icn.png"></a></li>
-				<li><span class="s-name block">Android版</span>Android 5.0以上<br><a class="spec-app-img" href="https://play.google.com/store/apps/details?id=jp.domeiapp.kudannofolklore" target="_blank"><img src="sp/img/sp-dl-google-play-icn.png"></a></li>
-			</ul>
+			
 		</div>
 	</section>
 </article>
@@ -771,7 +651,7 @@ ga('send', 'pageview');
 	});
 </script>
 <script async>
-	var headerhtml = '/folklore/head.html';
+	var headerhtml = '/folklore_remaster/jp/head.html';
 	$.ajax({
 		type: 'get',
 		url: headerhtml,
@@ -780,7 +660,7 @@ ga('send', 'pageview');
 			$("#head").append(data);
 		}
 	});
-	var footerhtml = '/folklore/foot.html';
+	var footerhtml = '/folklore_remaster/jp/foot.html';
 	$.ajax({
 		type: 'get',
 		url: footerhtml,
