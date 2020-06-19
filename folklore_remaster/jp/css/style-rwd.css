@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*共通*/
+body{min-width:auto;}
+
+#floor-box{padding:0 30px}
+.floor{padding:30px 0;}
+.br1028{display: none}
+
+@media screen and (max-width: 930px){
+.floor{min-width:auto}
+}
+
+@media screen and (max-width: 768px){
+body:before {content:"";display:block;position:fixed;top:0;left:0;z-index:-1;width:100%;height:100vh;background:url(../img/mv-bg.jpg) center/cover no-repeat!important;-webkit-background-size:cover;/*Android4*/}
+}
+/*header*/
+.drawer{display: flex;z-index:999}
+#head{-webkit-transform: translateX(-110%);transform: translateX(-110%);-webkit-transition:ease .5s;transition:ease .5s;z-index:998;padding:60px 0 0;}
+
+/*OPEN時の動き*/
+.navbar_toggle.open .nav-i:nth-child(1) {top: 10px;-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.navbar_toggle.open .nav-i:nth-child(2){top:0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+.navbar_toggle.open .nav-i:nth-child(3)
+{-webkit-transform: translateY(-50%);transform: translateY(-50%);opacity: 0;}
+#head.open {-webkit-transform:translateX(0);transform:translateX(0);overflow-y: auto;-webkit-overflow-scrolling: touch;}
+
+.m-tw{display: block}
+
+
+/*--NEWS--*/
+@media screen and (max-width: 930px){
+.news-info p{height:108px; overflow: hidden;}
+}
+@media screen and (max-width: 768px){
+	.news-box{width: 60%}
+	.tw-box{width: 39%; max-width: inherit}
+}
+/*--topics--*/
+@media screen and (max-width: 768px){
+.t-cpn{font-size: 1.0rem}
+}
+/*--story--*/
+
+/*--point--*/
+.bg-pt{background:rgba(0,0,0,.5);box-shadow:0px 0px 200px 100px rgba(0,0,0,.7) inset}
+.pt-kudan-img img{width: 100%!important}
+.pt-img-sub01{ position:static;right: 0; top:0; display: block; margin: 5px 0 0}
+.pt-img{padding:0 0 0 1%;}
+.point-box-sub:last-child{margin:-0}
+
+
+@media screen and (max-width: 930px){
+	.pt-tit{font-size: 2.2rem;}
+	.pt-kudan{width: 100%;font-size: 0; display: block;padding:20px 0;border-bottom:1px solid #fff; height: auto}
+	.pt-kudan-img{position: static}
+	.pt-text02{ width: 60%}
+	.pt-img{width: 40%}
+	
+	.pt-tit-sub01{border-top:none; border-bottom:none; padding:0 0 10px; font-weight: bold}
+	.pt-tit-sub02{border:1px solid #fff; margin: 0 0 10px;padding:2px 0; color:#fff}
+	.pt-kudan-box,.pt-text-sp{display: inline-block; vertical-align: middle}
+	.pt-kudan-box{width: 39%; margin: 0 1% 0 0; padding:5px;}
+	.pt-text-sp{width: 60%;line-height:2.4rem; padding:5px!important;}
+	.pt-kudan .font01{font-family:游ゴシック体, 'Yu Gothic', YuGothic,sans-serif;}
+}
+@media screen and (max-width: 768px){
+	.pt-tit{text-align: center}
+	.point-box{ width: 100%; display: block}
+	.pt-tit-s .t-block{ display:initial!important}
+	.pt-text{line-height: 2.2rem!important}
+	.pt-text02{ width: 100%}
+	.pt-img{width: 100%; max-width:inherit; margin: 0 auto; padding:0}
+	.pt-img img{float: left; width:50%; padding:0 0.5% 0 0}
+	.pt-img-sub01{ padding:0 0 0 0.5%!important;margin:0}
+	
+	.point-box:last-of-type .pt-img{padding:0 0 0 0; float: none}
+	.point-box:last-of-type .pt-img img{width: 100%; float: none; padding:0}
+	.point-box:last-of-type .pt-text02{float:none}
+}
+
+/*--chara--*/
+@media screen and (max-width: 930px){
+	.chara-name{ font-size: 5rem}
+	.c-img01, .c-img03{left:-8%;}
+	.c-img02, .c-img04, .c-img05 {left:0;}
+	.voice{left:2%;}
+}
+@media screen and (max-width: 768px){
+	.voice{left:0;}
+}
+
+/*--gallery--*/
+@media screen and (max-width: 768px){
+	.c-img02, .c-img04, .c-img05{left: -3%;}
+	.chara-name{ font-size: 4.5rem}
+	.chara-bg{max-width:inherit;z-index:9; width: 100%; left: 0!important;top:120px;}
+	.chara-text{ background: rgba(0,0,0,.5); width: 60%;right:3%}
+	.cg-new:after{font-size: 1.2rem;line-height: 1.2rem; left: -43%}
+}
+
+/*--spec--*/
+@media screen and (max-width: 768px){
+	.spec-text{display: block; font-size: 0}
+	.spec-text li{font-size: 1.4rem;padding:10px 5px;display: inline-block; width: auto;vertical-align: top}
+	.spec-text .block{display: inherit}
+	.spec-text-sub li{width: 100%}
+	.spec100{width: 100%!important}
+	
+	.spec-app li{width: 100%;max-width:inherit}
+	.spec-app-img{height:auto;}
+	.spec-app-img img{height:auto; width:100%;}
+	
+}
+/*--footer--*/
+
+/*--サポート--*/
+.support-box{padding:5px;}
+.supp-text{text-align: left}
