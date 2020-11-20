@@ -122,7 +122,7 @@ color: #ccc;
 }
 
 #cboxLoadingGraphic {
-background: url(img/loading.gif) no-repeat center center;
+background: url(http://sukerasparo.com/folklore/css/img/loading.gif) no-repeat center center;
 }
 
 /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
