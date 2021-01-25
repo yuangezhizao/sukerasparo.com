@@ -17,7 +17,7 @@ div#loader .lord-img img{width:100%;position:absolute;max-width:640px;top:0;bott
 .mv2 .main .logo{width:55%;max-width:400px;position:absolute;margin:auto;right:0;bottom:1%;top:inherit;}
 .mv2 .taiken{bottom:59%;top:inherit}
 /*---0801変更分 マスターアップ----*/
-.mv-mas{background:url(http://sukerasparo.com/amrilato/image/main-masterup.jpg) center top no-repeat;background-size:cover}
+.mv-mas{background:url(../image/main-masterup.jpg) center top no-repeat;background-size:cover}
 .mv-mas .catch{width:12%;top:12%;bottom:inherit}
 .mv-mas .main .logo{width:60%;max-width:400px;position:absolute;margin:auto;right:0;left:0;bottom:1%;top:inherit;}
 .mv-mas .taiken{bottom:37%;top:inherit}
