@@ -78,7 +78,7 @@ ga('send', 'pageview');
 
 <section id="sp-name" class="bg-change02">
 <div class="floor">
-	<div class="head-tit01"><h2 class="font02"><span>OriginalSoundTrack</span></h2></div>
+	<div class="head-tit01"><h2 class="font02"><span>OriginalVoiceDrama</span></h2></div>
 </div>
 </section>
 
@@ -88,6 +88,18 @@ ga('send', 'pageview');
 	<section class="cd">
 		
 		<style>
+			p.header7 {
+				margin-top: 2rem;
+			}
+
+			p.header6 {
+				border-radius: 4px;
+				color: #FFF;
+				background-color: #6bd8bf;
+				font-size: large;
+				font-weight: bold;
+				padding: 1.5rem;}
+
 			section.cd {
 				font-size: 1rem;
 				margin: 0 auto; 
@@ -104,6 +116,7 @@ ga('send', 'pageview');
 				margin-bottom: 2rem;}
 			}
 			div.first-view > div.shelf { -ms-grid-row: 1;  -ms-grid-column: 1;}
+			div.first-view > div.shelf > * { margin-bottom: 1rem;}
 			div.first-view > div.details { -ms-grid-row: 1;  -ms-grid-column: 2;}
 			div.details {
 				margin-left: 2rem;
@@ -133,7 +146,7 @@ ga('send', 'pageview');
 				-ms-grid-rows: auto;}
 			div.version > div.button-area { -ms-grid-row: 1;  -ms-grid-column: 1;}
 			div.version > div.text-area { -ms-grid-row: 1;  -ms-grid-column: 2;}
-			.track-list > p {
+			.track-list > p, .arasuzi {
 				border-radius: 4px;
 				color: #FFF;
 				background-color: #6bd8bf;
@@ -150,6 +163,17 @@ ga('send', 'pageview');
 			.small { font-size: small;}
 			.version-name { font-size: 2rem; line-height: 3rem;}
 			.track-list > ul { padding: 2rem;}
+			.track-list > table { padding: 2rem;}
+			.track-list .track {
+				width: 12rem;
+				font-size: 1.2rem !important;
+				font-weight: inherit;
+				border-radius: 100px;
+				color: rgb(0, 0, 0);
+				background-color: #cacaca;
+				padding: 0.5rem 1rem;
+				margin-right: 1rem;
+				}
 			
 
 			p.subheading { 
@@ -180,8 +204,7 @@ ga('send', 'pageview');
 				border-radius: 4px;
 				background-color: #5ec9e0;
 				padding: 1rem;}
-
-				
+		
 			div.shop.list > div.shop > p { 
 				font-weight: bold;
 				color: #FFF;}
@@ -263,98 +286,110 @@ ga('send', 'pageview');
 				div.details { margin-left: 0px;}
 			}
 
+			
+			.page-lang { text-align: end;}
+			.page-lang button { font-size: 1.2rem; background-color: #cecece; border-radius: 100px; padding: 1rem; color:#FFF;}
+			.page-lang button.on { font-size: 1.2rem; background-color: #FF7BAC; border-radius: 100px; padding: 1rem; color:#FFF;}
+
 		</style>
 		<div class="first-view">
 			<div class="shelf">
-				<img class="jacket" src="img/jacket.png" alt="">
-				<div class="youtube"><iframe width="480" height="270" src="https://www.youtube.com/embed/Vn7k-EWsGh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-				<div class="youtube"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIxvRJYWaZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></div>
+				<img class="jacket" src="img/dramaCD2.png" alt="">
+				<!-- <div class="youtube"><iframe width="480" height="270" src="https://www.youtube.com/embed/Vn7k-EWsGh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="youtube"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIxvRJYWaZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
 			</div>
 			<div class="details">
-				<p class="product title">推しのラブより恋のラブ<br>オリジナルサウンドトラック</p>
-				<p>発売日 ： 2020年8月28日(金)</p>
-				<p>国際的大ヒットを記録したドタバタ王道百合コメディ「推しのラブより恋のラブ」のオリジナルサウンドトラックです。このCDの為に制作したヒロイン古館恋が歌う主題歌『Love Emotion！』恋ver.、本邦初公開の『チョコスプレー』フルver.も収録です！パッケージはもちろんDSマイル先生による描き下ろしイラスト！！そしてスーパージュエルボックス仕様の豪華CDとなっております。</p>
+				<p class="product title">推しのラブより恋のラブ<br>あくると恋の交換日記</p>
+				<p>発売日 ： 2021年3月26日(金)</p>
+
+				<div class="page-lang">
+					<button class="on" onclick="window.open('voicedrama.html')">日本語</button>
+					<button onclick="window.open('voicedrama_en.html')">ENGLISH</button>
+					<button onclick="window.open('voicedrama_cn.html')">简体中文</button>
+					<button onclick="window.open('voicedrama_tw.html')">繁體中文</button>
+				</div>
+				
 				<ul class="lineup">
+
 					<li>
 						<div class="version">
 							<div class="button-area">
-								<button class="buy" onclick="window.open('https://sukerasparo.net/items/5f101227ea3c9d29a91a141e')">購入する</button>
+								<button class="buy" onclick="window.open('https://camp-fire.jp/projects/view/379605')">購入する</button>
 							</div>
 							<div class="text-area">
-								<p class="version-name">タペストリー付き限定盤</p>
-								<p class="price">	5,000円（税別）</p>
-							</div>
-						</div>
-						<p class="small">※タペストリー付き限定盤は初回生産分のみの製造となります</p>
-						<p class="small">ジャケットイラストを使用したWスエード生地のB2タペストリー</p>
-						<p class="small">サイズ：W51.5cm × H72.8cm</p>
-					</li>
-					<li>
-						<div class="version">
-							<div class="button-area">
-							<button class="buy"onclick="window.open('https://sukerasparo.net/items/5f10105813a48b5872c5a83e')">購入する</button></div>
-							<div class="text-area">
-								<p class="version-name">通常版</p>
-								<p class="price">2,500円（税別）</p>
+								<p class="version-name">クラウドファンディング</p>
+								<p class="price">（CAMPFIRE）</p>
 							</div>
 						</div>
 					</li>
+
 				</ul>
+
+				<p class="arasuzi">あらすじ</p>
+				<p>
+					不運なオタクOL『速星あくる』とガチャ運最強ギャル『古館 恋』、ひょんなことから出会ってしまった二人は結婚？ 同棲？ を経て、恋人としての交際をスタートすることに。<br>
+					<br>
+					そんなある日、あくるがハマっているソーシャルゲームのグッズくじが発売される。<br>
+					あくるはもちろん推しのキャラのグッズを手に入れるために大金をつぎこむが、結局GETできたのは、お目当て以外のものばかり……<br>
+					さらに、家に持って帰ってきた大量グッズの中からノートを見つけた恋にある提案を持ちかけられてしまう。<br>
+					<br>
+					「交換日記やろ！ 一日ずつ日記を書いて毎日交換するの！」<br>
+					<br>
+					その言葉にあくるは抵抗するもの、なし崩し的に日記を書き始めること。<br>
+					帰り道に手をつなごうとしてみたり、恋の得意のネイルをしてもらったり……<br>
+					甘々でドタバタなふたりの日常は日記でもすれちがうかと思いきや――<br>
+					<br>
+					ドタバタ王道百合コメディ『推しのラブより恋のラブ』の後日談を描くボイスドラマ、第一弾発売！<br>
+				</p>
+
 				<div class="track-list">
-					<p>収録楽曲</p>
+					<p>収録内容</p>
+					<table>
+						<tr>
+							<th><p class="track">Track1.Day0</p></th>
+							<td>速星あくる、十八番勝負の夜</td>
+						</tr>
+						<tr>
+							<th><p class="track">Track2.Day1</p></th>
+							<td>1日目 今夜は鍋！お買い物デート（仮）</td>
+						</tr>
+						<tr>
+							<th><p class="track">Track3.Day2</p></th>
+							<td>2日目 爪先の色は……？</td>
+						</tr>
+						<tr>
+							<th><p class="track">Track4.Day3</p></th>
+							<td>3日目 リベンジ！十八番勝負</td>
+						</tr>
+						<tr>
+							<th><p class="track">Track5.Day4</p></th>
+							<td>4日目 長い夜は今日でおしまい。</td>
+						</tr>
+						<tr>
+							<th><p class="track">Track6.後日談</p></th>
+							<td>夜が明けて、明日からの話。</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="section">
+					<p class="header7"><b>スタッフ</b></p>
 					<ul>
-						<li>1.Love Emotion！</li>
-						<li>2.お出かけしようよ！</li>
-						<li>3.ウキウキするよね</li>
-						<li>4.もしかしてだけど…</li>
-						<li>5.待て待て待てー！</li>
-						<li>6.ぽかーん…</li>
-						<li>7.大好きだから</li>
-						<li>8.Love Emotion！オルゴールVer.</li>
-						<li>9.今日も楽しくいこう！</li>
-						<li>10.あたたかい日々</li>
-						<li>11.鼓動を聞いて</li>
-						<li>12.Love Emotion！ instVer.</li>
-						<li>13.チョコスプレー フルver.</li>
-						<li>14.Love Emotion！ 恋ver.</li>
+						<li>シナリオ：オグリアヤ</li>
+						<li>イラスト：DSマイル</li>
 					</ul>
-					<ul class="song-list">
-						<li>
-							
-							<div class="song title"><span class="tag">OP曲</span>&#12302;Love Emotion！&#12303;</div>
-							<div class="description">
-								<p>歌：鈴湯</p>
-								<p>作詞・作曲・編曲：よる。</p>
-								<p>Guitar：masaki</p>
-								<p>Piano：山本佳祐</p>
-								<p>(All Other Instruments & Programming：よる。)</p>
-							</div>
-						</li>
-						<li>
-							<div class="song title"><span class="tag">録り下ろし楽曲</span>&#12302;Love Emotion！&#12303;恋ver.</div>
-							<div class="description">
-								<p>歌：古館恋（CV：北大路ゆき）</p>
-								<p>作詞・作曲・編曲：よる。</p>
-								<p>Guitar：masaki</p>
-								<p>Piano：山本佳祐</p>
-								<p>(All Other Instruments & Programming：よる。)</p>
-							</div>
-						</li>
-						<li>
-							<div class="song title"><span class="tag">ED曲</span>&#12302;チョコスプレー&#12303;フルver.</div>
-							<div class="description">
-								<p>歌：杏花</p>
-								<p>作詞：杏花</p>
-								<p>作曲：福田和也、Rick Sakurai</p>
-							</div>
-						</li>
+
+					<p class="header7"><b>出演</b></p>
+					<ul>
+						<li>速星あくる　CV：猫村ゆき</li>
+						<li>古館恋　CV：北大路ゆき</li>
 					</ul>
+
 				</div>
 			</div>
 		</div>
-		<p class="subheading">取り扱い店舗</p>
+		<!-- <p class="subheading">取り扱い店舗</p>
 		<div class="shop list">
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>アキバ☆ソフマップ・ドットコム</p>
 				<div class="buttons">
@@ -362,7 +397,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://a.sofmap.com/product_detail.aspx?sku=20976205&gid=CD12040000')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>アニメイト オンラインショップ</p>
 				<div class="buttons">
@@ -370,7 +404,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://www.animate-onlineshop.jp/pn/%E3%80%90%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF%E3%80%91Win%E7%89%88+%E6%8E%A8%E3%81%97%E3%81%AE%E3%83%A9%E3%83%96%E3%82%88%E3%82%8A%E6%81%8B%E3%81%AE%E3%83%A9%E3%83%96+%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF+%E9%80%9A%E5%B8%B8%E7%9B%A4/pd/1825753/')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>amazon.co.jp</p>
 				<div class="buttons">
@@ -378,7 +411,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://www.amazon.co.jp/dp/B08F2GT9G9/ref=sr_1_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=VVKX5OSV8BU4&dchild=1&keywords=%E6%8E%A8%E3%81%97%E3%81%AE%E3%83%A9%E3%83%96%E3%82%88%E3%82%8A%E6%81%8B%E3%81%AE%E3%83%A9%E3%83%96+%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF&qid=1596173703&sprefix=%E6%8E%A8%E3%81%97%E3%81%AE%E3%83%A9%E3%83%96%E3%82%88%E3%82%8A%2Csoftware%2C252&sr=8-2')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>アリスNET</p>
 				<div class="buttons">
@@ -386,7 +418,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('http://www.alice-kobe.com/shop/shopdetail.html?brandcode=000000007779&search=%BF%E4%A4%B7%A4%CE%A5%E9%A5%D6%A4%E8%A4%EA%CE%F8%A4%CE%A5%E9%A5%D6&sort=')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>ゲーマーズ オンラインショップ</p>
 				<div class="buttons">
@@ -394,7 +425,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://www.gamers.co.jp/pn/%E3%80%90%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF%E3%80%91%E6%8E%A8%E3%81%97%E3%81%AE%E3%83%A9%E3%83%96%E3%82%88%E3%82%8A%E6%81%8B%E3%81%AE%E3%83%A9%E3%83%96+%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/pd/10506769/')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>Getchu.com</p>
 				<div class="buttons">
@@ -402,7 +432,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('http://www.getchu.com/soft.phtml?id=1098604')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>とらのあな通販</p>
 				<div class="buttons">
@@ -410,7 +439,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://ecs.toranoana.jp/tora/ec/item/210006615162/')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>トレーダー通販</p>
 				<div class="buttons">
@@ -418,7 +446,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('http://www.trader.co.jp/shop/shopdetail.html?brandcode=000000005776&search=%BF%E4%A4%B7%A4%CE%A5%E9%A5%D6%A4%E8%A4%EA%CE%F8%A4%CE%A5%E9%A5%D6%2C18&sort=order')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>FANZA</p>
 				<div class="buttons">
@@ -426,7 +453,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://www.dmm.co.jp/mono/pcgame/-/detail/=/cid=2137srs001/?i3_ref=search&i3_ord=1')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>プロップ通販</p>
 				<div class="buttons">
@@ -434,7 +460,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('http://www.prop.gr.jp/id121872_6.html')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>メロンブックス通販</p>
 				<div class="buttons">
@@ -442,7 +467,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://www.melonbooks.co.jp/detail/detail.php?product_id=694602')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop">
 				<p>SukeraSparo通販</p>
 				<div class="buttons">
@@ -450,7 +474,6 @@ ga('send', 'pageview');
 					<button class="buy" onclick="window.open('https://sukerasparo.net/items/5f10105813a48b5872c5a83e')">通常版</button>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
 			<div class="shop steam">
 				<p>Steam</p>
 				<div class="buttons">
@@ -462,8 +485,7 @@ ga('send', 'pageview');
 					<p><small>※OP曲、ED曲はショートバージョンになります。<br>Love Emotion！恋ver.は含まれません。</small></p>
 				</div>
 			</div>
-			<!--  -------------------------------------------------- -->
-		</div>
+		</div> -->
 	</section>
 
 
