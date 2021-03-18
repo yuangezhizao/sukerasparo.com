@@ -77,11 +77,11 @@ ga('send', 'pageview');
 	<h2 class="h2-tit sp-tit font01 cpn-tit">特典情報</h2>
 </section>
 </article>
-	
+
 	<article id="floor-box" class="sp-bg-col01 provolege h100"><!--01-->
 	<section class="floor t-center sp-floor">
 		<h3 class="cpn-name"><span class="sub-name">「クダンノフォークロア」<br class="br480b">特装版 同梱特典情報</span></h3>
-		
+
 		<div class="provolege-item w100b">
 			<p class="provolege-item-name t-center">「クダンノフォークロア」特装版</p>
 			<img class="headvisual" src="img/limitededition.png" alt="">
@@ -100,7 +100,7 @@ ga('send', 'pageview');
 		</div>
 
 		<p class="provolege-name">内容</p>
-		
+
 		<style>.provolege-item { height: auto;} </style>
 
 		<!---->
@@ -121,17 +121,32 @@ ga('send', 'pageview');
 			<div class="provolege-item-img"><img src="img/special-favor-1-3.png" width="100%" alt=""></div>
 			<div id="openModal-2" class="more-box"><span class="more">あらすじを読む</span></div>
 		</div>
-		
+
 		<div class="provolege-item">
 			<p class="provolege-item-name">ポストカード×10枚セット</p>
 			<div class="provolege-item-img"><img class="h-extend-2" src="img/special-favor-1-4.png" width="100%" alt=""></div>
 			<style>.h-extend-2 {padding-bottom: 52px;}</style>
 		</div>
-		
+
 		<div class="provolege-item">
 			<p class="provolege-item-name">豪華三方背ケース仕様</p>
 			<div class="provolege-item-img"><img class="h-extend-2" src="img/special-favor-1-5.png" width="100%" alt=""></div>
 			<style>.h-extend-2 {padding-bottom: 52px;}</style>
+		</div>
+
+		<div class="provolege-item w100b">
+			<style>
+				img.button:hover {
+					-webkit-transition: all 0.1s;
+					-moz-transition: all 0.1s;
+					-ms-transition: all 0.1s;
+					-o-transition: all 0.1s;
+					cursor: pointer;
+					box-shadow: 0 5px 10px -3px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+					transform: translateY(-2px);
+				}
+			</style>
+			<img class="button" onclick="location.href='https://gyutto.com/pd/kudancomic'" src="img/bnr_toDLpage.png" alt="" >
 		</div>
 
 	</section>
@@ -168,12 +183,12 @@ ga('send', 'pageview');
 					</ul>
 				</div>
 				<div id="closeModal" class="closeModal">
-	
+
 				</div>
 			</div>
 		</section>
 
-		
+
         <section id="modalArea-2" class="modalArea">
 			<div id="modalBg-2" class="modalBg"></div>
 			<div class="modalWrapper wide">
@@ -204,7 +219,7 @@ ga('send', 'pageview');
 				</p>
 				</div>
 				<div id="closeModal-2" class="closeModal">
-	
+
 				</div>
 			</div>
 		</section>
@@ -221,7 +236,7 @@ ga('send', 'pageview');
 
 			.modalBg { width: 100%; height: 100%; background-color: rgba(30,30,30,0.9); }
 
-			.modalWrapper { 
+			.modalWrapper {
 				position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%);
 				background-color: #fff; margin-bottom: 40px; min-width: 30%;
 			}
@@ -246,9 +261,9 @@ ga('send', 'pageview');
 			FastClick.attach(document.body);
 		}, false);
 	}
-	
+
 	$(function(){
-		var tgElm = $('p,h3,.chara-name'), 
+		var tgElm = $('p,h3,.chara-name'),
 				tagType = "span";
 		tgElm.each(function(){
 			var tgText = $(this).html();
@@ -258,7 +273,7 @@ ga('send', 'pageview');
 			$(this).html(tgText);
 		});
 	});
-	
+
 	$(document).ready(function(){
 		$(".group1").colorbox({rel:'group1'});
 		$(".group1").colorbox({
@@ -295,7 +310,7 @@ ga('send', 'pageview');
 	const closeModal = document.getElementById('closeModal');
 	const modalBg = document.getElementById('modalBg');
 	const toggle = [openModal,closeModal,modalBg];
-	
+
 	for(let i=0, len=toggle.length ; i<len ; i++){
 		toggle[i].addEventListener('click',function(){
 		modalArea.classList.toggle('is-show');
@@ -311,7 +326,7 @@ ga('send', 'pageview');
 	const closeModal = document.getElementById('closeModal-2');
 	const modalBg = document.getElementById('modalBg-2');
 	const toggle = [openModal,closeModal,modalBg];
-	
+
 	for(let i=0, len=toggle.length ; i<len ; i++){
 		toggle[i].addEventListener('click',function(){
 		modalArea.classList.toggle('is-show');
