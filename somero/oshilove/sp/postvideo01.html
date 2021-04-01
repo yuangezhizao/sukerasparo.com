@@ -37,7 +37,7 @@ ga('send', 'pageview');
 	#mv-contents{position: relative;}
 	#mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
 	.mv-bg{width:100%;height:100%;top:0;background:url(http://sukerasparo.com/somero/oshilove/sp/img/mv-img.jpg) top/cover no-repeat;position: fixed;}
-	
+
 	.load-none{opacity:0;}
 	.load-block{opacity:1;}
 
@@ -45,7 +45,7 @@ ga('send', 'pageview');
 		.mv-bg{background:url(../img/mv-img.jpg) 26%/cover no-repeat!important;}
 	}
 	@media screen and (max-width: 640px){
-		.mv-bg{top:65px;}		
+		.mv-bg{top:65px;}
 		#mv-contents{min-height:inherit}
 	}
 	@media screen and (max-width: 480px){
@@ -84,7 +84,7 @@ ga('send', 'pageview');
 <!---->
 <section id="sp-floor"><!--class="h100"-->
 	<div class="floor">
-		
+
 		<style>
 				fieldset { border : 0px; }
 				input, textarea { border-radius: 4px; background-color: #f7f7f7; width: 100%; font-size: 1.5rem; padding: 1rem;}
@@ -138,7 +138,7 @@ ga('send', 'pageview');
 				.main-pic { width: 100%;}
 
 		</style>
-		
+
 		<div class="sp-head-tit"><h2>『推しのラブより恋のラブ』百合ゲーム実況プレイ動画投稿応援キャンペーン</h2></div>
 
 		<!-- メイン画像 -->
@@ -158,20 +158,24 @@ ga('send', 'pageview');
 
 		<div class="call to action">
 			<style>.call.to.action {text-align: center; padding:30px 0;}</style>
-			<a class="button" href="postvideo01.html#form">
+			<a class="button disabled" href="postvideo01.html#form">
 				<style>
 					a.button {
-						display:inline-block; background-color: #FF7BAC; color:#FFF; padding:10px 20px; 
+						display:inline-block; background-color: #FF7BAC; color:#FFF; padding:10px 20px;
 						font-size: 2rem; font-weight: bold; border-radius: 4px; margin:1px;}
 					a.button:hover {
-						display:inline-block; background-color: #FFEAF3; color:#FF7BAC; padding:10px 20px; 
+						display:inline-block; background-color: #FFEAF3; color:#FF7BAC; padding:10px 20px;
 						font-size: 2rem; font-weight: bold; border-radius: 4px; border:1px solid #FF7BAC;
 						box-sizing: border-box; margin:0;}
+					a.disabled, a.disabled:hover {
+						display:inline-block; background-color: #858585; color:#FFF; padding:10px 20px;
+						font-size: 2rem; font-weight: bold; border-radius: 4px; margin:1px; border:0;
+						cursor: not-allowed;}
 				</style>
 				応募する!
 			</a>
 		</div>
-		
+
 		<div class="notice">
 			<style>.notice {text-align: center;} </style>
 			<p>応募期限は2021年3月31日まで！</p>
@@ -181,7 +185,7 @@ ga('send', 'pageview');
 			<div class="backnumber sp-head-tit"><h3>過去の実況プレイ動画</h3></div>
 			<div class="backnumber">
 				<style>
-					.backnumber.sp-head-tit { 
+					.backnumber.sp-head-tit {
 						margin-top:6rem;
 						font-size: 1.6rem;
 						 }
@@ -191,13 +195,13 @@ ga('send', 'pageview');
 						padding:10px;
 						display: -webkit-box;
 						display: -ms-flexbox;
-						display: flex; 
+						display: flex;
 						flex-wrap: wrap; }
 					.backnumber div.youtube {
 						position: relative;
 						width: 100%;
 						padding: calc(315 / 560 * 100%) 0 0;
-						overflow:auto; 
+						overflow:auto;
 						-webkit-overflow-scrolling:touch;
 					}
 					.backnumber div.youtube iframe {
@@ -221,7 +225,7 @@ ga('send', 'pageview');
 				</div>
 			</div>
 		</div>
-		
+
 		<form id="form" class="formular" method="post" action="http://sukerasparo.com/somero/oshilove/sp/postvideo01.php">
 			<fieldset>
 				<label><p>お名前</p></label>
@@ -246,8 +250,11 @@ ga('send', 'pageview');
 				</div>
 				<label>&nbsp;</label>
 				<div id="submit_press">
-					<input type="submit" class="submit kadomaru" name="send" value="送信"/><br>
+					<input disabled type="submit" class="submit kadomaru disabled" name="send" value="送信"/><br>
 					<div id="submit_message" style="display:none"><p>送信中…</p></div>
+					<style>
+						input.disabled, input.disabled:hover { border:0 !important; background-color: #858585 !important; color: #FFF !important; cursor: not-allowed; }
+					</style>
 				</div>
 			</fieldset>
 		</form>
@@ -263,7 +270,7 @@ ga('send', 'pageview');
 <script src="../js/jquery.colorbox-min.js"></script>
 <script>
 	$(function(){
-		var tgElm = $('p,li,td'), 
+		var tgElm = $('p,li,td'),
 				tagType = "span";
 		tgElm.each(function(){
 			var tgText = $(this).html();
@@ -272,7 +279,7 @@ ga('send', 'pageview');
 			tgText = tgText.replace(/[・；：]/g, '<' + tagType + ' style="margin-left: -0.2em; margin-right: -0.2em;">$&</' + tagType + '>');
 			$(this).html(tgText);
 		});
-	});	
+	});
 </script>
 
 <!-- 伸縮するテキストエリア -->
