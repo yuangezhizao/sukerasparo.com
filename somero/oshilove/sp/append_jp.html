@@ -37,7 +37,7 @@ ga('send', 'pageview');
 	#mv-contents{position: relative;}
 	#mv-main{position:relative;width:100%;height:100%;overflow:hidden;}
 	.mv-bg{width:100%;height:100%;top:0;background:url(http://sukerasparo.com/somero/oshilove/sp/img/mv-img.jpg) top/cover no-repeat;position: fixed;}
-	
+
 	.load-none{opacity:0;}
 	.load-block{opacity:1;}
 
@@ -47,7 +47,7 @@ ga('send', 'pageview');
 
 	}
 	@media screen and (max-width: 640px){
-		.mv-bg{top:65px;}		
+		.mv-bg{top:65px;}
 		#mv-contents{min-height:inherit}
 	}
 	@media screen and (max-width: 480px){
@@ -89,10 +89,10 @@ ga('send', 'pageview');
 	<div class="floor">
 
 		<style>
-			.lang { height: auto; width: 100%; text-align: right;} 
-			.lang > * { 
-				padding: 0.5rem; 
-				font-size: 1.4rem !important;} 
+			.lang { height: auto; width: 100%; text-align: right;}
+			.lang > * {
+				padding: 0.5rem;
+				font-size: 1.4rem !important;}
 		</style>
 		<div class="lang">
 			<span>日本語</span>
@@ -104,7 +104,7 @@ ga('send', 'pageview');
 		<div class="main-box rt-cpn">
 			<!-- http://sukerasparo.com/somero/oshilove/append/ -->
 			<!-- <div class="main-img"><img src="img/rt-cpn_img01.jpg" width="100%"></div> -->
-			
+
 			<p class="t-center">
 				<ul>
 					<li>1.ゲームを起動している場合は、一旦ゲームを終了させてください。</li>
@@ -127,7 +127,7 @@ ga('send', 'pageview');
 			</p>
 		</div>
 
-		
+
 		<div class="sp-head-tit"><h2>セーブファイルについて</h2></div>
 		<div class="main-box rt-cpn">
 			<p class="t-center">
@@ -145,15 +145,15 @@ ga('send', 'pageview');
 				</a>
 			</p>
 		</div>
-		
+
 		<style>.head-banner { text-align: center;}</style>
 		<a href="../append/index.html">
 			<img src="img/append_banner.png" alt="" width="100%">
 			<div class="head-banner" >追加されるストーリー内容はこちら</div>
 		</a><br>
-		
+
 		<!---->
-		
+
 	</div>
 
 </section>
@@ -166,7 +166,7 @@ ga('send', 'pageview');
 <script src="../js/jquery.colorbox-min.js"></script>
 <script>
 	$(function(){
-		var tgElm = $('p,li,td'), 
+		var tgElm = $('p,li,td'),
 				tagType = "span";
 		tgElm.each(function(){
 			var tgText = $(this).html();
@@ -175,7 +175,7 @@ ga('send', 'pageview');
 			tgText = tgText.replace(/[・；：]/g, '<' + tagType + ' style="margin-left: -0.2em; margin-right: -0.2em;">$&</' + tagType + '>');
 			$(this).html(tgText);
 		});
-	});	
+	});
 </script>
 
 <script async>

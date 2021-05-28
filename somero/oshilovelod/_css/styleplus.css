@@ -1,0 +1,190 @@
+
+
+#mv-contents { height:100%; position:relative; min-height:768px;}
+#mv-main { position:relative; width:100%; height:100%;overflow:hidden;}
+.mv-bg { width:100%; height:100%; z-index:-1}
+
+/* border-radius: 150px; */
+.load-none{ opacity:0; }
+.load-block{ opacity:1; }
+
+@media screen and ( max-width: 640px ){
+	.mv-bg { top:65px;}
+	#mv-contents { min-height:inherit}
+
+}
+
+
+/* 背景 ========================================== */
+.mv-bg { background:url(../_img/background-mv-pc.jpg) top / cover no-repeat; position:fixed; right:0px; }
+@media screen and (max-width: 768px){
+	.mv-bg { background:url(../_img/background-mv-sp.jpg) center top / cover no-repeat; } }
+
+
+/* キャッチコピーの位置とサイズ ========================================== */
+	/* 基本設定 */
+		.mv-catch { position: absolute; z-index:6; }
+		.mv-catch img { width:100%; height:auto; }
+
+	/* 位置調整 */
+		@media screen and ( min-width:1280px ){ .mv-catch { top:82px; right:30px; } }
+		@media screen and ( min-width: 769px ){ .mv-catch { bottom:0px; right:30px; } } /* ※ヘッダーの高さ…52px */
+		@media screen and ( max-width: 768px ){ .mv-catch {
+			-ms-transform:translate(-50%,0);
+			-webkit-transform:translate(-50%,0);
+			transform :translate(-50%,0);
+			bottom:42%; left:50%;
+			text-align: center;} }
+
+	/* サイズ調整 */
+		.mv-catch { min-width:600px; }
+		@media screen and ( min-width:1280px ){ .mv-catch { max-width:300px; } }
+		@media screen and ( min-width: 769px ){ .mv-catch { max-width:150px; max-height:18%; } }
+		@media screen and ( max-width: 768px ){
+			.mv-catch { display:none; }
+			.mv-catch * { display:none; }
+		}
+
+		/* @media screen and ( max-width:1366px ){ .mv-catch.c-sub { max-width:100px; } }
+		@media screen and ( max-width: 768px ){ .mv-catch.c-sub { right:inherit; bottom:inherit; top:10%; } } */
+
+
+/* タイトルロゴの位置とサイズ ==========================================  */
+	/* 基本設定 */
+		.mv-logo { width:100%; height:100%; position:absolute; z-index:5;}
+		.mv-logo-img01,
+		.mv-logo-img02,
+		.mv-logo-img03 { width:100%; height:100%; position:absolute; -webkit-transform:translatez(0); -webkit-transform:translate3d(0,0,0); }
+
+		.mv-logo-img01 { background:url(../_img/logo_title_jp.png) no-repeat center; background-size:contain; z-index:6}
+		.mv-logo-img02 { background:url(../_img/logo_release01_jp.png) no-repeat center; background-size:contain; z-index:6}
+		.mv-logo-img03 { background:url(../_img/logo_release02_jp.png) no-repeat center; background-size:contain; z-index:6}
+
+
+		/* 各言語版に切り替え */
+			html[lang="en"] .mv-logo-img01 { background:url(../_img/logo_title_en.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="en"] .mv-logo-img02 { background:url(../_img/logo_release01_en.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="en"] .mv-logo-img03 { background:url(../_img/logo_release02_en.png) no-repeat center; background-size:contain; z-index:6}
+
+			html[lang="zh-cmn-Hans"] .mv-logo-img01 { background:url(../_img/logo_title_cn.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="zh-cmn-Hans"] .mv-logo-img02 { background:url(../_img/logo_release01_cn.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="zh-cmn-Hans"] .mv-logo-img03 { background:url(../_img/logo_release02_cn.png) no-repeat center; background-size:contain; z-index:6}
+
+			html[lang="zh-cmn-Hant"] .mv-logo-img01 { background:url(../_img/logo_title_tw.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="zh-cmn-Hant"] .mv-logo-img02 { background:url(../_img/logo_release01_tw.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="zh-cmn-Hant"] .mv-logo-img03 { background:url(../_img/logo_release02_tw.png) no-repeat center; background-size:contain; z-index:6}
+
+			html[lang="ko"] .mv-logo-img01 { background:url(../_img/logo_title_ko.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="ko"] .mv-logo-img02 { background:url(../_img/logo_release01_ko.png) no-repeat center; background-size:contain; z-index:6}
+			html[lang="ko"] .mv-logo-img03 { background:url(../_img/logo_release02_ko.png) no-repeat center; background-size:contain; z-index:6}
+
+	/* レイアウト */
+		@media screen and ( min-width:1281px )	{ .mv-logo { bottom:30px; left:0; } }
+		@media screen and ( min-width: 769px ) and ( max-width:1280px )	{ .mv-logo { bottom:16%; left:30px; } }
+		@media screen and ( max-width: 768px )	{
+			.mv-logo {
+				-ms-transform:translate(-50%,0);
+				-webkit-transform:translate(-50%,0);
+				transform :translate(-50%,0);
+				top:auto; left:50%; bottom:1%; right:auto;
+				text-align: center;
+			}
+		}
+
+	/* サイズ */
+		@media screen and ( min-width:1281px )	{ .mv-logo { max-width:38%; max-height:46%; } }
+		@media screen and ( min-width:769px ) and ( max-width:1280px )	{
+				.mv-logo { max-width:50%; max-height:40%; } }
+		@media screen and ( max-width: 768px )	{ .mv-logo { max-height:40%; } }
+
+
+/* マスターアップ（ファーストビュー丸抜き）の位置とサイズ ========================================== */
+	/* 基本設定 */
+		.mas-up{ position:absolute; background:#fff; z-index:10; }
+
+	/* 基準位置 */
+		@media screen and ( min-width: 769px  ){ .mas-up{ top:6%; left:auto; bottom:auto; right:2%; } }
+		@media screen and ( max-width: 768px  ){ .mas-up{ top:12%; left:auto; bottom:auto; right:2%; } }
+
+	/* サイズ */
+		@media screen and ( min-width: 1681px ){ .mas-up{ max-width:20%; } }
+		@media screen and ( max-width: 1680px ){ .mas-up{ max-width:240px; } }
+		@media screen and ( max-width: 1366px ){ .mas-up{ max-width:220px; } }
+		@media screen and ( max-width: 1024px ){ .mas-up{ max-width:160px; } }
+		@media screen and ( max-width: 480px  ){ .mas-up{ max-width:100px; } }
+		@media screen and ( max-width: 320px  ){ .mas-up{ max-width:100px; } }
+
+
+/* トップバナーの位置とサイズ ========================================== */
+	/* 基本設定 */
+		.infomation {
+			display:flex; display:-ms-flexbox; display:-webkit-flex;
+			position:absolute; bottom:5%; left:30%; width:auto;  z-index:5; }
+		.infomation img { max-width:200px; margin:10px; }
+
+		@media screen and ( max-width:1280px )	{ .infomation { left:3%; } }
+		@media screen and ( max-width: 768px ){
+			.infomation { display: none; }
+			.infomation * { display: none; }
+		}
+
+/* ムービーの位置とサイズ ========================================== */
+	/* バックアップ */
+		/* #mv-demo{ position:absolute;  z-index:10; }
+
+		#mv-demo{ bottom:5%; left:4%; max-width:420px; width:100%; }
+		@media screen and ( max-width:1680px )	{ #mv-demo{ max-width:370px; right:2%; } }
+		@media screen and ( max-width:1366px )	{ #mv-demo{ max-width:320px; right:1%; } }
+
+		@media screen and ( max-width:1280px )	{ #mv-demo{ bottom: 26%; } }
+		@media screen and ( max-width: 768px )	{
+			#mv-demo{ bottom:auto; left:auto; position:static; width:100%; max-width:inherit; background:rgba(63,169,245,.9); padding:20px}
+		}
+		@media screen and ( max-width: 480px )	{ #mv-demo{ padding:10px; } } */
+
+		/* デモパーツ内 */
+		/* .demo{
+			position:relative; width:100%; padding:56% 0 0 0; max-width:480px;
+			margin:0 auto; box-shadow: 0px 0px 10px 2px rgba(238,80,162,.25); border:3px solid #fff; background:#fff;}
+		.demo	iframe{ position:absolute; top:0; left:0; width:100%; height:100%; }
+		@media screen and ( max-width:1024px )	{
+			.demo{ padding:53% 0 0 0; margin: 0 auto; box-shadow:none; width:100%; max-width:inherit;}
+		} */
+
+
+	/* 基本設定 */
+		#mv-demo,
+		#mv-demo * { display:none; }
+		iframe.video { z-index:10; max-width:420px; width:100%; }
+
+		@media screen and ( max-width: 768px )	{
+			#mv-demo,
+			#mv-demo * { display:inherit; }
+			iframe.video { display:none; }
+			#mv-demo{ bottom:auto; left:auto; position:static; width:100%; max-width:inherit; background:rgba(63,169,245,.9); padding:20px}
+		}
+		@media screen and ( max-width: 480px )	{ #mv-demo{ padding:10px; } }
+
+		/* デモパーツ内 */
+		.demo{
+			position:relative; width:100%; padding:56% 0 0 0; max-width:480px;
+			margin:0 auto; box-shadow: 0px 0px 10px 2px rgba(238,80,162,.25); border:3px solid #fff; background:#fff;}
+		.demo	iframe{ position:absolute; top:0; left:0; width:100%; height:100%; }
+		@media screen and ( max-width:1024px )	{
+			.demo{ padding:53% 0 0 0; margin: 0 auto; box-shadow:none; width:100%; max-width:inherit;}
+		}
+
+
+span.nowrap { white-space:nowrap; }
+
+
+/* ステータス */
+	/* マスターアップ */
+		#mv-main div.mas-up		{ display:none !important; }
+		#mv-main div.infomation	{ display:none !important; }
+		section#mv-demo				{ display:none !important; }
+
+		html[lang="en"] section#news,
+		html[lang="zh-cmn-Hans"] section#news,
+		html[lang="zh-cmn-Hant"] section#news,
+		html[lang="ko"] section#news { display:none; }
