@@ -1218,3 +1218,9 @@ span.headline {
 			display:inline-block;
 			}
 	}
+
+html[lang="en"] li.only-jp,
+html[lang="zh-cmn-Hans"] li.only-jp,
+html[lang="zh-cmn-Hant"] li.only-jp,
+html[lang="ko"] li.only-jp { display:none; }
+.font02 { font-family:'Candal', sans-serif; }

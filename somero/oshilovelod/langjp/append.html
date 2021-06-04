@@ -106,7 +106,7 @@
 	</script>
 
 	<script async>
-		var headerhtml = 'header.html';
+		var headerhtml = '../include/header.html';
 		$.ajax({
 			type: 'get',
 			url: headerhtml,
@@ -115,7 +115,7 @@
 				$("#header").append(data);
 			}
 		});
-		var footerhtml = 'footer.html';
+		var footerhtml = '../include/footer.html';
 		$.ajax({
 			type: 'get',
 			url: footerhtml,
